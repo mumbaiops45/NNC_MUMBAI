@@ -1,4 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
+const pages = [
+  "/website-development-company-mumbai",
+  "/mobile-app-development-company-mumbai",
+  "/web-design-company-mumbai",
+  "/custom-web-development-mumbai",
+  "/react-native-app-development-mumbai",
+  "/ecommerce-website-development-mumbai",
+  "/crm-development-company-mumbai",
+  "/website-redesign-services-mumbai",
+  "/android-app-development-company-mumbai",
+  "/software-development-company-thane-mumbai",
+];
 
 export default function Home() {
   return (
@@ -58,6 +71,23 @@ export default function Home() {
           >
             Documentation
           </a>
+          <div className="mt-10 w-full">
+  <h2 className="text-xl font-semibold mb-4 text-black dark:text-white">
+    Our Services in Mumbai
+  </h2>
+
+  <div className="flex flex-col gap-2">
+    {pages.map((slug) => (
+      <Link
+        key={slug}
+        href={slug}
+        className="text-[var(--primery)] hover:underline"
+      >
+        {slug.replaceAll("-", " ").replace("/", "")}
+      </Link>
+    ))}
+  </div>
+</div>
         </div>
       </main>
     </div>
