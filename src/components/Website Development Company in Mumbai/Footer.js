@@ -16,16 +16,48 @@ export default function Footer() {
     { name: "FAQ", path: "/faq" },
   ];
 
-  // ✅ Services List
+  // ✅ Services (SEO Optimized Names + Slugs)
   const services = [
-    "Corporate websites",
-    "E-commerce development",
-    "Real estate portals",
-    "Healthcare websites",
-    "Landing page design",
-    "WordPress & CMS development",
-    "Custom web applications",
-    "Website redesign",
+    {
+      name: "Website Development Company in Mumbai",
+      path: "/website-development-company-mumbai",
+    },
+    {
+      name: "Mobile App Development Company in Mumbai",
+      path: "/mobile-app-development-company-mumbai",
+    },
+    {
+      name: "Web Design Company in Mumbai",
+      path: "/web-design-company-mumbai",
+    },
+    {
+      name: "Custom Web Development Mumbai",
+      path: "/custom-web-development-mumbai",
+    },
+    {
+      name: "React Native App Development Mumbai",
+      path: "/react-native-app-development-mumbai",
+    },
+    {
+      name: "E-commerce Website Development Mumbai",
+      path: "/ecommerce-website-development-mumbai",
+    },
+    {
+      name: "CRM Development Company Mumbai",
+      path: "/crm-development-company-mumbai",
+    },
+    {
+      name: "Website Redesign Services Mumbai",
+      path: "/website-redesign-services-mumbai",
+    },
+    {
+      name: "Android App Development Company Mumbai",
+      path: "/android-app-development-company-mumbai",
+    },
+    {
+      name: "Software Development Company in Thane Mumbai",
+      path: "/software-development-company-thane-mumbai",
+    },
   ];
 
   return (
@@ -37,12 +69,12 @@ export default function Footer() {
         {/* Logo + About */}
         <div>
           <Image
-           src="/logo.avif"
-           alt="Logo"
-           width={60}
-           height={25}
-           className="object-contain"
-         />
+            src="/logo.avif"
+            alt="Logo"
+            width={60}
+            height={25}
+            className="object-contain"
+          />
           <p className="text-sm leading-7 pt-5 text-white/80">
             NNC is a leading website development company in Mumbai offering
             custom, scalable and SEO-friendly digital solutions for businesses.
@@ -75,11 +107,14 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-6">Services</h3>
           <ul className="space-y-3">
             {services.map((service, index) => (
-              <li
-                key={index}
-                className="text-white/80 hover:text-[var(--primery)] transition cursor-pointer"
-              >
-                {service}
+              <li key={index}>
+                <Link
+                  href={service.path}
+                  title={service.name}
+                  className="text-white/80 hover:text-[var(--primery)] transition"
+                >
+                  {service.name}
+                </Link>
               </li>
             ))}
           </ul>

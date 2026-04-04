@@ -1,31 +1,31 @@
 "use client";
 
 import React from "react";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Globe } from "lucide-react";
 
-export default function CTA({
+export default function MobileAppCTA({
   phone = "+91 99005 66466",
-  email = "info@nakshatranamahacreations.com",
+  website = "https://nakshatranamahacreations.com",
   className = "",
 }) {
   return (
     <section className={`w-full ${className}`}>
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="max-w-5xl mx-auto ">
 
-        <div className=" rounded-2xl p-8 md:py-10 text-center shadow-md">
+        <div className="rounded-2xl p-8 md:py-10 text-center shadow-md">
           
           {/* Contact Info with icons */}
-          <p className="text-sm md:text-base mb-6 opacity-90 flex flex-col sm:flex-row justify-center items-center gap-4 ">
+          <p className="text-sm md:text-base mb-6 opacity-90 flex flex-col sm:flex-row justify-center items-center gap-4">
             <span className="flex items-center gap-2">
-              <Phone className=" text-[var(--primary)] w-4 h-4 " /> Call us at{" "}
+              <Phone className="text-[var(--primary)] w-4 h-4" />  Call{" "}
               <a href={`tel:${phone}`} className="font-semibold underline">
                 {phone}
               </a>
             </span>
             <span className="flex items-center gap-2">
-              <Mail className="text-[var(--secondary)] w-4 h-4 " /> or email{" "}
-              <a href={`mailto:${email}`} className="font-semibold underline">
-                {email}
+              <Globe className="text-[var(--secondary)] w-4 h-4" /> or visit{" "}
+              <a href={website} target="_blank" className="font-semibold underline">
+                {website.replace(/^https?:\/\//, "")}
               </a>
             </span>
           </p>
@@ -43,10 +43,11 @@ export default function CTA({
 
             {/* Secondary Button */}
             <a
-              href={`mailto:${email}`}
+              href={website}
+              target="_blank"
               className="px-6 py-3 rounded-xl secondary-btn flex items-center justify-center gap-2"
             >
-              <Mail className="w-5 h-5" /> Email Us
+              <Globe className="w-5 h-5" /> Visit Website
             </a>
 
           </div>

@@ -11,9 +11,11 @@ export default function Navbar() {
 
   const menuItems = [
     { name: "HOME", path: "/website-development-company-mumbai" },
-    { name: "Why NNC", path: "/why-nnc" },
-    { name: "Services", path: "/services" },
-    { name: "FAQ", path: "/faq" },
+    { name: "Why NNC", path: "#Why_Us" },
+    { name: "Services", path: "#Services" },
+    { name: "Tech Stack", path: "#Tech_Stack" },
+    { name: "FAQ", path: "#FAQ" },
+    
   ];
 
   return (

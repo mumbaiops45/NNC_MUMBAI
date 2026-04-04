@@ -1,10 +1,10 @@
 import React from 'react'
-import Hero from '@/components/mobile-app-development-company-mumbai/Hero'
+import Hero from '@/components/Hero'
 import CardList from '@/components/CardList'
 import CardCarouselLeftRight from '@/components/CardCarousel';
 import TackStack from '@/components/TechStack';
 import FAQ from '@/components/FAQ';
-import CTA from '@/components/mobile-app-development-company-mumbai/CTA';
+import CTA from '@/components/Website Development Company in Mumbai/CTA';
 const cardData = [
   {
     image: "/Website Development Company in Mumbai/10+ years.webp",
@@ -146,8 +146,16 @@ const faqData = [
 const page = () => {
   return (
     <>
-      <Hero />
-      <section className="Why_us w-full py-20 px-15">
+       <Hero
+      title="Website Development Company in"
+      highlight="Mumbai"
+      subtext="Custom websites built for Mumbai businesses. React.js, Next.js, WordPress. Delivered on time. Priced fairly."
+      description="Looking for a reliable website development company in Mumbai? Nakshatra Namaha Creations (NNC) has been building high-performance websites for Mumbai businesses since 2015. From startups in Andheri to enterprises in BKC, we deliver websites that load fast, rank on Google, and convert visitors into paying customers."
+      image="/Website Development Company in Mumbai/hero1.jpg"
+      buttonText="Get Quote"
+      buttonLink="#contact"
+    />
+      <section id='Why_Us' className="Why_Us scroll-mt-10 w-full py-20 px-15">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">
@@ -157,7 +165,7 @@ const page = () => {
         </div>
         <CardList cards={cardData} />
       </section>
-      <section className="Services w-full py-20 px-6 bg-gradient-to-b from-[var(--primary)]/10 to-transparent">
+      <section id='Services' className="Services scroll-mt-10 w-full py-20 px-6 bg-gradient-to-b from-[var(--primary)]/10 to-transparent">
         <div className="max-w-6xl mx-auto flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">
@@ -169,7 +177,7 @@ const page = () => {
         <CardCarouselLeftRight cards={leftSlideService} direction="left" />
         <CardCarouselLeftRight className='mt-10' cards={rightSlideService} direction="right" />
       </section>
-      <section className="Tech_Stack w-full py-20 px-15">
+      <section id='Tech_Stack' className="Tech_Stack scroll-mt-10 w-full py-20 px-15">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center">
@@ -179,7 +187,7 @@ const page = () => {
         </div>
         <TackStack items={techStackData} />
       </section>
-      <section className="FAQ w-full py-20 px-15 bg-gradient-to-b from-[var(--secondary)]/5 to-transparent">
+      <section id='FAQ' className="FAQ scroll-mt-10 w-full py-20 px-15 bg-gradient-to-b from-[var(--secondary)]/5 to-transparent">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center">
@@ -189,7 +197,7 @@ const page = () => {
         </div>
         <FAQ data={faqData} />
       </section>
-      <section className="Tech_Stack w-full pb-20 pt-10 px-15">
+      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 px-15">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center">

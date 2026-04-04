@@ -1,15 +1,14 @@
 import Navbar from "@/components/Mobile App Development Company in Mumbai/Navbar";
 import Footer from "@/components/Website Development Company in Mumbai/Footer";
 export const metadata = {
-  title: "Best Website Development Company in Mumbai | NNC Digital",
-  description: "Top-rated website development company in Mumbai. Custom websites, React & Next.js builds, SEO-ready. 565+ projects delivered. Get a free quote today.",
+  title: "Mobile App Development Company in Mumbai | NNC Digital",
+  description: "Custom Android & iOS mobile app development in Mumbai. React Native, cross-platform builds. 80+ apps delivered. Free consultation. Call NNC today.",
 };
 
 export default function Layout({ children }) {
   return (
     <>
-      <Navbar />
-
+   <Navbar />
       <main className="pt-23">
         {children}
       </main>
