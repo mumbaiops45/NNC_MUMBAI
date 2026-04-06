@@ -13,23 +13,36 @@ export default function TackStack({ items = [], className = "" }) {
           {items.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center group cursor-pointer"
+              className={`flex flex-col items-center group cursor-pointer rounded-xl  ${item.HoverBG ? `p-4` : 'p-0'}  ${item.HoverBG ? `${item.HoverBG}` :'hove:bg-[var(--primary)]'}` }
             >
               
               {/* Image */}
-              <div className="flex justify-center relative w-20 h-20 rounded-xl overflow-hidden transition-transform duration-300 group-hover:scale-110">
+              <div
+                style={{
+                  height: item.height ? `${item.height}px` : "90px",
+                  width: item.width ? `${item.width}px` : "90px",
+                }}
+                className="flex justify-center relative rounded-xl overflow-hidden transition-transform duration-300 group-hover:scale-110"
+              >
                 <Image
                   src={item.image}
                   alt={item.heading}
                   fill
-                  className="object-cover"
+                  className="object-contain p-2"
                 />
               </div>
 
               {/* Heading */}
-              <h3 className="mt-4 text-lg font-semibold text-gray-900 transition-colors duration-300 group-hover:text-[var(--primary)]">
+              <h3 className={`${item.height ? `h-${item.height}` : 'h-20'} ${item.width ? `w-${item.width}` : 'w-20'} mt-4 text-lg font-semibold text-gray-900 transition-colors duration-300 ${item.text ? `${item.text}` : 'group-hover:text-[var(--primary)]'} ${item.height ? `text-start` : 'text-center'}  text-center` }>
                 {item.heading}
               </h3>
+
+              {/* Description */}
+              {item.description && (
+                <p className={` ${item.height ? `text-start` : 'text-center'} mt-2 text-sm text-gray-600 ` }>
+                  {item.description}
+                </p>
+              )}
 
             </div>
           ))}

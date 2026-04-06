@@ -44,52 +44,40 @@ const servicesData = [
 
 const cardData = [
   {
-    image: "/E-commerce Website Development in Mumbai/E-commerce Website Development in Mumbai.jpg",
-    heading: "Mobile-First Responsive Design",
+    image: "/website-redesign-services-mumbai/loding.webp",
+    heading: "Website takes more than 3 seconds to load",
     paragraph:
-      "We build fully responsive e-commerce websites that deliver a seamless shopping experience across mobile, tablet, and desktop devices, ensuring maximum reach and engagement.",
+      "A slow website frustrates users and increases bounce rates. We optimize performance, compress images, and streamline code to ensure your site loads in under 3 seconds.",
   },
   {
-    image: "/E-commerce Website Development in Mumbai/Product Catalogue with Filter and Search.jpg",
-    heading: "Product Catalogue with Filter and Search",
+    image: "/website-redesign-services-mumbai/Looks broken or cluttered on mobile screens.jpg",
+    heading: "Looks broken or cluttered on mobile screens",
     paragraph:
-      "Our solutions include advanced product catalogues with smart filters and search functionality, helping customers easily find what they’re looking for and improving conversion rates.",
+      "Mobile users expect a smooth, responsive experience. We redesign websites to adapt seamlessly across devices, providing a clean, easy-to-navigate interface for every screen size.",
   },
   {
-    image: "/E-commerce Website Development in Mumbai/Razorpay, PayU, and UPI Payment Integration.png",
-    heading: "Razorpay, PayU, and UPI Payment Integration",
+    image: "/website-redesign-services-mumbai/No clear call-to-action on any page.png",
+    heading: "No clear call-to-action on any page",
     paragraph:
-      "We integrate secure and reliable payment gateways like Razorpay, PayU, and UPI to enable smooth, fast, and safe transactions for your customers.",
+      "Without visible and compelling CTAs, visitors may leave without taking action. We craft strategic CTAs that guide users to contact, purchase, or engage, boosting conversions effectively.",
   },
   {
-    image: "/E-commerce Website Development in Mumbai/Inventory and Order Management Panel.webp",
-    heading: "Inventory and Order Management Panel",
+    image: "/E-commerce Website Development in Mumbai/outdated-design.jpg",
+    heading: "Design hasn't been updated in the last 3 years",
     paragraph:
-      "Manage your products, stock levels, and orders efficiently with a powerful backend dashboard designed for easy tracking and real-time updates.",
+      "An outdated design can harm credibility. We refresh your website with modern layouts, typography, and visuals that align with current trends and enhance brand perception.",
   },
   {
-    image: "/E-commerce Website Development in Mumbai/costom login.png",
-    heading: "Customer Login and Order Tracking",
+    image: "/E-commerce Website Development in Mumbai/low-conversion.jpg",
+    heading: "Low conversion rate despite decent traffic",
     paragraph:
-      "We enable user accounts with order history and real-time tracking, enhancing transparency and improving the overall customer experience.",
+      "High traffic is wasted if visitors don’t convert. We analyze user behavior, optimize navigation, and improve product/service presentation to turn visitors into loyal customers.",
   },
   {
-    image: "/E-commerce Website Development in Mumbai/GST-Compliant Invoicing.png",
-    heading: "GST-Compliant Invoicing",
+    image: "/E-commerce Website Development in Mumbai/seo-issues.jpg",
+    heading: "Not ranking on Google for core keywords",
     paragraph:
-      "Our e-commerce systems generate GST-compliant invoices automatically, ensuring your business stays aligned with Indian tax regulations.",
-  },
-  {
-    image: "/E-commerce Website Development in Mumbai/WhatsApp Enquiry Integration.jpg",
-    heading: "WhatsApp Enquiry Integration",
-    paragraph:
-      "Boost customer engagement with direct WhatsApp integration, allowing users to make quick enquiries and connect with your team instantly.",
-  },
-  {
-    image: "/E-commerce Website Development in Mumbai/SEO-Optimised Product Pages.png",
-    heading: "SEO-Optimised Product Pages",
-    paragraph:
-      "We create search engine-friendly product pages with optimized content, meta tags, and structure to improve visibility and drive organic traffic.",
+      "If your website isn’t visible on search engines, potential customers can’t find you. We implement SEO best practices, keyword optimization, and structured content to improve rankings and organic traffic.",
   },
 ];
 
@@ -110,17 +98,17 @@ const page = () => {
   return (
     <>
       <Hero
-        title="E-commerce Website Development in  "
+        title="Website Redesign Services in "
         highlight="Mumbai"
 
-        subtext="We create scalable e-commerce platforms that help Mumbai businesses sell smarter, reach wider audiences, and grow revenue with ease."
-        description="Mumbai is one of India's largest retail markets. If your products aren't online yet, you're leaving serious money on the table. NNC builds e-commerce websites in Mumbai that are fast, mobile-first, and optimised for conversions. From catalogue sites to full marketplace platforms, we handle it all."
-        image="/E-commerce Website Development in Mumbai/e-commerce.jpg"
+        subtext="Transform your online presence with modern, responsive, and user-friendly website designs that engage visitors and drive results."
+        description="An outdated website kills trust and kills leads. If your website looks like it was built in 2015, it is silently turning away customers every day. NNC's website redesign service in Mumbai gives your existing site a full transformation, improving speed, design, mobile experience, and SEO in one go."
+        image="/website-redesign-services-mumbai/website-redesign-services-mumbai.jpg"
         buttonText="Get Quote"
         buttonLink="#contact"
       />
 
-      <section id='Why_Us' className="What We Deliver  w-full py-20 px-15">
+      <section id='signs-you-need' className="What We Deliver  w-full py-20 px-15">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">What Your
@@ -130,7 +118,7 @@ const page = () => {
         </div>
         <CardList cards={cardData} />
       </section>
-      <section id='Platforms' className='bg-gradient-to-b from-[var(--secondary)]/5 to-transparent pt-15'>
+      <section id='what-we-improve' className='bg-gradient-to-b from-[var(--secondary)]/5 to-transparent pt-15'>
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">
@@ -138,7 +126,7 @@ const page = () => {
           </h2>
 
         </div>
-        <ServicesLayout servicesData={servicesData} />
+        <ServicesLayout servicesData={servicesData} reverse={true} />
       </section>
 
 

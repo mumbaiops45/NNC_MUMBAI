@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 
-const ServicesLayout = ({ servicesData }) => {
+const ServicesLayout = ({ servicesData,reverse = false }) => {
     const [Active, setActive] = useState("Custom React.js + Node.js stores for full flexibility");
 
     const activeService = servicesData.find(
@@ -15,10 +15,10 @@ const ServicesLayout = ({ servicesData }) => {
     return (
         <section className="py-16 px-6 md:px-15 ">
             {/* MAIN LAYOUT */}
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[40%_1fr] gap-10">
+            <div className={`max-w-7xl mx-auto grid grid-cols-1  gap-10 ${reverse ? "md:grid-cols-[1fr_40%]" : "md:grid-cols-[40%_1fr]"}`}>
 
                 {/* LEFT SIDEBAR */}
-                <div className="flex flex-col gap-4">
+                <div className={`flex flex-col gap-4 ${reverse ? "md:order-2" : "md:order-1"}`}>
                     {servicesData.map((service) => (
                         <div key={service.id}>
                             <div
@@ -81,7 +81,7 @@ const ServicesLayout = ({ servicesData }) => {
                 </div>
 
                 {/* RIGHT CONTENT */}
-                <div className="hidden md:block">
+                <div className={`hidden md:block ${reverse ? "md:order-1" : "md:order-2"}`}>
                     {activeService && (
                         <>
                             {/* TITLE */}

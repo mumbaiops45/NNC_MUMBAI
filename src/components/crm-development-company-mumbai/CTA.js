@@ -17,27 +17,26 @@ export default function MobileAppCTA({
           {/* Contact Info with icons */}
           <p className="text-sm md:text-base mb-6 opacity-90 flex flex-col sm:flex-row justify-center items-center gap-4">
             <span className="flex items-center gap-2">
-              <Phone className="text-[var(--primary)] w-4 h-4" />  Let's get your store live. Call {" "}
-              <a href={`tel:${phone}`} className="font-semibold underline">
-                {phone}
-              </a>
+              <Globe className="text-[var(--secondary)] w-4 h-4" /> Email {" "}
+              <a href={website} target="_blank" className="font-semibold underline">
+                {website.replace(/^https?:\/\//, "")}
+              </a> for a free demo.
             </span>
-          
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             
-            {/* Primary Button */}
-            <a
-              href={`tel:${phone}`}
-              className="px-6 py-3 rounded-xl primary-btn flex items-center justify-center gap-2"
-            >
-              <Phone className="w-5 h-5" /> Call Now
-            </a>
+            
 
-     
-           
+            {/* Secondary Button */}
+            <a
+              href={website}
+              target="_blank"
+              className="px-6 py-3 rounded-xl secondary-btn flex items-center justify-center gap-2"
+            >
+              <Globe className="w-5 h-5" /> Visit Website
+            </a>
 
           </div>
 
