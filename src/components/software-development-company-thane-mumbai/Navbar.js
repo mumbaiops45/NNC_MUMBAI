@@ -8,9 +8,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "HOME", path: "/crm-development-company-mumbai" },
-    { name: "CRM We Build", path: "#crm-we-build" },
-    { name: "Industries", path: "#Industries" },
+    { name: "HOME", path: "/software-development-company-thane-mumbai" },
+    { name: "Services", path: "#Services" },
+    { name: "Why Local Matters", path: "#why-local-matters" },
     { name: "FAQ", path: "#FAQ" },
   ];
 
