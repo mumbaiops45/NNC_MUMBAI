@@ -17,7 +17,7 @@ export default function MobileAppCTA({
           {/* Contact Info with icons */}
           <p className="text-sm md:text-base mb-6 opacity-90 flex flex-col sm:flex-row justify-center items-center gap-4">
             <span className="flex items-center gap-2">
-              <Phone className="text-[var(--primary)] w-4 h-4" />  Let's get your store live. Call {" "}
+              <Phone className="text-[var(--primary)] w-4 h-4" />  Visit our Thane West office or call  {" "}
               <a href={`tel:${phone}`} className="font-semibold underline">
                 {phone}
               </a>

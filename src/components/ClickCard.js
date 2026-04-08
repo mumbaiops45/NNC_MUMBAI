@@ -5,8 +5,10 @@ import { useState } from "react";
 
 
 
-const ServicesLayout = ({ servicesData,reverse = false }) => {
-    const [Active, setActive] = useState("Custom React.js + Node.js stores for full flexibility");
+const ServicesLayout = ({ servicesData, reverse = false, color,TextColor }) => {
+    const [Active, setActive] = useState(
+        servicesData[0]?.title
+    );
 
     const activeService = servicesData.find(
         (service) => service.title === Active
@@ -25,7 +27,7 @@ const ServicesLayout = ({ servicesData,reverse = false }) => {
 
                                 onClick={() => setActive(service.title)}
                                 className={`cursor-pointer border rounded-xl p-4 transition ${Active === service.title
-                                    ? "bg-[var(--primary)] text-white shadow-md"
+                                    ? `${color} text-white shadow-md`
                                     : "bg-white border-gray-200 hover:shadow-md"
                                     }`}
                             >
@@ -63,9 +65,14 @@ const ServicesLayout = ({ servicesData,reverse = false }) => {
                                                             </div>
 
                                                             {/* TEXT */}
-                                                            <p className="text-sm md:text-base font-medium text-gray-700">
-                                                                {subItem.name}
-                                                            </p>
+                                                            <div className="w-full md:w-2/3 md:text-left">
+                                                                <h3 className={`text-lg md:text-xl font-semibold mb-3 py-2 text-${TextColor} border-l-4 border-${TextColor} pl-4`}>
+                                                                    {subItem.heading}
+                                                                </h3>
+                                                                <p className="text-sm md:text-base text-gray-600">
+                                                                    {subItem.discription}
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     ))}
                                                 </div>
@@ -104,7 +111,7 @@ const ServicesLayout = ({ servicesData,reverse = false }) => {
 
                                         {/* RIGHT CONTENT */}
                                         <div className="w-full md:w-2/3 text-center md:text-left">
-                                            <h3 className="text-lg md:text-xl font-semibold mb-3 py-2 text-[var(--primary)] border-l-4 border-[var(--primary)] pl-4">
+                                            <h3 className={`text-lg md:text-xl font-semibold mb-3 py-2 text-${TextColor} border-l-4 border-${TextColor} pl-4`}>
                                                 {item.heading}
                                             </h3>
                                             <p className="text-sm md:text-base text-gray-600">

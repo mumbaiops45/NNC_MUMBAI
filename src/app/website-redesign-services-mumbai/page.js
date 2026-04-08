@@ -108,7 +108,7 @@ const page = () => {
         buttonLink="#contact"
       />
 
-      <section id='signs-you-need' className="What We Deliver  w-full py-20 px-15">
+      <section id='signs-you-need' className="What We Deliver  w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">What Your
@@ -126,7 +126,7 @@ const page = () => {
           </h2>
 
         </div>
-        <ServicesLayout servicesData={servicesData} reverse={true} />
+        <ServicesLayout servicesData={servicesData} reverse={true} color="bg-[var(--secondary)]" TextColor="[var(--secondary)]"/>
       </section>
 
 

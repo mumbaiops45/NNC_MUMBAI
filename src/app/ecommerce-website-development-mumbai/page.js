@@ -120,7 +120,7 @@ const page = () => {
         buttonLink="#contact"
       />
 
-      <section id='Why_Us' className="What We Deliver  w-full py-20 px-15">
+      <section id='what-we-deliver' className="What We Deliver  w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">What Your
@@ -138,7 +138,7 @@ const page = () => {
           </h2>
 
         </div>
-        <ServicesLayout servicesData={servicesData} />
+        <ServicesLayout servicesData={servicesData} color="bg-[var(--primary)]" />
       </section>
 
 

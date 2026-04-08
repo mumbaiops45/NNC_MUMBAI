@@ -153,7 +153,7 @@ const page = () => {
       buttonLink="#contact"
     />
       
-      <section id='Services' className="Services scroll-mt-10 w-full py-20 px-6 bg-gradient-to-b from-[var(--primary)]/10 to-transparent">
+      <section id='Services' className="Services  w-full py-20 px-6 bg-gradient-to-b from-[var(--primary)]/10 to-transparent">
         <div className="max-w-6xl mx-auto flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">

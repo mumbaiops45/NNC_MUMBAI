@@ -115,7 +115,7 @@ const page = () => {
       buttonLink="#contact"
     />
       
-     <section id='what-we-build' className="what-we-build scroll-mt-10 w-full py-20 px-15">
+     <section id='what-we-build' className="what-we-build  w-full py-20 md:px-15 px-6">
              <div className="max-w-6xl mx-auto  flex items-center justify-center">
      
                <h2 className="mb-10 text-center text-gray-900">
@@ -126,7 +126,7 @@ const page = () => {
              <CardList cards={cardData} />
            </section>
 
-      <section id='process' className="process scroll-mt-10 w-full py-20 px-6 bg-gradient-to-b from-[var(--primary)]/5 to-transparent ">
+      <section id='process' className="process  w-full py-20 px-6 bg-gradient-to-b from-[var(--primary)]/5 to-transparent ">
         <div className="max-w-6xl mx-auto flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">Our 
@@ -140,7 +140,7 @@ const page = () => {
 
       
       
-      <section id='FAQ' className="FAQ scroll-mt-10 w-full py-20 px-15 ">
+      <section id='FAQ' className="FAQ  w-full py-20 md:px-15 px-6 ">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center">
@@ -150,7 +150,7 @@ const page = () => {
         </div>
         <FAQ data={faqData} />
       </section>
-      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 px-15">
+      <section id='CTA' className="CTA  w-full pb-20 pt-10 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center">Need an 
