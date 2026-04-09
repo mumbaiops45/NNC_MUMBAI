@@ -5,6 +5,48 @@ import CardCarouselLeftRight from '@/components/CardCarousel';
 import TackStack from '@/components/TechStack';
 import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/crm-development-company-mumbai/CTA';
+
+const crmSVG = (
+  <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
+
+    {/* Main Dashboard */}
+    <rect x="60" y="50" width="280" height="200" rx="12" stroke="white" strokeOpacity="0.3" />
+
+    {/* Top Bar */}
+    <rect x="60" y="50" width="280" height="40" rx="12" fill="white" fillOpacity="0.05" />
+
+    {/* Sidebar */}
+    <rect x="60" y="90" width="60" height="160" fill="white" fillOpacity="0.05" />
+
+    {/* Cards (CRM modules) */}
+    <rect x="140" y="110" width="70" height="40" rx="6" fill="white" fillOpacity="0.08" />
+    <rect x="220" y="110" width="90" height="40" rx="6" fill="white" fillOpacity="0.08" />
+    <rect x="140" y="160" width="170" height="30" rx="6" fill="white" fillOpacity="0.08" />
+
+    {/* User Icons */}
+    <circle cx="100" cy="120" r="8" fill="white" fillOpacity="0.3" />
+    <circle cx="100" cy="150" r="8" fill="white" fillOpacity="0.3" />
+    <circle cx="100" cy="180" r="8" fill="white" fillOpacity="0.3" />
+
+    {/* Workflow Lines */}
+    <line x1="180" y1="150" x2="260" y2="150" stroke="white" strokeOpacity="0.2" strokeDasharray="4 4" />
+    <line x1="180" y1="180" x2="260" y2="180" stroke="white" strokeOpacity="0.2" strokeDasharray="4 4" />
+
+    {/* Growth Chart */}
+    <polyline
+      points="160,210 190,190 220,200 260,170"
+      stroke="white"
+      strokeOpacity="0.3"
+      strokeWidth="2"
+      fill="none"
+    />
+
+    {/* Floating circles */}
+    <circle cx="50" cy="230" r="20" stroke="white" strokeOpacity="0.1" />
+    <circle cx="360" cy="80" r="25" stroke="white" strokeOpacity="0.1" />
+
+  </svg>
+);
 const cardData = [
   {
     image: "/crm-development-company-mumbai/Lead Capture & Pipeline Management.png",
@@ -64,8 +106,8 @@ const techStackData = [
       "We build CRM systems to manage property listings, track leads, schedule site visits, and automate follow-ups to close deals faster.",
       height: "220",
       width: "220",
-       text: "group-hover:text-[var(--secondary)]",
-       HoverBG: "hover:bg-[var(--secondary)]/3"
+       text: "group-hover:text-[var(--primary)]",
+       HoverBG: "hover:bg-white/10"
   },
   {
     image: "/crm-development-company-mumbai/Healthcare Clinics & Hospitals.png",
@@ -74,8 +116,8 @@ const techStackData = [
       "Custom CRM solutions to handle patient records, appointment scheduling, communication, and improve overall patient management.",
        height: "220",
       width: "220",
-       text: "group-hover:text-[var(--secondary)]",
-       HoverBG: "hover:bg-[var(--secondary)]/3"
+       text: "group-hover:text-[var(--primary)]",
+       HoverBG: "hover:bg-white/10"
   },
   {
     image: "/crm-development-company-mumbai/Legal Firms & Consulting Practices.png",
@@ -84,8 +126,8 @@ const techStackData = [
       "Manage clients, cases, documents, and communication efficiently with secure and scalable CRM systems tailored for legal workflows.",
        height: "220",
       width: "220",
-       text: "group-hover:text-[var(--secondary)]",
-       HoverBG: "hover:bg-[var(--secondary)]/3"
+       text: "group-hover:text-[var(--primary)]",
+       HoverBG: "hover:bg-white/10"
   },
   {
     image: "/crm-development-company-mumbai/FMCG & Distribution Companies.jpg",
@@ -94,8 +136,8 @@ const techStackData = [
       "Track distributors, manage orders, monitor inventory, and streamline supply chain operations with powerful CRM tools.",
        height: "220",
       width: "220",
-       text: "group-hover:text-[var(--secondary)]",
-       HoverBG: "hover:bg-[var(--secondary)]/3"
+       text: "group-hover:text-[var(--primary)]",
+       HoverBG: "hover:bg-white/10"
   },
   {
     image: "/crm-development-company-mumbai/Event Management Companies.png",
@@ -104,8 +146,8 @@ const techStackData = [
       "Organize events seamlessly by managing clients, vendors, bookings, and timelines in one centralized CRM platform.",
        height: "220",
       width: "220",
-       text: "group-hover:text-[var(--secondary)]",
-       HoverBG: "hover:bg-[var(--secondary)]/3"
+       text: "group-hover:text-[var(--primary)]",
+       HoverBG: "hover:bg-white/10"
   },
   {
     image: "/crm-development-company-mumbai/Logistics & Freight Forwarders.png",
@@ -114,8 +156,8 @@ const techStackData = [
       "Optimize operations with CRM systems for shipment tracking, client communication, documentation, and delivery management.",
        height: "220",
       width: "220",
-       text: "group-hover:text-[var(--secondary)]",
-       HoverBG: "hover:bg-[var(--secondary)]/3"
+       text: "group-hover:text-[var(--primary)]",
+       HoverBG: "hover:bg-white/10"
   },
   {
     image: "/crm-development-company-mumbai/E-commerce & Retail Businesses.png",
@@ -124,8 +166,8 @@ const techStackData = [
       "Enhance customer experience with CRM solutions for order tracking, customer data, marketing automation, and sales insights.",
        height: "220",
        width: "220",
-       text: "group-hover:text-[var(--secondary)]",
-       HoverBG: "hover:bg-[var(--secondary)]/3"
+       text: "group-hover:text-[var(--primary)]",
+       HoverBG: "hover:bg-white/10"
   },
 ];
 const faqData = [
@@ -144,7 +186,7 @@ const faqData = [
 const page = () => {
   return (
     <>
-       <Hero
+       {/* <Hero
       title="CRM Development Company in "
       highlight="Mumbai"
       subtext="Build tailor-made CRM solutions to streamline your sales, automate workflows, and boost team productivity."
@@ -152,7 +194,14 @@ const page = () => {
       image="/crm-development-company-mumbai/CRM Development Company in Mumbai.jpg"
       buttonText="Get Quote"
       buttonLink="#contact"
-    />
+    /> */}
+    <Hero
+  title="CRM Development Company in "
+  highlight="Mumbai"
+  subtext="Build tailor-made CRM solutions to streamline your sales, automate workflows, and boost team productivity."
+  description="A generic CRM forces your team to adapt to the software. A custom CRM is built to match how your business actually works. NNC builds bespoke CRM systems for Mumbai businesses across real estate, healthcare, logistics, legal, and service industries. Built on React.js + Node.js + MongoDB for speed, scale, and flexibility."
+  svg={crmSVG}
+/>
       <section id='crm-we-build' className="Why_Us scroll-mt-10 w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
@@ -164,15 +213,15 @@ const page = () => {
         <CardList cards={cardData} />
       </section>
      
-      <section id='Industries' className=" w-full py-20 md:px-15 px-6 bg-gradient-to-b from-[var(--primary)]/5 to-transparent">
+      <section id='Industries' className=" w-full py-20 md:px-15 px-6 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className=" text-center">Industries We Build 
+          <h2 className=" text-center text-white">Industries We Build 
             <span className="text-[var(--primary)]"> CRMs  </span> For in  <span className="text-[var(--primary)]">Mumbai  </span>
           </h2>
 
         </div>
-        <TackStack items={techStackData} />
+        <TackStack items={techStackData} hColor='text-white' />
       </section>
       <section id='FAQ' className="FAQ scroll-mt-10 w-full py-20 md:px-15 px-6 bg-gradient-to-b from-[var(--secondary)]/5 to-transparent">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
@@ -182,12 +231,12 @@ const page = () => {
           </h2>
 
         </div>
-        <FAQ data={faqData} />
+          <FAQ data={faqData} qColor="bg-gradient-to-r from-[#041027] to-[var(--primary)]" qTextColor="text-white" />
       </section>
-      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 md:px-15 px-6">
+      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 md:px-15 px-6 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center">Need a 
+          <h2 className="mb-10 text-center text-white">Need a 
           <span className="text-[var(--primary)]"> CRM  </span>built for your   <span className="text-[var(--primary)]">Mumbai  </span>business?
           </h2>
 

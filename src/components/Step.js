@@ -12,7 +12,7 @@ const Process = ({ processSteps }) => {
                         {/* IMAGE (outside card, fully visible) */}
                         <div className="hidden md:block absolute opacity-0 -left-33 w-52 h-52 z-10 group-hover:opacity-100 transition">
                             <Image
-                                src="/Web Design Company in Mumbai/walking.png"
+                                src="/Web Design Company in Mumbai/walking1.png"
                                 alt="Sample Image"
                                 fill
                                 className="object-contain"
@@ -20,7 +20,7 @@ const Process = ({ processSteps }) => {
                         </div>
 
                         {/* CARD */}
-                        <div className="w-full h-full bg-white rounded-md shadow-md hover:shadow-xl transition relative overflow-hidden px-10 pt-5 pb-6">
+                        <div className="w-full h-full bg-white/10 rounded-md shadow-md hover:shadow-xl transition relative overflow-hidden px-10 pt-5 pb-6">
 
                             {/* INDEX (half visible because of overflow-hidden on card) */}
                             <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-20 h-20 flex items-end justify-end p-4 rounded-full bg-[var(--secondary)] text-white text-lg font-bold z-20">
@@ -29,10 +29,10 @@ const Process = ({ processSteps }) => {
 
                             {/* CONTENT */}
                             <div className="relative z-20 mt-6">
-                                <h3 className="font-semibold text-lg mb-2">
+                                <h3 className="font-semibold text-lg mb-2 text-white">
                                     {item.title}
                                 </h3>
-                                <p className="text-sm text-gray-600">
+                                <p className="text-sm text-gray-400">
                                     {item.description}
                                 </p>
                             </div>

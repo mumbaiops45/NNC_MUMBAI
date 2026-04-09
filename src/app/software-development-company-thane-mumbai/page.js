@@ -7,6 +7,39 @@ import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import ServicesLayout from '@/components/ClickCard';
 
+const softwareDevSVG = (
+  <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
+
+    {/* Main App Window */}
+    <rect x="60" y="50" width="280" height="180" rx="12" stroke="white" strokeOpacity="0.4" />
+
+    {/* Top Bar */}
+    <rect x="60" y="50" width="280" height="30" rx="12" fill="white" fillOpacity="0.05" />
+
+    {/* Code Symbols */}
+    <text x="100" y="140" fill="white" fillOpacity="0.3" fontSize="28" fontFamily="monospace">
+      {"< />"}
+    </text>
+
+    {/* UI Blocks */}
+    <rect x="160" y="110" width="140" height="20" rx="4" fill="white" fillOpacity="0.1" />
+    <rect x="160" y="140" width="120" height="20" rx="4" fill="white" fillOpacity="0.08" />
+    <rect x="160" y="170" width="100" height="20" rx="4" fill="white" fillOpacity="0.08" />
+
+    {/* Database Icon */}
+    <ellipse cx="110" cy="190" rx="25" ry="10" stroke="white" strokeOpacity="0.3" />
+    <path d="M85 190 V210 C85 215 135 215 135 210 V190" stroke="white" strokeOpacity="0.3" />
+    <ellipse cx="110" cy="210" rx="25" ry="10" stroke="white" strokeOpacity="0.3" />
+
+    {/* Connection Lines */}
+    <line x1="135" y1="190" x2="160" y2="150" stroke="white" strokeOpacity="0.2" strokeDasharray="4 4" />
+
+    {/* Floating Elements */}
+    <circle cx="40" cy="230" r="18" stroke="white" strokeOpacity="0.1" />
+    <circle cx="360" cy="60" r="22" stroke="white" strokeOpacity="0.1" />
+
+  </svg>
+);
 const LocalBenefits = [
   {
     id: "01",
@@ -155,7 +188,7 @@ const faqData = [
 const page = () => {
   return (
     <>
-      <Hero
+      {/* <Hero
         title="Software Development Company in "
         highlight="Thane, Mumbai"
 
@@ -164,7 +197,14 @@ const page = () => {
         image="/E-commerce Website Development in Mumbai/e-commerce.jpg"
         buttonText="Get Quote"
         buttonLink="#contact"
-      />
+      /> */}
+      <Hero
+  title="Software Development Company in "
+  highlight="Thane, Mumbai"
+  subtext="Building scalable, secure, and high-performance software solutions tailored for businesses in Thane and across Mumbai."
+  description="NNC's Mumbai branch is based in Thane West, making us one of the most accessible software development companies in the Thane and Greater Mumbai area. Whether you need a web application, mobile app, CRM, or custom business software, our Thane team is available for face-to-face meetings, discovery sessions, and ongoing project reviews."
+  svg={softwareDevSVG}
+/>
 
       <section id='Services' className="Services  w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">

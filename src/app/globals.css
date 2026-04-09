@@ -2,8 +2,12 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #27abe1;
+  --primary: #2196f3;
   --secondary: #e95353;
+  --footer: #040e25;
+  --sectioncolor:#071435;
+ 
+   /* --primary: #27abe1; */
 }
 
 /* Apply Poppins Everywhere */

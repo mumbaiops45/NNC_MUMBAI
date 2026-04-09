@@ -61,7 +61,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#002a3a] text-white">
+    <footer className="bg-[var(--footer)] text-white">
 
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -91,8 +91,8 @@ export default function Footer() {
                   href={link.path}
                   className={`transition ${
                     pathname === link.path
-                      ? "text-[var(--primery)]"
-                      : "hover:text-[var(--primery)]"
+                      ? "text-amber-500"
+                      : "hover:text-[var(--primary)]"
                   }`}
                 >
                   {link.name}
@@ -111,7 +111,7 @@ export default function Footer() {
                 <Link
                   href={service.path}
                   title={service.name}
-                  className="text-white/80 hover:text-[var(--primery)] transition"
+                  className="text-white/80 hover:text-[var(--primary)] transition"
                 >
                   {service.name}
                 </Link>
@@ -126,30 +126,30 @@ export default function Footer() {
 
           <ul className="space-y-4 text-white/80">
             <li className="flex gap-2">
-              <MapPin className="text-[var(--primery)]" />
+              <MapPin className="text-[var(--primary)]" />
               Thane West, Mumbai, Maharashtra, India
             </li>
 
             <li className="flex gap-2">
-              <Phone className="text-[var(--primery)]" />
+              <Phone className="text-[var(--primary)]" />
               +91 98765 43210
             </li>
 
             <li className="flex gap-2">
-              <Mail className="text-[var(--primery)]" />
+              <Mail className="text-[var(--primary)]" />
               info@nnc.com
             </li>
           </ul>
 
           {/* Social Icons */}
           <div className="mt-8 flex gap-3">
-            <a className="p-3 border border-white rounded-full hover:bg-[var(--primery)] transition">
+            <a className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition">
               <Facebook size={18} />
             </a>
-            <a className="p-3 border border-white rounded-full hover:bg-[var(--primery)] transition">
+            <a className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition">
               <Instagram size={18} />
             </a>
-            <a className="p-3 border border-white rounded-full hover:bg-[var(--primery)] transition">
+            <a className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition">
               <Youtube size={18} />
             </a>
           </div>
@@ -166,7 +166,7 @@ export default function Footer() {
 
           <Link
             href="/terms-and-conditions"
-            className="hover:text-[var(--primery)] transition"
+            className="hover:text-[var(--primary)] transition"
           >
             Terms & Conditions
           </Link>

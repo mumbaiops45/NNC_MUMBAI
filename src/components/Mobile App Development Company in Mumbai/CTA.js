@@ -12,19 +12,19 @@ export default function MobileAppCTA({
     <section className={`w-full ${className}`}>
       <div className="max-w-5xl mx-auto ">
 
-        <div className="rounded-2xl p-8 md:py-10 text-center shadow-md">
+        <div className="rounded-2xl p-8 md:pt-10 text-center shadow-md">
           
           {/* Contact Info with icons */}
           <p className="text-sm md:text-base mb-6 opacity-90 flex flex-col sm:flex-row justify-center items-center gap-4">
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 text-white">
               <Phone className="text-[var(--primary)] w-4 h-4" />  Call{" "}
-              <a href={`tel:${phone}`} className="font-semibold underline">
+              <a href={`tel:${phone}`} className=" font-semibold underline">
                 {phone}
               </a>
             </span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 text-white">
               <Globe className="text-[var(--secondary)] w-4 h-4" /> or visit{" "}
-              <a href={website} target="_blank" className="font-semibold underline">
+              <a href={website} target="_blank" className=" font-semibold underline">
                 {website.replace(/^https?:\/\//, "")}
               </a>
             </span>

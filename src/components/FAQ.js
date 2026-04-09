@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-export default function FAQ({ data = [], className = "" }) {
+export default function FAQ({ data = [], className = "" ,qColor,qTextColor}) {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -11,7 +11,7 @@ export default function FAQ({ data = [], className = "" }) {
 
   return (
     <section className={`w-full ${className}`}>
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-3xl mx-auto">
 
         <div className="space-y-4">
           {data.map((item, index) => {
@@ -25,7 +25,7 @@ export default function FAQ({ data = [], className = "" }) {
                 {/* Question */}
                 <div
                   onClick={() => toggleFAQ(index)}
-                  className="flex justify-between items-center px-5 py-4 cursor-pointer bg-[var(--primary)]/20 "
+                  className={`flex justify-between items-center px-5 py-4 cursor-pointer ${qColor} ${qTextColor}`}
                 >
                   <h3 className="font-semibold text-base md:text-lg">
                     {item.question}

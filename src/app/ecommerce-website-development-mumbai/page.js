@@ -7,6 +7,52 @@ import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import ServicesLayout from '@/components/ClickCard';
 
+const ecommerceSVG = (
+  <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
+
+    {/* Shopping Bag */}
+    <rect x="140" y="100" width="120" height="110" rx="12" stroke="white" strokeOpacity="0.3" />
+    
+    {/* Handle */}
+    <path
+      d="M170 100 C170 70 230 70 230 100"
+      stroke="white"
+      strokeOpacity="0.3"
+      strokeWidth="2"
+      fill="none"
+    />
+
+    {/* Cart Icon */}
+    <circle cx="180" cy="200" r="6" fill="white" fillOpacity="0.3" />
+    <circle cx="220" cy="200" r="6" fill="white" fillOpacity="0.3" />
+    <line x1="170" y1="180" x2="230" y2="180" stroke="white" strokeOpacity="0.3" />
+    <line x1="170" y1="180" x2="175" y2="160" stroke="white" strokeOpacity="0.3" />
+    <line x1="175" y1="160" x2="230" y2="160" stroke="white" strokeOpacity="0.3" />
+
+    {/* Browser Window */}
+    <rect x="40" y="40" width="100" height="70" rx="8" stroke="white" strokeOpacity="0.2" />
+    <rect x="40" y="40" width="100" height="20" rx="8" fill="white" fillOpacity="0.05" />
+
+    {/* Product Blocks */}
+    <rect x="50" y="70" width="20" height="20" rx="4" fill="white" fillOpacity="0.1" />
+    <rect x="75" y="70" width="20" height="20" rx="4" fill="white" fillOpacity="0.1" />
+    <rect x="100" y="70" width="20" height="20" rx="4" fill="white" fillOpacity="0.1" />
+
+    {/* Growth Arrow */}
+    <polyline
+      points="260,80 290,60 320,90 350,50"
+      stroke="white"
+      strokeOpacity="0.3"
+      strokeWidth="2"
+      fill="none"
+    />
+
+    {/* Floating Circles */}
+    <circle cx="80" cy="230" r="20" stroke="white" strokeOpacity="0.1" />
+    <circle cx="330" cy="220" r="25" stroke="white" strokeOpacity="0.1" />
+
+  </svg>
+);
 const servicesData = [
   {
     id: "01",
@@ -109,7 +155,7 @@ const faqData = [
 const page = () => {
   return (
     <>
-      <Hero
+      {/* <Hero
         title="E-commerce Website Development in  "
         highlight="Mumbai"
 
@@ -118,7 +164,14 @@ const page = () => {
         image="/E-commerce Website Development in Mumbai/e-commerce.jpg"
         buttonText="Get Quote"
         buttonLink="#contact"
-      />
+      /> */}
+      <Hero
+  title="E-commerce Website Development in "
+  highlight="Mumbai"
+  subtext="We create scalable e-commerce platforms that help Mumbai businesses sell smarter, reach wider audiences, and grow revenue with ease."
+  description="Mumbai is one of India's largest retail markets. If your products aren't online yet, you're leaving serious money on the table. NNC builds e-commerce websites in Mumbai that are fast, mobile-first, and optimised for conversions. From catalogue sites to full marketplace platforms, we handle it all."
+  svg={ecommerceSVG}
+/>
 
       <section id='what-we-deliver' className="What We Deliver  w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
@@ -146,15 +199,15 @@ const page = () => {
 
 
 
-      <section id='FAQ' className="FAQ scroll-mt-10 w-full py-20 px-6 md:px-15 ">
+      <section id='FAQ' className="FAQ scroll-mt-10 w-full py-20 px-6 md:px-15 bg-gradient-to-r from-[#041027] to-[#0c245a] ">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center">
+          <h2 className="mb-10 text-center text-white">
             Frequently Asked  <span className="text-[var(--primary)]">Questions</span>
           </h2>
 
         </div>
-        <FAQ data={faqData} />
+       <FAQ data={faqData} qColor="bg-white/85"/>
       </section>
       <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 px-6 md:px-15">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">

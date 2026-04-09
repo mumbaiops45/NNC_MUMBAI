@@ -1,46 +1,81 @@
 import React from 'react'
 import Hero from '@/components/Hero'
+import CardList from '@/components/CardList';
 import CardCarouselLeftRight from '@/components/CardCarousel';
 import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/Web Design Company in Mumbai/CTA';
 import Process from '@/components/Step';
+const webDesignSVG = (
+  <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
+    {/* Browser Window */}
+    <rect x="40" y="50" width="320" height="200" rx="12" stroke="white" strokeOpacity="0.3" />
 
+    {/* Top bar */}
+    <rect x="40" y="50" width="320" height="40" rx="12" fill="white" fillOpacity="0.05" />
+
+    {/* Dots */}
+    <circle cx="70" cy="70" r="4" fill="white" />
+    <circle cx="90" cy="70" r="4" fill="white" />
+    <circle cx="110" cy="70" r="4" fill="white" />
+
+    {/* Layout blocks */}
+    <rect x="70" y="110" width="100" height="60" rx="6" fill="white" fillOpacity="0.08" />
+    <rect x="190" y="110" width="120" height="20" rx="4" fill="white" fillOpacity="0.08" />
+    <rect x="190" y="140" width="120" height="20" rx="4" fill="white" fillOpacity="0.08" />
+    <rect x="190" y="170" width="90" height="20" rx="4" fill="white" fillOpacity="0.08" />
+
+    {/* Cursor */}
+    <path
+      d="M120 190 L120 230 L135 215 L150 240 L160 235 L145 210 L165 210 Z"
+      stroke="white"
+      strokeOpacity="0.4"
+      strokeWidth="1.5"
+      fill="none"
+    />
+  </svg>
+);
 const cardData = [
   {
-    image: "/Mobile App Development Company in Mumbai/React Native.svg",
-    heading: "React Native Cross-Platform Apps for Android and iOS",
+    image: "/Web Design Company in Mumbai/UIUX Design for Websites and Apps.png",
+    heading: "UI/UX Design for Websites and Apps",
     paragraph:
-      "We build high-performance mobile applications using React Native, enabling seamless cross-platform functionality for both Android and iOS. Our solutions ensure faster development, cost efficiency, and a consistent user experience across devices.",
+      "We design intuitive and engaging user interfaces for both websites and mobile applications. Our UI/UX approach focuses on user behavior, usability, and conversion, ensuring every interaction feels seamless and meaningful.",
   },
   {
-    image: "/Mobile App Development Company in Mumbai/QA Team.png",
-    heading: "Dedicated QA Team for Bug-Free App Releases",
+    image: "/Web Design Company in Mumbai/Responsive Mobile-First Design.webp",
+    heading: "Responsive Mobile-First Design",
     paragraph:
-      "Our dedicated quality assurance team rigorously tests every mobile application to ensure it is secure, bug-free, and performs flawlessly. We follow industry-standard testing practices to deliver reliable and high-quality apps.",
+      "All our designs follow a mobile-first approach to ensure flawless performance across smartphones, tablets, and desktops. We create responsive layouts that adapt perfectly to every screen size and device.",
   },
   {
-    image: "/Mobile App Development Company in Mumbai/App Store and Play Store.png",
-    heading: "App Store and Play Store Submission Handled by Experts",
+    image: "/Web Design Company in Mumbai/Lead Generation.png",
+    heading: "Landing Page Design for Lead Generation",
     paragraph:
-      "We take care of the complete app deployment process, including submission to the Apple App Store and Google Play Store. Our team ensures compliance with all guidelines for a smooth and successful app launch.",
+      "We design high-converting landing pages optimized for lead generation and marketing campaigns. Every section is strategically crafted to guide users toward action and maximize conversions.",
   },
   {
-    image: "/Website Development Company in Mumbai/Post-launch support.png",
-    heading: "Post-Launch Support and Maintenance Plans",
+    image: "/Web Design Company in Mumbai/E-commerce Product Page Design.png",
+    heading: "E-commerce Product Page Design",
     paragraph:
-      "Our services extend beyond development with comprehensive post-launch support, regular updates, performance monitoring, and maintenance to keep your mobile app running efficiently and securely.",
+      "Our e-commerce designs focus on product visibility, trust, and conversion. We create clean and compelling product pages that enhance user experience and drive more sales.",
   },
   {
-    image: "/Mobile App Development Company in Mumbai/clarity, trust, and flexibility.png",
-    heading: "Transparent Milestone-Based Billing Process",
+    image: "/Web Design Company in Mumbai/Brand Identity Integration.png",
+    heading: "Brand Identity Integration",
     paragraph:
-      "We follow a transparent billing structure based on project milestones, ensuring clarity, trust, and flexibility. You only pay as progress is achieved, making the development process smooth and risk-free.",
+      "We align every design with your brand identity, including colors, typography, and visual elements. This ensures a consistent and professional look that strengthens brand recognition and trust.",
   },
   {
-    image: "/Mobile App Development Company in Mumbai/Apps Built for Healthcare, Logistics, Real Estate & E-commerce.webp",
-    heading: "Apps Built for Healthcare, Logistics, Real Estate & E-commerce",
+    image: "/Web Design Company in Mumbai/Wireframing and Prototype Design.png",
+    heading: "Wireframing and Prototype Design",
     paragraph:
-      "We develop custom mobile applications tailored for industries like healthcare, logistics, real estate, and e-commerce. Our solutions are designed to improve efficiency, user engagement, and business growth.",
+      "Before development, we create detailed wireframes and interactive prototypes to visualize the structure and flow of your website or app. This helps in refining ideas and ensuring clarity before execution.",
+  },
+  {
+    image: "/Web Design Company in Mumbai/Website Redesign and Revamp.png",
+    heading: "Website Redesign and Revamp",
+    paragraph:
+      "We transform outdated websites into modern, high-performing platforms. Our redesign process improves UI, speed, mobile experience, and overall usability to boost engagement and conversions.",
   },
 ];
 const leftSlideService = [
@@ -142,7 +177,7 @@ const faqData = [
 const page = () => {
   return (
     <>
-       <Hero
+       {/* <Hero
       title="Web Design Company in "
       highlight="Mumbai"
       
@@ -151,9 +186,26 @@ const page = () => {
       image="/Web Design Company in Mumbai/240_F_336883944_TYPsC4JqOxX6sY27Eb85Jr0ihP9iMgdg.jpg"
       buttonText="Get Quote"
       buttonLink="#contact"
-    />
-      
-      <section id='Services' className="Services  w-full py-20 px-6 bg-gradient-to-b from-[var(--primary)]/10 to-transparent">
+    /> */}
+      <Hero
+  title="Web Design Company in "
+  highlight="Mumbai"
+  subtext="Designs that impress. Pages that convert. Built for Mumbai's competitive market."
+  description="NNC is a premium web design company in Mumbai that blends creativity with conversion-focused design thinking. Our designers understand the Mumbai market and know exactly what makes a local audience click, trust, and buy. We don't just make websites look good. We make them work."
+  svg={webDesignSVG}
+/>
+ <section id='Services' className="Services  w-full py-20 md:px-15 px-6">
+        <div className="max-w-6xl mx-auto flex items-center justify-center">
+
+          <h2 className="mb-10 text-center text-gray-900">
+            <span className="text-[var(--primary)]">Web Design </span>  Services in <span className="text-[var(--primary)]">Mumbai  </span> 
+
+          </h2>
+
+        </div>
+        <CardList cards={cardData} />
+      </section>
+      {/* <section id='Services' className="Services  w-full py-20 px-6 bg-gradient-to-b from-[var(--primary)]/10 to-transparent">
         <div className="max-w-6xl mx-auto flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">
@@ -164,12 +216,12 @@ const page = () => {
         </div>
         <CardCarouselLeftRight cards={leftSlideService} direction="left" />
         <CardCarouselLeftRight className='mt-10' cards={rightSlideService} direction="right" />
-      </section>
+      </section> */}
 
-      <section id='process' className="Services scroll-mt-10 w-full py-20 px-6 md:px-15 ">
+      <section id='process' className="Services scroll-mt-10 w-full py-20 px-6 md:px-15 bg-[var(--sectioncolor)] ">
         <div className="max-w-6xl mx-auto flex items-center justify-center">
 
-          <h2 className="mb-10 text-center text-gray-900">Our Web Design
+          <h2 className="mb-10 text-center text-white">Our Web Design
             <span className="text-[var(--primary)]">  Process </span>
 
           </h2>
@@ -188,12 +240,12 @@ const page = () => {
           </h2>
 
         </div>
-        <FAQ data={faqData} />
+        <FAQ data={faqData} qColor="bg-gradient-to-r from-[#041027] to-[var(--primary)]" qTextColor="text-white"/>
       </section>
-      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 px-6 md:px-15">
+      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 px-6 md:px-15 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center">Want a 
+          <h2 className="mb-10 text-center text-white">Want a 
  <span className="text-[var(--primary)]"> website  </span> that actually looks    <span className="text-[var(--primary)]">premium </span>?
           </h2>
 

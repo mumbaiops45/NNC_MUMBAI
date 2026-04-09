@@ -4,7 +4,45 @@ import CardList from '@/components/CardList'
 import CardCarouselLeftRight from '@/components/CardCarousel';
 import TackStack from '@/components/TechStack';
 import FAQ from '@/components/FAQ';
-import CTA from '@/components/Website Development Company in Mumbai/CTA';
+import MobileAppCTA from '@/components/custom-web-development-mumbai/CTA';
+const customWebSVG = (
+  <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
+    
+    {/* Main Browser Window */}
+    <rect x="40" y="40" width="320" height="220" rx="12" stroke="white" strokeOpacity="0.3" />
+
+    {/* Top Bar */}
+    <rect x="40" y="40" width="320" height="40" rx="12" fill="white" fillOpacity="0.05" />
+
+    {/* Window Dots */}
+    <circle cx="70" cy="60" r="4" fill="white" />
+    <circle cx="90" cy="60" r="4" fill="white" />
+    <circle cx="110" cy="60" r="4" fill="white" />
+
+    {/* Code Brackets */}
+    <text x="130" y="170" fill="white" fillOpacity="0.4" fontSize="40" fontFamily="monospace">
+      &lt;/&gt;
+    </text>
+
+    {/* Layout Blocks */}
+    <rect x="70" y="100" width="80" height="50" rx="6" fill="white" fillOpacity="0.08" />
+    <rect x="260" y="100" width="60" height="20" rx="4" fill="white" fillOpacity="0.08" />
+    <rect x="260" y="130" width="60" height="20" rx="4" fill="white" fillOpacity="0.08" />
+
+    {/* Connection Lines */}
+    <line x1="150" y1="125" x2="260" y2="110" stroke="white" strokeOpacity="0.15" strokeDasharray="4 4" />
+    <line x1="150" y1="140" x2="260" y2="140" stroke="white" strokeOpacity="0.15" strokeDasharray="4 4" />
+
+    {/* Gear (logic/workflow) */}
+    <circle cx="300" cy="200" r="18" stroke="white" strokeOpacity="0.3" />
+    <circle cx="300" cy="200" r="8" stroke="white" strokeOpacity="0.2" />
+
+    {/* Floating shapes */}
+    <circle cx="90" cy="230" r="25" stroke="white" strokeOpacity="0.1" />
+    <circle cx="350" cy="80" r="20" stroke="white" strokeOpacity="0.1" />
+
+  </svg>
+);
 const cardData = [
   {
     image: "/Custom Web Development in Mumbai/crm and lead management systems.jpg",
@@ -75,7 +113,7 @@ const techStackData2 = [
     heading: "Node.js",
   },
   {
-    image: "/Custom Web Development in Mumbai/Express.svg",
+    image: "/Custom Web Development in Mumbai/Express1.png",
     heading: "Express.js",
   },
 
@@ -129,7 +167,7 @@ const faqData = [
 const page = () => {
   return (
     <>
-       <Hero
+       {/* <Hero
       title="Custom Web Development in"
       highlight="Mumbai"
       subtext="Custom websites built for Mumbai businesses. React.js, Next.js, WordPress. Delivered on time. Priced fairly."
@@ -137,7 +175,14 @@ const page = () => {
       image="/Custom Web Development in Mumbai/Web Design Company in Mumbai.jpg"
       buttonText="Get Quote"
       buttonLink="#contact"
-    />
+    /> */}
+    <Hero
+  title="Custom Web Development in "
+  highlight="Mumbai"
+  subtext="Custom websites built for Mumbai businesses. React.js, Next.js, WordPress. Delivered on time. Priced fairly."
+  description="Off-the-shelf templates don't cut it when your business has specific logic, workflows, or integrations. NNC builds custom web applications in Mumbai tailored to your exact requirements. Whether it's a booking engine, marketplace, or CRM portal, we architect it ground up using scalable technology."
+  svg={customWebSVG}
+/>
       <section id='what-we-build' className="Why_Us  w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
@@ -149,24 +194,24 @@ const page = () => {
         <CardList cards={cardData} />
       </section>
      
-      <section id='Tech_Stack' className="Tech_Stack  w-full py-20 px-15 bg-gradient-to-b from-[var(--secondary)]/5 to-transparent">
+      <section id='Tech_Stack' className="Tech_Stack  w-full py-20 px-15 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center">
+          <h2 className="mb-10 text-center text-white">
             <span className="text-[var(--primary)]">Tech </span> Stack
           </h2>
 
         </div>
         <h3 className='text-[var(--secondary)] py-2  border-l-4 border-[var(--secondary)] pl-4'>Frontend</h3>
-        <TackStack items={techStackData1} />
+        <TackStack items={techStackData1} hColor="text-white" />
         <h3 className='text-[var(--secondary)] py-2  border-l-4 border-[var(--secondary)] pl-4'>Backend</h3>
-        <TackStack items={techStackData2} />
+        <TackStack items={techStackData2} hColor="text-white" />
         <h3 className='text-[var(--secondary)] py-2  border-l-4 border-[var(--secondary)] pl-4'>Database</h3>
-        <TackStack items={techStackData3} />
+        <TackStack items={techStackData3} hColor="text-white" />
         <h3 className='text-[var(--secondary)] py-2  border-l-4 border-[var(--secondary)] pl-4'>Hosting</h3>
-        <TackStack items={techStackData4} />
+        <TackStack items={techStackData4} hColor="text-white" />
         <h3 className='text-[var(--secondary)] py-2  border-l-4 border-[var(--secondary)] pl-4'>Mobile</h3>
-        <TackStack items={techStackData5} />
+        <TackStack items={techStackData5} hColor="text-white" />
       </section>
       <section id='FAQ' className="FAQ  w-full py-20 md:px-15 px-6 ">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
@@ -176,17 +221,17 @@ const page = () => {
           </h2>
 
         </div>
-        <FAQ data={faqData} />
+        <FAQ data={faqData} qColor="bg-gradient-to-r from-[#041027] to-[var(--primary)]" qTextColor="text-white" />
       </section>
-      <section id='CTA' className="CTA  w-full pb-20 pt-10 md:px-15 px-6">
+      <section id='CTA' className="CTA  w-full pb-20 pt-10 md:px-15 px-6 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center">
+          <h2 className="mb-10 text-center text-white">
            Ready to  <span className="text-[var(--primary)]">launch  </span>your new website in <span className="text-[var(--primary)]"> Mumbai </span>?
           </h2>
 
         </div>
-         <CTA />
+         <MobileAppCTA />
       </section>
      
 

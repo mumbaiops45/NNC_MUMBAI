@@ -5,6 +5,44 @@ import CardCarouselLeftRight from '@/components/CardCarousel';
 import TackStack from '@/components/TechStack';
 import FAQ from '@/components/FAQ';
 import CTA from '@/components/Website Development Company in Mumbai/CTA';
+
+const websiteDevSVG = (
+  <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
+
+    {/* Browser Window */}
+    <rect x="50" y="60" width="300" height="180" rx="12" stroke="white" strokeOpacity="0.4" />
+
+    {/* Top Bar */}
+    <rect x="50" y="60" width="300" height="30" rx="12" fill="white" fillOpacity="0.05" />
+
+    {/* Browser Dots */}
+    <circle cx="70" cy="75" r="4" fill="white" fillOpacity="0.3" />
+    <circle cx="85" cy="75" r="4" fill="white" fillOpacity="0.3" />
+    <circle cx="100" cy="75" r="4" fill="white" fillOpacity="0.3" />
+
+    {/* Left Content Blocks */}
+    <rect x="70" y="110" width="110" height="18" rx="4" fill="white" fillOpacity="0.1" />
+    <rect x="70" y="140" width="140" height="18" rx="4" fill="white" fillOpacity="0.08" />
+    <rect x="70" y="170" width="120" height="18" rx="4" fill="white" fillOpacity="0.08" />
+
+    {/* Right UI Card */}
+    <rect x="220" y="110" width="100" height="80" rx="8" fill="white" fillOpacity="0.06" />
+
+    {/* Cursor Pointer */}
+    <path
+      d="M250 140 L250 180 L265 170 L280 200 L290 195 L275 165 L295 165Z"
+      stroke="white"
+      strokeOpacity="0.4"
+      strokeWidth="1.5"
+      fill="none"
+    />
+
+    {/* Floating Circles */}
+    <circle cx="40" cy="230" r="18" stroke="white" strokeOpacity="0.1" />
+    <circle cx="360" cy="40" r="22" stroke="white" strokeOpacity="0.1" />
+
+  </svg>
+);
 const cardData = [
   {
     image: "/Website Development Company in Mumbai/10+ years.webp",
@@ -146,7 +184,7 @@ const faqData = [
 const page = () => {
   return (
     <>
-       <Hero
+       {/* <Hero
       title="Website Development Company in"
       highlight="Mumbai"
       subtext="Custom websites built for Mumbai businesses. React.js, Next.js, WordPress. Delivered on time. Priced fairly."
@@ -154,8 +192,15 @@ const page = () => {
       image="/Website Development Company in Mumbai/hero1.jpg"
       buttonText="Get Quote"
       buttonLink="#contact"
-    />
-      <section id='Why_Us' className="Why_Us scroll-mt-10 w-full py-20 md:px-15 px-6">
+    /> */}
+    <Hero
+  title="Website Development Company in "
+  highlight="Mumbai"
+  subtext="Custom websites built for Mumbai businesses. React.js, Next.js, WordPress. Delivered on time. Priced fairly."
+  description="Looking for a reliable website development company in Mumbai? Nakshatra Namaha Creations (NNC) has been building high-performance websites for Mumbai businesses since 2015. From startups in Andheri to enterprises in BKC, we deliver websites that load fast, rank on Google, and convert visitors into paying customers."
+  svg={websiteDevSVG}
+/>
+      <section id='Why_Us' className="Why_Us  w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">
@@ -165,10 +210,10 @@ const page = () => {
         </div>
         <CardList cards={cardData} />
       </section>
-      <section id='Services' className="Services scroll-mt-10 w-full py-20 px-6 bg-gradient-to-b from-[var(--primary)]/10 to-transparent">
+      <section id='Services' className="Services  w-full py-20 px-6 bg-[var(--sectioncolor)]">
         <div className="max-w-6xl mx-auto flex items-center justify-center">
 
-          <h2 className="mb-10 text-center text-gray-900">
+          <h2 className="mb-10 text-center text-white">
             <span className="text-[var(--primary)]">Our</span> Website Development  <span className="text-[var(--primary)]">Services</span> in Mumbai
 
           </h2>
@@ -177,7 +222,7 @@ const page = () => {
         <CardCarouselLeftRight cards={leftSlideService} direction="left" />
         <CardCarouselLeftRight className='mt-10' cards={rightSlideService} direction="right" />
       </section>
-      <section id='Tech_Stack' className="Tech_Stack scroll-mt-10 w-full py-20 md:px-15 px-6">
+      <section id='Tech_Stack' className="Tech_Stack  w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center">
@@ -187,17 +232,17 @@ const page = () => {
         </div>
         <TackStack items={techStackData} />
       </section>
-      <section id='FAQ' className="FAQ scroll-mt-10 w-full py-20 md:px-15 px-6 bg-gradient-to-b from-[var(--secondary)]/5 to-transparent">
+      <section id='FAQ' className="FAQ  w-full py-20 md:px-15 px-6 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center">
+          <h2 className="mb-10 text-center text-white">
             Frequently Asked  <span className="text-[var(--primary)]">Questions</span>
           </h2>
 
         </div>
-        <FAQ data={faqData} />
+        <FAQ data={faqData} qColor="bg-white/85"/>
       </section>
-      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 md:px-15 px-6">
+      <section id='CTA' className="CTA  w-full pb-20 pt-10 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center">

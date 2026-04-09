@@ -16,13 +16,13 @@ export default function MobileAppCTA({
           
           {/* Contact Info with icons */}
           <p className="text-sm md:text-base mb-6 opacity-90 flex flex-col sm:flex-row justify-center items-center gap-4">
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 text-white">
               <Phone className="text-[var(--primary)] w-4 h-4" />  Call NNC at {" "}
               <a href={`tel:${phone}`} className="font-semibold underline">
                 {phone}
               </a>
             </span>
-            <span className="flex items-center gap-2">or 
+            <span className="flex items-center gap-2 text-white">or 
               <Globe className="text-[var(--secondary)] w-4 h-4" /> email us {" "}
               <a href={website} target="_blank" className="font-semibold underline">
                 {website.replace(/^https?:\/\//, "")}

@@ -16,7 +16,7 @@ export default function MobileAppCTA({
           
           {/* Contact Info with icons */}
           <p className="text-sm md:text-base mb-6 opacity-90 flex flex-col sm:flex-row justify-center items-center gap-4">
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 text-white">
               <Globe className="text-[var(--secondary)] w-4 h-4" /> Email {" "}
               <a href={website} target="_blank" className="font-semibold underline">
                 {website.replace(/^https?:\/\//, "")}

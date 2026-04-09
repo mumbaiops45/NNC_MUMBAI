@@ -6,6 +6,61 @@ import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import MobileAppCTA_React_Native from '@/components/React Native App Development in Mumbai/CTA';
 
+const reactNativeSVG = (
+  <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
+    
+    {/* Central Atom (React style) */}
+    <circle cx="200" cy="150" r="12" fill="white" fillOpacity="0.8" />
+
+    {/* Orbit 1 */}
+    <ellipse
+      cx="200"
+      cy="150"
+      rx="80"
+      ry="30"
+      stroke="white"
+      strokeOpacity="0.3"
+      strokeWidth="1.5"
+    />
+
+    {/* Orbit 2 */}
+    <ellipse
+      cx="200"
+      cy="150"
+      rx="80"
+      ry="30"
+      transform="rotate(60 200 150)"
+      stroke="white"
+      strokeOpacity="0.3"
+      strokeWidth="1.5"
+    />
+
+    {/* Orbit 3 */}
+    <ellipse
+      cx="200"
+      cy="150"
+      rx="80"
+      ry="30"
+      transform="rotate(-60 200 150)"
+      stroke="white"
+      strokeOpacity="0.3"
+      strokeWidth="1.5"
+    />
+
+    {/* Mobile Devices (left & right) */}
+    <rect x="40" y="80" width="60" height="140" rx="10" stroke="white" strokeOpacity="0.25" />
+    <rect x="300" y="80" width="60" height="140" rx="10" stroke="white" strokeOpacity="0.25" />
+
+    {/* Connection Lines */}
+    <line x1="100" y1="150" x2="150" y2="150" stroke="white" strokeOpacity="0.2" strokeDasharray="4 4" />
+    <line x1="250" y1="150" x2="300" y2="150" stroke="white" strokeOpacity="0.2" strokeDasharray="4 4" />
+
+    {/* Floating circles */}
+    <circle cx="80" cy="50" r="20" stroke="white" strokeOpacity="0.1" />
+    <circle cx="320" cy="250" r="25" stroke="white" strokeOpacity="0.1" />
+
+  </svg>
+);
 const cardData = [
   {
     image: "/React Native App Development in Mumbai/Development Cost.png",
@@ -92,7 +147,7 @@ const faqData = [
 const page = () => {
   return (
     <>
-       <Hero
+       {/* <Hero
       title="React Native App Development in "
       highlight="Mumbai"
       
@@ -101,7 +156,14 @@ const page = () => {
       image="/React Native App Development in Mumbai/React Native App Development in Mumbai.jpg"
       buttonText="Get Quote"
       buttonLink="#contact"
-    />
+    /> */}
+    <Hero
+  title="React Native App Development in "
+  highlight="Mumbai"
+  subtext="Empower your business with fast, cost-effective React Native app development in Mumbai, designed for performance, scalability, and user engagement."
+  description="React Native lets you ship one codebase to both Android and iOS, cutting your development time and cost by up to 40%. NNC's React Native team in Mumbai has built 80+ apps across healthcare, logistics, real estate, and e-commerce verticals. One build. Two platforms. Full native performance."
+  svg={reactNativeSVG}
+/>
       
      <section id='why-react-native' className="Why_Us scroll-mt-10 w-full py-20 md:px-15 px-6">
              <div className="max-w-6xl mx-auto  flex items-center justify-center">
@@ -114,10 +176,10 @@ const page = () => {
              <CardList cards={cardData} />
            </section>
 
-      <section id='Process' className="Services scroll-mt-10 w-full py-20 px-6 ">
+      <section id='Process' className="Services scroll-mt-10 w-full py-20 px-6 bg-[var(--sectioncolor)] ">
         <div className="max-w-6xl mx-auto flex items-center justify-center">
 
-          <h2 className="mb-10 text-center text-gray-900">How We Deliver 
+          <h2 className="mb-10 text-center text-white">How We Deliver 
             <span className="text-[var(--primary)]">  React Native </span>Apps in <span className="text-[var(--primary)]">  Mumbai </span>
 
           </h2>
@@ -136,12 +198,12 @@ const page = () => {
           </h2>
 
         </div>
-        <FAQ data={faqData} />
+        <FAQ data={faqData} qColor="bg-gradient-to-r from-[#041027] to-[var(--primary)]" qTextColor="text-white"/>
       </section>
-      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 md:px-15 px-6">
+      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 md:px-15 px-6 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center">Planning a 
+          <h2 className="mb-10 text-center text-white">Planning a 
  <span className="text-[var(--primary)]"> React Native app  </span>in     <span className="text-[var(--primary)]">Mumbai </span>?
           </h2>
 

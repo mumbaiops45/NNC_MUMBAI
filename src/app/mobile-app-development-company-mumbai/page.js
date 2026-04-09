@@ -4,6 +4,36 @@ import CardList from '@/components/CardList'
 import CardCarouselLeftRight from '@/components/CardCarousel';
 import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/Mobile App Development Company in Mumbai/CTA';
+const mobileAppSVG = (
+  <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
+
+    {/* Phone */}
+    <rect x="140" y="40" width="120" height="220" rx="20" stroke="white" strokeOpacity="0.3" />
+
+    {/* Screen */}
+    <rect x="155" y="70" width="90" height="150" rx="10" fill="white" fillOpacity="0.05" />
+
+    {/* Top notch */}
+    <rect x="180" y="50" width="40" height="6" rx="3" fill="white" fillOpacity="0.2" />
+
+    {/* App icons */}
+    <rect x="170" y="90" width="20" height="20" rx="4" fill="white" fillOpacity="0.1" />
+    <rect x="205" y="90" width="20" height="20" rx="4" fill="white" fillOpacity="0.1" />
+    <rect x="170" y="120" width="20" height="20" rx="4" fill="white" fillOpacity="0.1" />
+    <rect x="205" y="120" width="20" height="20" rx="4" fill="white" fillOpacity="0.1" />
+
+    {/* Bottom button */}
+    <circle cx="200" cy="235" r="6" fill="white" fillOpacity="0.2" />
+
+    {/* Floating elements */}
+    <circle cx="80" cy="100" r="30" stroke="white" strokeOpacity="0.15" />
+    <circle cx="320" cy="200" r="40" stroke="white" strokeOpacity="0.1" />
+
+    {/* Signal waves */}
+    <path d="M300 60 Q320 40 340 60" stroke="white" strokeOpacity="0.3" />
+    <path d="M295 50 Q320 20 345 50" stroke="white" strokeOpacity="0.2" />
+  </svg>
+);
 const cardData = [
   {
     image: "/Mobile App Development Company in Mumbai/React Native.svg",
@@ -112,7 +142,7 @@ const faqData = [
 const page = () => {
   return (
     <>
-       <Hero
+      {/* <Hero
       title="Mobile App Development Company in"
       highlight="Mumbai"
       description="NNC is a trusted mobile app development company in Mumbai with a proven track record of building Android and iOS apps for startups, SMEs, and large enterprises. We develop apps using React Native for cross-platform delivery, keeping your timeline short and your budget in check."
@@ -120,7 +150,14 @@ const page = () => {
       image="/Mobile App Development Company in Mumbai/hero.webp"
       buttonText="Get Quote"
       buttonLink="#contact"
-    />
+    /> */}
+      <Hero
+        title="Mobile App Development Company in "
+        highlight="Mumbai"
+        subtext="Android apps. iOS apps. Cross-platform builds. Built by a Mumbai team that has delivered 80+ apps."
+        description="NNC is a trusted mobile app development company in Mumbai with a proven track record of building Android and iOS apps for startups, SMEs, and large enterprises. We develop apps using React Native for cross-platform delivery, keeping your timeline short and your budget in check."
+        svg={mobileAppSVG}
+      />
       <section id='Why_Us' className="Why_Us scroll-mt-10 w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
@@ -131,10 +168,10 @@ const page = () => {
         </div>
         <CardList cards={cardData} />
       </section>
-      <section id='Services' className="Services scroll-mt-10 w-full py-20 px-6 bg-gradient-to-b from-[var(--primary)]/10 to-transparent">
+      <section id='Services' className="Services scroll-mt-10 w-full py-20 px-6 bg-[var(--sectioncolor)]">
         <div className="max-w-6xl mx-auto flex items-center justify-center">
 
-          <h2 className="mb-10 text-center text-gray-900">
+          <h2 className="mb-10 text-center text-white">
             <span className="text-[var(--primary)]">Mobile App </span>  Development <span className="text-[var(--primary)]">Services  </span> We Offer
 
           </h2>
@@ -143,8 +180,8 @@ const page = () => {
         <CardCarouselLeftRight cards={leftSlideService} direction="left" />
         <CardCarouselLeftRight className='mt-10' cards={rightSlideService} direction="right" />
       </section>
-      
-      <section id='FAQ' className="FAQ  w-full py-20 md:px-15 px-6 bg-gradient-to-b from-[var(--secondary)]/5 to-transparent">
+
+      <section id='FAQ' className="FAQ  w-full py-20 md:px-15 px-6 ">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center">
@@ -152,19 +189,19 @@ const page = () => {
           </h2>
 
         </div>
-        <FAQ data={faqData} />
+        <FAQ data={faqData} qColor="bg-gradient-to-r from-[#041027] to-[var(--primary)]" qTextColor="text-white" />
       </section>
-      <section id='CTA' className="CTA s w-full pb-20 pt-10 md:px-15 px-6">
+      <section id='CTA' className="CTA s w-full pb-20 pt-10 md:px-15 px-6 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center">
-Want a   <span className="text-[var(--primary)]">mobile app  </span>built in   <span className="text-[var(--primary)]">Mumbai? </span>?
+          <h2 className="mb-10 text-center text-white">
+            Want a   <span className="text-[var(--primary)]">mobile app  </span>built in   <span className="text-[var(--primary)]">Mumbai? </span>?
           </h2>
 
         </div>
         <MobileAppCTA />
       </section>
-     
+
 
     </>
   )

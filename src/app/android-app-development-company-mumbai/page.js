@@ -6,6 +6,36 @@ import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import MobileAppCTA_React_Native from '@/components/React Native App Development in Mumbai/CTA';
 
+const androidSVG = (
+  <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
+
+    {/* Phone Body */}
+    <rect x="140" y="40" width="120" height="220" rx="16" stroke="white" strokeOpacity="0.4" />
+
+    {/* Screen */}
+    <rect x="150" y="70" width="100" height="150" rx="6" fill="white" fillOpacity="0.05" />
+
+    {/* Android Head */}
+    <rect x="175" y="85" width="50" height="30" rx="10" fill="white" fillOpacity="0.15" />
+    <line x1="185" y1="80" x2="175" y2="65" stroke="white" strokeOpacity="0.3" strokeWidth="2" />
+    <line x1="215" y1="80" x2="225" y2="65" stroke="white" strokeOpacity="0.3" strokeWidth="2" />
+    <circle cx="190" cy="98" r="2" fill="white" />
+    <circle cx="210" cy="98" r="2" fill="white" />
+
+    {/* App UI Blocks */}
+    <rect x="165" y="130" width="70" height="12" rx="3" fill="white" fillOpacity="0.1" />
+    <rect x="165" y="150" width="60" height="12" rx="3" fill="white" fillOpacity="0.08" />
+    <rect x="165" y="170" width="50" height="12" rx="3" fill="white" fillOpacity="0.08" />
+
+    {/* Play Button */}
+    <polygon points="195,200 225,215 195,230" fill="white" fillOpacity="0.2" />
+
+    {/* Floating Circles */}
+    <circle cx="100" cy="240" r="20" stroke="white" strokeOpacity="0.1" />
+    <circle cx="320" cy="60" r="25" stroke="white" strokeOpacity="0.1" />
+
+  </svg>
+);
 const cardData = [
   {
     image: "/android-app-development-company-mumbai/Customer-Facing Service Booking Apps.png",
@@ -104,7 +134,7 @@ const faqData = [
 const page = () => {
   return (
     <>
-       <Hero
+       {/* <Hero
       title="Android App Development Company in "
       highlight="Mumbai"
       
@@ -113,8 +143,14 @@ const page = () => {
       image="/React Native App Development in Mumbai/React Native App Development in Mumbai.jpg"
       buttonText="Get Quote"
       buttonLink="#contact"
-    />
-      
+    /> */}
+      <Hero
+  title="Android App Development Company in "
+  highlight="Mumbai"
+  subtext="High-performance Android apps built for speed, scalability, and real user engagement across Mumbai’s fast-growing digital market."
+  description="India has 750 million Android users. If your business doesn't have an Android app, you're invisible to most of the market. NNC is a trusted Android app development company in Mumbai with 80+ apps built and live on the Play Store. From simple utility apps to complex enterprise solutions, we build Android apps that users actually stick to."
+  svg={androidSVG}
+/>
      <section id='what-we-build' className="what-we-build  w-full py-20 md:px-15 px-6">
              <div className="max-w-6xl mx-auto  flex items-center justify-center">
      
@@ -126,10 +162,10 @@ const page = () => {
              <CardList cards={cardData} />
            </section>
 
-      <section id='process' className="process  w-full py-20 px-6 bg-gradient-to-b from-[var(--primary)]/5 to-transparent ">
+      <section id='process' className="process  w-full py-20 px-6 bg-[var(--sectioncolor)] ">
         <div className="max-w-6xl mx-auto flex items-center justify-center">
 
-          <h2 className="mb-10 text-center text-gray-900">Our 
+          <h2 className="mb-10 text-center text-white">Our 
             <span className="text-[var(--primary)]"> Android App  </span>Launch   <span className="text-[var(--primary)]">  Process </span>in <span className="text-[var(--primary)]"> Mumbai  </span> 
 
           </h2>
@@ -148,12 +184,12 @@ const page = () => {
           </h2>
 
         </div>
-        <FAQ data={faqData} />
+         <FAQ data={faqData} qColor="bg-gradient-to-r from-[#041027] to-[var(--primary)]" qTextColor="text-white"/>
       </section>
-      <section id='CTA' className="CTA  w-full pb-20 pt-10 md:px-15 px-6">
+      <section id='CTA' className="CTA  w-full pb-20 pt-10 md:px-15 px-6 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center">Need an 
+          <h2 className="mb-10 text-center text-white">Need an 
  <span className="text-[var(--primary)]"> Android app   </span>built in    <span className="text-[var(--primary)]">Mumbai </span>?
           </h2>
 
