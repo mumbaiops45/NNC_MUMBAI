@@ -5,41 +5,84 @@ import CardCarouselLeftRight from '@/components/CardCarousel';
 import TackStack from '@/components/TechStack';
 import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/custom-web-development-mumbai/CTA';
+import Testimonial from '@/components/Testimonial';
 const customWebSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
-    
-    {/* Main Browser Window */}
-    <rect x="40" y="40" width="320" height="220" rx="12" stroke="white" strokeOpacity="0.3" />
 
-    {/* Top Bar */}
-    <rect x="40" y="40" width="320" height="40" rx="12" fill="white" fillOpacity="0.05" />
+    {/* Decorative rings */}
+    <circle cx="82" cy="248" r="22" stroke="#334155" strokeWidth="1.2"/>
+    <circle cx="82" cy="248" r="14" stroke="#334155" strokeWidth="0.6" strokeDasharray="3 3"/>
+    <circle cx="355" cy="72" r="20" stroke="#334155" strokeWidth="1.2"/>
+    <circle cx="355" cy="72" r="12" stroke="#334155" strokeWidth="0.6" strokeDasharray="3 3"/>
 
-    {/* Window Dots */}
-    <circle cx="70" cy="60" r="4" fill="white" />
-    <circle cx="90" cy="60" r="4" fill="white" />
-    <circle cx="110" cy="60" r="4" fill="white" />
+    {/* Dot accents */}
+    <circle cx="360" cy="200" r="3" fill="#334155"/>
+    <circle cx="38" cy="120" r="2" fill="#475569"/>
+    <circle cx="370" cy="240" r="2" fill="#475569"/>
 
-    {/* Code Brackets */}
-    <text x="130" y="170" fill="white" fillOpacity="0.4" fontSize="40" fontFamily="monospace">
-      &lt;/&gt;
-    </text>
+    {/* Browser frame */}
+    <rect x="38" y="36" width="324" height="218" rx="13" fill="#0f1e2e" stroke="#475569" strokeWidth="1.4"/>
+    <rect x="38" y="36" width="324" height="34" rx="13" fill="#1e293b"/>
+    <rect x="38" y="56" width="324" height="14" fill="#1e293b"/>
 
-    {/* Layout Blocks */}
-    <rect x="70" y="100" width="80" height="50" rx="6" fill="white" fillOpacity="0.08" />
-    <rect x="260" y="100" width="60" height="20" rx="4" fill="white" fillOpacity="0.08" />
-    <rect x="260" y="130" width="60" height="20" rx="4" fill="white" fillOpacity="0.08" />
+    {/* Traffic lights */}
+    <circle cx="64" cy="53" r="5" fill="#ef4444"/>
+    <circle cx="82" cy="53" r="5" fill="#f59e0b"/>
+    <circle cx="100" cy="53" r="5" fill="#22c55e"/>
 
-    {/* Connection Lines */}
-    <line x1="150" y1="125" x2="260" y2="110" stroke="white" strokeOpacity="0.15" strokeDasharray="4 4" />
-    <line x1="150" y1="140" x2="260" y2="140" stroke="white" strokeOpacity="0.15" strokeDasharray="4 4" />
+    {/* URL bar */}
+    <rect x="118" y="44" width="180" height="18" rx="5" fill="#0f1e2e" stroke="#334155" strokeWidth="0.8"/>
+    <rect x="126" y="49" width="90" height="5" rx="2" fill="#334155"/>
+    <circle cx="290" cy="53" r="4" fill="#334155"/>
 
-    {/* Gear (logic/workflow) */}
-    <circle cx="300" cy="200" r="18" stroke="white" strokeOpacity="0.3" />
-    <circle cx="300" cy="200" r="8" stroke="white" strokeOpacity="0.2" />
+    {/* Left code panel */}
+    <rect x="52" y="82" width="108" height="150" rx="8" fill="#142135" stroke="#2d4a6a" strokeWidth="1"/>
+    <rect x="62" y="94" width="20" height="5" rx="2" fill="#38bdf8" opacity="0.7"/>
+    <rect x="86" y="94" width="50" height="5" rx="2" fill="#334155"/>
+    <rect x="62" y="106" width="16" height="5" rx="2" fill="#a78bfa" opacity="0.7"/>
+    <rect x="82" y="106" width="40" height="5" rx="2" fill="#334155"/>
+    <rect x="70" y="118" width="55" height="5" rx="2" fill="#334155"/>
+    <rect x="70" y="130" width="42" height="5" rx="2" fill="#334155" opacity="0.7"/>
+    <rect x="62" y="142" width="30" height="5" rx="2" fill="#38bdf8" opacity="0.5"/>
+    <rect x="96" y="142" width="35" height="5" rx="2" fill="#334155"/>
+    <rect x="70" y="154" width="48" height="5" rx="2" fill="#334155"/>
+    <rect x="70" y="166" width="36" height="5" rx="2" fill="#a78bfa" opacity="0.5"/>
+    <rect x="62" y="178" width="22" height="5" rx="2" fill="#38bdf8" opacity="0.6"/>
+    <rect x="88" y="178" width="44" height="5" rx="2" fill="#334155"/>
+    <rect x="62" y="190" width="60" height="5" rx="2" fill="#334155" opacity="0.5"/>
+    <rect x="62" y="202" width="16" height="5" rx="2" fill="#38bdf8" opacity="0.7"/>
+    <rect x="82" y="202" width="30" height="5" rx="2" fill="#334155"/>
+    <rect x="62" y="214" width="50" height="5" rx="2" fill="#334155" opacity="0.4"/>
 
-    {/* Floating shapes */}
-    <circle cx="90" cy="230" r="25" stroke="white" strokeOpacity="0.1" />
-    <circle cx="350" cy="80" r="20" stroke="white" strokeOpacity="0.1" />
+    {/* Dashed connectors */}
+    <line x1="160" y1="122" x2="196" y2="118" stroke="#475569" strokeWidth="1" strokeDasharray="4 3"/>
+    <line x1="160" y1="148" x2="196" y2="160" stroke="#475569" strokeWidth="1" strokeDasharray="4 3"/>
+    <line x1="160" y1="178" x2="196" y2="196" stroke="#475569" strokeWidth="1" strokeDasharray="4 3"/>
+
+    {/* Top right — UI component */}
+    <rect x="200" y="84" width="118" height="44" rx="7" fill="#1a2d4a" stroke="#2d4a6a" strokeWidth="1"/>
+    <rect x="210" y="94" width="60" height="6" rx="2" fill="#38bdf8" opacity="0.5"/>
+    <rect x="210" y="105" width="44" height="5" rx="2" fill="#334155"/>
+    <rect x="258" y="105" width="20" height="5" rx="2" fill="#22c55e" opacity="0.5"/>
+
+    {/* Middle right — API */}
+    <rect x="200" y="140" width="118" height="44" rx="7" fill="#1a2d4a" stroke="#2d4a6a" strokeWidth="1"/>
+    <rect x="210" y="150" width="42" height="6" rx="2" fill="#a78bfa" opacity="0.6"/>
+    <rect x="256" y="150" width="24" height="6" rx="2" fill="#334155"/>
+    <rect x="210" y="162" width="70" height="5" rx="2" fill="#334155" opacity="0.7"/>
+
+    {/* Bottom right — DB */}
+    <rect x="200" y="196" width="118" height="44" rx="7" fill="#1a2d4a" stroke="#2d4a6a" strokeWidth="1"/>
+    <rect x="210" y="206" width="36" height="6" rx="2" fill="#f59e0b" opacity="0.6"/>
+    <rect x="250" y="206" width="30" height="6" rx="2" fill="#334155"/>
+    <rect x="210" y="218" width="55" height="5" rx="2" fill="#334155" opacity="0.6"/>
+
+    {/* Mumbai badge */}
+    <rect x="130" y="265" width="90" height="24" rx="8" fill="#3b82f6" fillOpacity="0.12" stroke="#3b82f6" strokeWidth="1.1"/>
+    <circle cx="146" cy="277" r="5" fill="#3b82f6" fillOpacity="0.25" stroke="#3b82f6" strokeWidth="1"/>
+    <circle cx="146" cy="276" r="2.5" fill="#3b82f6"/>
+    <line x1="146" y1="278" x2="146" y2="283" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round"/>
+    <text x="188" y="281" textAnchor="middle" fontSize="10" fill="#3b82f6" fontFamily="sans-serif" fontWeight="500">Mumbai</text>
 
   </svg>
 );
@@ -213,6 +256,30 @@ const page = () => {
         <h3 className='text-[var(--secondary)] py-2  border-l-4 border-[var(--secondary)] pl-4'>Mobile</h3>
         <TackStack items={techStackData5} hColor="text-white" />
       </section>
+      <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
+              <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
+      
+                {/* LEFT: Heading */}
+                <h2 className="text-white text-left max-w-lg">
+                  <span className="text-[var(--primary)]">Trusted </span>
+                  by Businesses Across
+                  <span className="text-[var(--primary)]"> Mumbai </span>
+                  & <span className="text-[var(--primary)]"> Beyond </span>
+                </h2>
+      
+                {/* RIGHT: Button */}
+                <a
+                  href="https://www.google.com/maps/place/Nakshatra+Namaha+Creations+Private+Limited+%7C+Website+Development+Company+in+Mumbai/@19.2345775,68.3744923,7z/data=!4m10!1m2!2m1!1snakshatra+namaha+creations!3m6!1s0x3be7bb2a3d75529f:0x9a21f9c6add3f2aa!8m2!3d19.2345775!4d72.9887501!15sChpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc1ocIhpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc5IBEHdlYnNpdGVfZGVzaWduZXLgAQA!16s%2Fg%2F11yt9b9y2b?entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="primary-btn whitespace-nowrap px-6 py-3 rounded-xl"
+                >
+                  View All on Google
+                </a>
+      
+              </div>
+              <Testimonial CardColor="bg-white/10" ClintTextColor="text-[var(--primary)]" />
+            </section>
       <section id='FAQ' className="FAQ  w-full py-20 md:px-15 px-6 ">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 

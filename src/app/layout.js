@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import WhatsappChat from "@/components/WhatsappChat";
+import ScrollToTop from "@/components/ScrollToTop";
 
 
 export const metadata = {
@@ -15,6 +17,8 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         {children}
+            <ScrollToTop/>
+        <WhatsappChat/>
         </body>
     </html>
   );

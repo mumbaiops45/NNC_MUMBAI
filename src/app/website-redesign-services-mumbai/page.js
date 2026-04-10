@@ -6,44 +6,62 @@ import CTA from '@/components/website-redesign-services-mumbai/CTA';
 import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import ServicesLayout from '@/components/ClickCard';
+import Testimonial from '@/components/Testimonial';
 
 const redesignSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
-    {/* Old Website (left - faded) */}
-    <rect x="40" y="70" width="120" height="160" rx="10" stroke="white" strokeOpacity="0.15" />
-    <rect x="40" y="70" width="120" height="30" rx="10" fill="white" fillOpacity="0.03" />
-    <rect x="55" y="110" width="90" height="10" fill="white" fillOpacity="0.05" />
-    <rect x="55" y="130" width="70" height="10" fill="white" fillOpacity="0.05" />
-    <rect x="55" y="150" width="80" height="10" fill="white" fillOpacity="0.05" />
+    {/* Decorative rings */}
+    <circle cx="44" cy="234" r="22" stroke="#334155" strokeWidth="1.2"/>
+    <circle cx="362" cy="68" r="26" stroke="#334155" strokeWidth="1.2"/>
 
-    {/* Arrow (Transformation) */}
+    {/* Dashboard Frame */}
+    <rect x="54" y="44" width="292" height="208" rx="13" fill="#0f172a" stroke="#334155"/>
+    <rect x="54" y="44" width="292" height="34" rx="13" fill="#1e293b"/>
+
+    {/* Top Dots */}
+    <circle cx="76" cy="61" r="5" fill="#ef4444"/>
+    <circle cx="94" cy="61" r="5" fill="#f59e0b"/>
+    <circle cx="112" cy="61" r="5" fill="#22c55e"/>
+
+    {/* OLD UI (Left Side - faded) */}
+    <rect x="70" y="90" width="100" height="130" rx="10" fill="#1e293b" stroke="#334155"/>
+    <rect x="80" y="105" width="80" height="8" rx="3" fill="#475569"/>
+    <rect x="80" y="120" width="60" height="8" rx="3" fill="#475569"/>
+    <rect x="80" y="135" width="70" height="8" rx="3" fill="#475569"/>
+
+    {/* Broken / messy indicator */}
+    <line x1="80" y1="160" x2="150" y2="180" stroke="#ef4444" strokeDasharray="4 4"/>
+    <line x1="80" y1="180" x2="150" y2="160" stroke="#ef4444" strokeDasharray="4 4"/>
+
+    {/* Transformation Arrow */}
+    <line x1="180" y1="150" x2="230" y2="150" stroke="#64748b" strokeWidth="2"/>
+    <polyline points="220,140 230,150 220,160" stroke="#64748b" strokeWidth="2" fill="none"/>
+
+    {/* NEW UI (Right Side - clean) */}
+    <rect x="240" y="80" width="90" height="140" rx="12" fill="#1e293b" stroke="#475569"/>
+
+    {/* Clean Layout */}
+    <rect x="255" y="100" width="60" height="30" rx="6" fill="#334155"/>
+    <rect x="255" y="140" width="70" height="10" rx="4" fill="#475569"/>
+    <rect x="255" y="160" width="50" height="10" rx="4" fill="#475569"/>
+
+    {/* Improvement Highlight */}
+    <circle cx="310" cy="90" r="10" fill="#22c55e" opacity="0.7"/>
+    <polyline points="305,90 309,94 316,86" stroke="#0f172a" strokeWidth="2" fill="none"/>
+
+    {/* Subtle Glow Line */}
     <polyline
-      points="180,150 220,150 205,135 220,150 205,165"
-      stroke="white"
-      strokeOpacity="0.3"
+      points="240,200 260,185 280,190 300,170"
+      stroke="#38bdf8"
+      strokeOpacity="0.4"
       strokeWidth="2"
       fill="none"
     />
 
-    {/* New Website (right - clean & modern) */}
-    <rect x="240" y="60" width="120" height="180" rx="12" stroke="white" strokeOpacity="0.4" />
-    <rect x="240" y="60" width="120" height="35" rx="12" fill="white" fillOpacity="0.06" />
-
-    {/* Clean UI blocks */}
-    <rect x="255" y="110" width="90" height="20" rx="4" fill="white" fillOpacity="0.1" />
-    <rect x="255" y="140" width="90" height="20" rx="4" fill="white" fillOpacity="0.1" />
-    <rect x="255" y="170" width="60" height="20" rx="4" fill="white" fillOpacity="0.1" />
-
-    {/* Spark (improvement highlight) */}
-    <g transform="translate(300,40)">
-      <line x1="0" y1="8" x2="16" y2="8" stroke="white" strokeOpacity="0.4" />
-      <line x1="8" y1="0" x2="8" y2="16" stroke="white" strokeOpacity="0.4" />
-    </g>
-
-    {/* Floating circles */}
-    <circle cx="80" cy="250" r="20" stroke="white" strokeOpacity="0.1" />
-    <circle cx="330" cy="260" r="25" stroke="white" strokeOpacity="0.1" />
+    {/* Floating Elements */}
+    <circle cx="80" cy="250" r="18" stroke="#334155" />
+    <circle cx="330" cy="250" r="20" stroke="#334155" />
 
   </svg>
 );
@@ -166,21 +184,44 @@ const page = () => {
         </div>
         <CardList cards={cardData} />
       </section>
-      <section id='what-we-improve' className='bg-gradient-to-b from-[var(--secondary)]/5 to-transparent pt-15'>
+      <section id='what-we-improve' className='bg-[var(--sectioncolor)] pt-15'>
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center text-gray-900">
+          <h2 className="mb-10 text-center text-gray-900 text-white">
             <span className="text-[var(--primary)]"> E-commerce   </span> Platforms We <span className="text-[var(--primary)]"> Work  </span>  With
           </h2>
 
         </div>
-        <ServicesLayout servicesData={servicesData} reverse={true} color="bg-[var(--secondary)]" TextColor="[var(--secondary)]"/>
+        <ServicesLayout servicesData={servicesData} reverse={true} color="bg-[var(--primary)]" TextColor="white"/>
       </section>
 
 
 
 
+<section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
+        <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
 
+          {/* LEFT: Heading */}
+          <h2 className="text-white text-left max-w-lg">
+            <span className="text-[var(--primary)]">Trusted </span>
+            by Businesses Across
+            <span className="text-[var(--primary)]"> Mumbai </span>
+            & <span className="text-[var(--primary)]"> Beyond </span>
+          </h2>
+
+          {/* RIGHT: Button */}
+          <a
+            href="https://www.google.com/maps/place/Nakshatra+Namaha+Creations+Private+Limited+%7C+Website+Development+Company+in+Mumbai/@19.2345775,68.3744923,7z/data=!4m10!1m2!2m1!1snakshatra+namaha+creations!3m6!1s0x3be7bb2a3d75529f:0x9a21f9c6add3f2aa!8m2!3d19.2345775!4d72.9887501!15sChpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc1ocIhpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc5IBEHdlYnNpdGVfZGVzaWduZXLgAQA!16s%2Fg%2F11yt9b9y2b?entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="primary-btn whitespace-nowrap px-6 py-3 rounded-xl"
+          >
+            View All on Google
+          </a>
+
+        </div>
+        <Testimonial CardColor="bg-white/10" ClintTextColor="text-[var(--primary)]" />
+      </section>
 
       <section id='FAQ' className="FAQ scroll-mt-10 w-full py-20 px-6 md:px-15 ">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
@@ -190,12 +231,12 @@ const page = () => {
           </h2>
 
         </div>
-        <FAQ data={faqData} />
+        <FAQ data={faqData} qColor="bg-gradient-to-r from-[#041027] to-[var(--primary)]" qTextColor="text-white"  />
       </section>
-      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 px-6 md:px-15">
+      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 px-6 md:px-15 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center">Tired of your 
+          <h2 className="mb-10 text-center text-white">Tired of your 
             <span className="text-[var(--primary)]"> old website    </span> embarrassing your  <span className="text-[var(--primary)]">brand  </span>?
           </h2>
 

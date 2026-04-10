@@ -5,45 +5,111 @@ import CardCarouselLeftRight from '@/components/CardCarousel';
 import TackStack from '@/components/TechStack';
 import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/crm-development-company-mumbai/CTA';
+import Testimonial from '@/components/Testimonial';
 
 const crmSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
-    {/* Main Dashboard */}
-    <rect x="60" y="50" width="280" height="200" rx="12" stroke="white" strokeOpacity="0.3" />
+    {/* Decorative rings */}
+    <circle cx="44" cy="234" r="22" stroke="white" strokeOpacity="0.1" strokeWidth="1.2"/>
+    <circle cx="44" cy="234" r="14" stroke="white" strokeOpacity="0.07" strokeWidth="0.6" strokeDasharray="3 3"/>
+    <circle cx="362" cy="68" r="26" stroke="white" strokeOpacity="0.1" strokeWidth="1.2"/>
+    <circle cx="362" cy="68" r="16" stroke="white" strokeOpacity="0.07" strokeWidth="0.6" strokeDasharray="3 3"/>
 
-    {/* Top Bar */}
-    <rect x="60" y="50" width="280" height="40" rx="12" fill="white" fillOpacity="0.05" />
+    {/* Dot accents */}
+    <circle cx="366" cy="230" r="3" fill="white" fillOpacity="0.08"/>
+    <circle cx="36" cy="90" r="2" fill="white" fillOpacity="0.08"/>
+
+    {/* Dashboard frame */}
+    <rect x="54" y="44" width="292" height="208" rx="13" fill="white" fillOpacity="0.04" stroke="white" strokeOpacity="0.15" strokeWidth="1.2"/>
+    <rect x="54" y="44" width="292" height="34" rx="13" fill="white" fillOpacity="0.07"/>
+    <rect x="54" y="64" width="292" height="14" fill="white" fillOpacity="0.07"/>
+
+    {/* Traffic lights */}
+    <circle cx="76" cy="61" r="5" fill="#ef4444" fillOpacity="0.7"/>
+    <circle cx="94" cy="61" r="5" fill="#f59e0b" fillOpacity="0.7"/>
+    <circle cx="112" cy="61" r="5" fill="#22c55e" fillOpacity="0.7"/>
+
+    {/* Title strip */}
+    <rect x="128" y="57" width="100" height="6" rx="2" fill="white" fillOpacity="0.12"/>
+    <rect x="300" y="55" width="36" height="10" rx="4" fill="white" fillOpacity="0.08" stroke="white" strokeOpacity="0.15" strokeWidth="0.7"/>
+    <rect x="305" y="58" width="26" height="4" rx="2" fill="white" fillOpacity="0.2"/>
 
     {/* Sidebar */}
-    <rect x="60" y="90" width="60" height="160" fill="white" fillOpacity="0.05" />
+    <rect x="62" y="82" width="62" height="160" rx="7" fill="white" fillOpacity="0.05" stroke="white" strokeOpacity="0.1" strokeWidth="0.8"/>
+    <rect x="70" y="90" width="46" height="14" rx="4" fill="white" fillOpacity="0.08"/>
+    <circle cx="79" cy="97" r="4" fill="#38bdf8" fillOpacity="0.6"/>
+    <rect x="87" y="94" width="22" height="4" rx="2" fill="white" fillOpacity="0.2"/>
+    <rect x="87" y="100" width="14" height="3" rx="1.5" fill="white" fillOpacity="0.1"/>
 
-    {/* Cards (CRM modules) */}
-    <rect x="140" y="110" width="70" height="40" rx="6" fill="white" fillOpacity="0.08" />
-    <rect x="220" y="110" width="90" height="40" rx="6" fill="white" fillOpacity="0.08" />
-    <rect x="140" y="160" width="170" height="30" rx="6" fill="white" fillOpacity="0.08" />
+    {/* Contact rows */}
+    {[120, 146, 172].map((y, i) => (
+      <g key={i}>
+        <circle cx="80" cy={y} r="8" fill="white" fillOpacity="0.12" stroke="white" strokeOpacity="0.2" strokeWidth="0.7"/>
+        <circle cx="80" cy={y - 3} r="3" fill="white" fillOpacity="0.25"/>
+        <path d={`M73 ${y + 6} Q80 ${y + 2} 87 ${y + 6}`} stroke="white" strokeOpacity="0.2" strokeWidth="0.8" strokeLinecap="round" fill="none"/>
+        <rect x="91" y={y - 3} width="26" height="3" rx="1.5" fill="white" fillOpacity="0.15"/>
+        <rect x="91" y={y + 2} width="18" height="3" rx="1.5" fill="white" fillOpacity="0.08"/>
+      </g>
+    ))}
 
-    {/* User Icons */}
-    <circle cx="100" cy="120" r="8" fill="white" fillOpacity="0.3" />
-    <circle cx="100" cy="150" r="8" fill="white" fillOpacity="0.3" />
-    <circle cx="100" cy="180" r="8" fill="white" fillOpacity="0.3" />
+    <rect x="70" y="220" width="46" height="14" rx="4" fill="white" fillOpacity="0.06" stroke="white" strokeOpacity="0.1" strokeWidth="0.6"/>
+    <rect x="75" y="225" width="22" height="4" rx="2" fill="white" fillOpacity="0.12"/>
 
-    {/* Workflow Lines */}
-    <line x1="180" y1="150" x2="260" y2="150" stroke="white" strokeOpacity="0.2" strokeDasharray="4 4" />
-    <line x1="180" y1="180" x2="260" y2="180" stroke="white" strokeOpacity="0.2" strokeDasharray="4 4" />
+    {/* Pipeline header */}
+    <rect x="134" y="82" width="202" height="18" rx="5" fill="white" fillOpacity="0.06" stroke="white" strokeOpacity="0.1" strokeWidth="0.7"/>
+    <rect x="142" y="88" width="50" height="5" rx="2" fill="#38bdf8" fillOpacity="0.5"/>
+    <rect x="284" y="85" width="44" height="12" rx="4" fill="#22c55e" fillOpacity="0.15" stroke="#22c55e" strokeOpacity="0.4" strokeWidth="0.7"/>
+    <rect x="289" y="89" width="34" height="4" rx="2" fill="#22c55e" fillOpacity="0.6"/>
 
-    {/* Growth Chart */}
-    <polyline
-      points="160,210 190,190 220,200 260,170"
-      stroke="white"
-      strokeOpacity="0.3"
-      strokeWidth="2"
-      fill="none"
-    />
+    {/* Pipeline cards — Lead */}
+    <rect x="134" y="106" width="60" height="52" rx="7" fill="white" fillOpacity="0.06" stroke="white" strokeOpacity="0.12" strokeWidth="0.8"/>
+    <rect x="140" y="113" width="30" height="5" rx="2" fill="#38bdf8" fillOpacity="0.5"/>
+    <rect x="140" y="122" width="48" height="4" rx="2" fill="white" fillOpacity="0.1"/>
+    <rect x="140" y="130" width="36" height="4" rx="2" fill="white" fillOpacity="0.07"/>
+    <rect x="140" y="148" width="40" height="6" rx="3" fill="#38bdf8" fillOpacity="0.15" stroke="#38bdf8" strokeOpacity="0.3" strokeWidth="0.6"/>
+    <rect x="144" y="151" width="24" height="3" rx="1.5" fill="#38bdf8" fillOpacity="0.5"/>
 
-    {/* Floating circles */}
-    <circle cx="50" cy="230" r="20" stroke="white" strokeOpacity="0.1" />
-    <circle cx="360" cy="80" r="25" stroke="white" strokeOpacity="0.1" />
+    {/* Pipeline cards — Proposal */}
+    <rect x="202" y="106" width="60" height="52" rx="7" fill="white" fillOpacity="0.06" stroke="white" strokeOpacity="0.12" strokeWidth="0.8"/>
+    <rect x="208" y="113" width="36" height="5" rx="2" fill="#a78bfa" fillOpacity="0.6"/>
+    <rect x="208" y="122" width="48" height="4" rx="2" fill="white" fillOpacity="0.1"/>
+    <rect x="208" y="130" width="30" height="4" rx="2" fill="white" fillOpacity="0.07"/>
+    <rect x="208" y="148" width="40" height="6" rx="3" fill="#a78bfa" fillOpacity="0.15" stroke="#a78bfa" strokeOpacity="0.3" strokeWidth="0.6"/>
+    <rect x="212" y="151" width="24" height="3" rx="1.5" fill="#a78bfa" fillOpacity="0.5"/>
+
+    {/* Pipeline cards — Won */}
+    <rect x="270" y="106" width="60" height="52" rx="7" fill="white" fillOpacity="0.06" stroke="white" strokeOpacity="0.12" strokeWidth="0.8"/>
+    <rect x="276" y="113" width="28" height="5" rx="2" fill="#22c55e" fillOpacity="0.6"/>
+    <rect x="276" y="122" width="48" height="4" rx="2" fill="white" fillOpacity="0.1"/>
+    <rect x="276" y="130" width="36" height="4" rx="2" fill="white" fillOpacity="0.07"/>
+    <rect x="276" y="148" width="40" height="6" rx="3" fill="#22c55e" fillOpacity="0.15" stroke="#22c55e" strokeOpacity="0.3" strokeWidth="0.6"/>
+    <rect x="280" y="151" width="24" height="3" rx="1.5" fill="#22c55e" fillOpacity="0.5"/>
+
+    {/* Card connectors */}
+    <line x1="194" y1="132" x2="202" y2="132" stroke="white" strokeOpacity="0.15" strokeWidth="0.8" strokeDasharray="3 2"/>
+    <line x1="262" y1="132" x2="270" y2="132" stroke="white" strokeOpacity="0.15" strokeWidth="0.8" strokeDasharray="3 2"/>
+
+    {/* Growth chart */}
+    <rect x="134" y="166" width="202" height="64" rx="7" fill="white" fillOpacity="0.04" stroke="white" strokeOpacity="0.1" strokeWidth="0.8"/>
+    <line x1="142" y1="196" x2="328" y2="196" stroke="white" strokeOpacity="0.06" strokeWidth="0.6"/>
+    <line x1="142" y1="210" x2="328" y2="210" stroke="white" strokeOpacity="0.06" strokeWidth="0.6"/>
+    <line x1="142" y1="182" x2="328" y2="182" stroke="white" strokeOpacity="0.06" strokeWidth="0.6"/>
+    <path d="M148 218 L175 202 L202 210 L229 188 L256 194 L283 174 L310 180 L322 168 L322 224 L148 224 Z" fill="white" fillOpacity="0.04"/>
+    <polyline points="148,218 175,202 202,210 229,188 256,194 283,174 310,180 322,168"
+      stroke="#38bdf8" strokeOpacity="0.6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    <circle cx="148" cy="218" r="2.5" fill="#38bdf8" fillOpacity="0.7"/>
+    <circle cx="202" cy="210" r="2.5" fill="#38bdf8" fillOpacity="0.7"/>
+    <circle cx="256" cy="194" r="2.5" fill="#38bdf8" fillOpacity="0.7"/>
+    <circle cx="310" cy="180" r="2.5" fill="#38bdf8" fillOpacity="0.7"/>
+    <circle cx="322" cy="168" r="3.5" fill="#22c55e" fillOpacity="0.8" stroke="white" strokeOpacity="0.2" strokeWidth="0.8"/>
+
+    {/* Mumbai badge */}
+    <rect x="140" y="264" width="90" height="24" rx="8" fill="#3b82f6" fillOpacity="0.12" stroke="#3b82f6" strokeWidth="1.1"/>
+    <circle cx="156" cy="276" r="5" fill="#3b82f6" fillOpacity="0.25" stroke="#3b82f6" strokeWidth="1"/>
+    <circle cx="156" cy="275" r="2.5" fill="#3b82f6"/>
+    <line x1="156" y1="277" x2="156" y2="282" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round"/>
+    <text x="198" y="280" textAnchor="middle" fontSize="10" fill="#3b82f6" fontFamily="sans-serif" fontWeight="500">Mumbai</text>
 
   </svg>
 );
@@ -223,6 +289,30 @@ const page = () => {
         </div>
         <TackStack items={techStackData} hColor='text-white' />
       </section>
+      <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
+              <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
+      
+                {/* LEFT: Heading */}
+                <h2 className="text-white text-left max-w-lg">
+                  <span className="text-[var(--primary)]">Trusted </span>
+                  by Businesses Across
+                  <span className="text-[var(--primary)]"> Mumbai </span>
+                  & <span className="text-[var(--primary)]"> Beyond </span>
+                </h2>
+      
+                {/* RIGHT: Button */}
+                <a
+                  href="https://www.google.com/maps/place/Nakshatra+Namaha+Creations+Private+Limited+%7C+Website+Development+Company+in+Mumbai/@19.2345775,68.3744923,7z/data=!4m10!1m2!2m1!1snakshatra+namaha+creations!3m6!1s0x3be7bb2a3d75529f:0x9a21f9c6add3f2aa!8m2!3d19.2345775!4d72.9887501!15sChpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc1ocIhpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc5IBEHdlYnNpdGVfZGVzaWduZXLgAQA!16s%2Fg%2F11yt9b9y2b?entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="primary-btn whitespace-nowrap px-6 py-3 rounded-xl"
+                >
+                  View All on Google
+                </a>
+      
+              </div>
+              <Testimonial CardColor="bg-white/10" ClintTextColor="text-[var(--primary)]" />
+            </section>
       <section id='FAQ' className="FAQ scroll-mt-10 w-full py-20 md:px-15 px-6 bg-gradient-to-b from-[var(--secondary)]/5 to-transparent">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 

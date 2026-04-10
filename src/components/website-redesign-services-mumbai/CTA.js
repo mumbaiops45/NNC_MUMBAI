@@ -16,7 +16,7 @@ export default function CTA({
           
           {/* Contact Info with icons */}
           <p className="text-sm md:text-base mb-6 opacity-90 flex flex-col sm:flex-row justify-center items-center gap-4 ">
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 text-white">
               <Phone className=" text-[var(--primary)] w-4 h-4 " /> Get a free website audit from NNC. Call {" "}
               <a href={`tel:${phone}`} className="font-semibold underline">
                 {phone}

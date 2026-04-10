@@ -5,33 +5,105 @@ import CardCarouselLeftRight from '@/components/CardCarousel';
 import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/Web Design Company in Mumbai/CTA';
 import Process from '@/components/Step';
+import Testimonial from '@/components/Testimonial';
 const webDesignSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
-    {/* Browser Window */}
-    <rect x="40" y="50" width="320" height="200" rx="12" stroke="white" strokeOpacity="0.3" />
 
-    {/* Top bar */}
-    <rect x="40" y="50" width="320" height="40" rx="12" fill="white" fillOpacity="0.05" />
+    {/* Decorative rings */}
+    <circle cx="368" cy="66" r="20" stroke="#334155" strokeWidth="1.2"/>
+    <circle cx="368" cy="66" r="12" stroke="#334155" strokeWidth="0.6" strokeDasharray="3 3"/>
+    <circle cx="48" cy="258" r="18" stroke="#334155" strokeWidth="1.2"/>
+    <circle cx="48" cy="258" r="11" stroke="#334155" strokeWidth="0.6" strokeDasharray="3 3"/>
 
-    {/* Dots */}
-    <circle cx="70" cy="70" r="4" fill="white" />
-    <circle cx="90" cy="70" r="4" fill="white" />
-    <circle cx="110" cy="70" r="4" fill="white" />
+    {/* Dot accents */}
+    <circle cx="365" cy="230" r="3" fill="#334155"/>
+    <circle cx="38" cy="90" r="2" fill="#475569"/>
+    <circle cx="372" cy="180" r="2" fill="#475569"/>
 
-    {/* Layout blocks */}
-    <rect x="70" y="110" width="100" height="60" rx="6" fill="white" fillOpacity="0.08" />
-    <rect x="190" y="110" width="120" height="20" rx="4" fill="white" fillOpacity="0.08" />
-    <rect x="190" y="140" width="120" height="20" rx="4" fill="white" fillOpacity="0.08" />
-    <rect x="190" y="170" width="90" height="20" rx="4" fill="white" fillOpacity="0.08" />
+    {/* Browser frame */}
+    <rect x="38" y="44" width="324" height="212" rx="13" fill="#0f1e2e" stroke="#475569" strokeWidth="1.4"/>
+    <rect x="38" y="44" width="324" height="34" rx="13" fill="#1e293b"/>
+    <rect x="38" y="64" width="324" height="14" fill="#1e293b"/>
 
-    {/* Cursor */}
-    <path
-      d="M120 190 L120 230 L135 215 L150 240 L160 235 L145 210 L165 210 Z"
-      stroke="white"
-      strokeOpacity="0.4"
-      strokeWidth="1.5"
-      fill="none"
-    />
+    {/* Traffic lights */}
+    <circle cx="64" cy="61" r="5" fill="#ef4444"/>
+    <circle cx="82" cy="61" r="5" fill="#f59e0b"/>
+    <circle cx="100" cy="61" r="5" fill="#22c55e"/>
+
+    {/* URL bar */}
+    <rect x="118" y="51" width="186" height="18" rx="5" fill="#0f1e2e" stroke="#334155" strokeWidth="0.8"/>
+    <rect x="126" y="57" width="80" height="4" rx="2" fill="#334155"/>
+    <rect x="213" y="57" width="30" height="4" rx="2" fill="#334155" opacity="0.4"/>
+    <circle cx="296" cy="60" r="4" fill="#334155"/>
+
+    {/* Sidebar */}
+    <rect x="50" y="82" width="66" height="158" rx="7" fill="#142135" stroke="#2d4a6a" strokeWidth="1"/>
+    <rect x="60" y="92" width="46" height="16" rx="4" fill="#1e3a5a"/>
+    <circle cx="70" cy="100" r="4" fill="#38bdf8" opacity="0.5"/>
+    <rect x="78" y="97" width="22" height="4" rx="2" fill="#334155"/>
+    <rect x="78" y="103" width="14" height="3" rx="1.5" fill="#334155" opacity="0.5"/>
+
+    {/* Nav items */}
+    <rect x="60" y="116" width="46" height="8" rx="3" fill="#38bdf8" fillOpacity="0.2" stroke="#38bdf8" strokeWidth="0.6"/>
+    <rect x="64" y="119" width="28" height="3" rx="1.5" fill="#38bdf8" opacity="0.7"/>
+    <rect x="60" y="130" width="46" height="8" rx="3" fill="#1e3a5a"/>
+    <rect x="64" y="133" width="22" height="3" rx="1.5" fill="#334155"/>
+    <rect x="60" y="144" width="46" height="8" rx="3" fill="#1e3a5a"/>
+    <rect x="64" y="147" width="30" height="3" rx="1.5" fill="#334155"/>
+    <rect x="60" y="158" width="46" height="8" rx="3" fill="#1e3a5a"/>
+    <rect x="64" y="161" width="18" height="3" rx="1.5" fill="#334155"/>
+    <rect x="60" y="172" width="46" height="8" rx="3" fill="#1e3a5a"/>
+    <rect x="64" y="175" width="26" height="3" rx="1.5" fill="#334155"/>
+
+    {/* Sidebar avatar */}
+    <circle cx="73" cy="222" r="10" fill="#1e3a5a" stroke="#2d4a6a" strokeWidth="0.8"/>
+    <circle cx="73" cy="219" r="4" fill="#334155"/>
+    <path d="M64 228 Q73 224 82 228" stroke="#334155" strokeWidth="1" strokeLinecap="round" fill="none"/>
+
+    {/* Header row */}
+    <rect x="128" y="82" width="222" height="22" rx="6" fill="#1a2d4a" stroke="#2d4a6a" strokeWidth="0.8"/>
+    <rect x="138" y="90" width="70" height="5" rx="2" fill="#38bdf8" opacity="0.5"/>
+    <rect x="298" y="88" width="42" height="10" rx="4" fill="#22c55e" fillOpacity="0.2" stroke="#22c55e" strokeWidth="0.7"/>
+    <rect x="305" y="91" width="28" height="4" rx="2" fill="#22c55e" opacity="0.6"/>
+
+    {/* Hero banner */}
+    <rect x="128" y="110" width="222" height="60" rx="8" fill="#0f2540" stroke="#1e4a7a" strokeWidth="1"/>
+    <circle cx="168" cy="140" r="22" fill="#38bdf8" fillOpacity="0.08" stroke="#38bdf8" strokeWidth="0.7"/>
+    <circle cx="168" cy="140" r="13" fill="#38bdf8" fillOpacity="0.1"/>
+    <rect x="202" y="122" width="100" height="8" rx="3" fill="#1e4a7a"/>
+    <rect x="202" y="135" width="76" height="6" rx="3" fill="#1e4a7a" opacity="0.7"/>
+    <rect x="202" y="147" width="56" height="6" rx="3" fill="#1e4a7a" opacity="0.5"/>
+    <rect x="202" y="158" width="44" height="10" rx="4" fill="#38bdf8" fillOpacity="0.25" stroke="#38bdf8" strokeWidth="0.7"/>
+    <rect x="207" y="161" width="28" height="4" rx="2" fill="#38bdf8" opacity="0.6"/>
+
+    {/* Card row */}
+    <rect x="128" y="178" width="68" height="52" rx="6" fill="#142135" stroke="#2d4a6a" strokeWidth="0.8"/>
+    <rect x="136" y="186" width="52" height="18" rx="4" fill="#1a2d4a"/>
+    <rect x="136" y="210" width="40" height="5" rx="2" fill="#334155"/>
+    <rect x="136" y="218" width="28" height="4" rx="2" fill="#334155" opacity="0.5"/>
+
+    <rect x="205" y="178" width="68" height="52" rx="6" fill="#142135" stroke="#2d4a6a" strokeWidth="0.8"/>
+    <rect x="213" y="186" width="52" height="18" rx="4" fill="#1a2d4a"/>
+    <rect x="213" y="210" width="40" height="5" rx="2" fill="#334155"/>
+    <rect x="213" y="218" width="28" height="4" rx="2" fill="#334155" opacity="0.5"/>
+
+    <rect x="282" y="178" width="68" height="52" rx="6" fill="#142135" stroke="#2d4a6a" strokeWidth="0.8"/>
+    <rect x="290" y="186" width="52" height="18" rx="4" fill="#1a2d4a"/>
+    <rect x="290" y="210" width="40" height="5" rx="2" fill="#334155"/>
+    <rect x="290" y="218" width="28" height="4" rx="2" fill="#334155" opacity="0.5"/>
+
+    {/* Design cursor */}
+    <path d="M248 128 L244 158 L254 151 L260 168 L267 164 L261 147 L273 147 Z"
+      stroke="#94a3b8" strokeWidth="1.4" strokeLinejoin="round"
+      fill="#0f1e2e" fillOpacity="0.6"/>
+
+    {/* Mumbai badge */}
+    <rect x="138" y="268" width="90" height="24" rx="8" fill="#3b82f6" fillOpacity="0.12" stroke="#3b82f6" strokeWidth="1.1"/>
+    <circle cx="154" cy="280" r="5" fill="#3b82f6" fillOpacity="0.25" stroke="#3b82f6" strokeWidth="1"/>
+    <circle cx="154" cy="279" r="2.5" fill="#3b82f6"/>
+    <line x1="154" y1="281" x2="154" y2="286" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round"/>
+    <text x="196" y="284" textAnchor="middle" fontSize="10" fill="#3b82f6" fontFamily="sans-serif" fontWeight="500">Mumbai</text>
+
   </svg>
 );
 const cardData = [
@@ -230,7 +302,30 @@ const page = () => {
         <Process processSteps={processSteps} />
       </section>
 
+      <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
+              <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
       
+                {/* LEFT: Heading */}
+                <h2 className="text-white text-left max-w-lg">
+                  <span className="text-[var(--primary)]">Trusted </span>
+                  by Businesses Across
+                  <span className="text-[var(--primary)]"> Mumbai </span>
+                  & <span className="text-[var(--primary)]"> Beyond </span>
+                </h2>
+      
+                {/* RIGHT: Button */}
+                <a
+                  href="https://www.google.com/maps/place/Nakshatra+Namaha+Creations+Private+Limited+%7C+Website+Development+Company+in+Mumbai/@19.2345775,68.3744923,7z/data=!4m10!1m2!2m1!1snakshatra+namaha+creations!3m6!1s0x3be7bb2a3d75529f:0x9a21f9c6add3f2aa!8m2!3d19.2345775!4d72.9887501!15sChpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc1ocIhpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc5IBEHdlYnNpdGVfZGVzaWduZXLgAQA!16s%2Fg%2F11yt9b9y2b?entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="primary-btn whitespace-nowrap px-6 py-3 rounded-xl"
+                >
+                  View All on Google
+                </a>
+      
+              </div>
+              <Testimonial CardColor="bg-white/10" ClintTextColor="text-[var(--primary)]" />
+            </section>
       
       <section id='FAQ' className="FAQ scroll-mt-10 w-full py-20 px-6 md:px-15 bg-gradient-to-b from-[var(--secondary)]/5 to-transparent">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">

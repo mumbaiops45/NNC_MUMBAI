@@ -5,59 +5,77 @@ import MobileAppCTA from '@/components/Web Design Company in Mumbai/CTA';
 import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import MobileAppCTA_React_Native from '@/components/React Native App Development in Mumbai/CTA';
+import Testimonial from '@/components/Testimonial';
 
 const reactNativeSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
-    
-    {/* Central Atom (React style) */}
-    <circle cx="200" cy="150" r="12" fill="white" fillOpacity="0.8" />
 
-    {/* Orbit 1 */}
-    <ellipse
-      cx="200"
-      cy="150"
-      rx="80"
-      ry="30"
-      stroke="white"
-      strokeOpacity="0.3"
-      strokeWidth="1.5"
-    />
+    {/* Decorative rings */}
+    <circle cx="72" cy="48" r="22" stroke="#334155" strokeWidth="1.2"/>
+    <circle cx="72" cy="48" r="14" stroke="#334155" strokeWidth="0.6" strokeDasharray="3 3"/>
+    <circle cx="328" cy="255" r="24" stroke="#334155" strokeWidth="1.2"/>
+    <circle cx="328" cy="255" r="15" stroke="#334155" strokeWidth="0.6" strokeDasharray="3 3"/>
 
-    {/* Orbit 2 */}
-    <ellipse
-      cx="200"
-      cy="150"
-      rx="80"
-      ry="30"
-      transform="rotate(60 200 150)"
-      stroke="white"
-      strokeOpacity="0.3"
-      strokeWidth="1.5"
-    />
+    {/* Dot accents */}
+    <circle cx="355" cy="80" r="3" fill="#334155"/>
+    <circle cx="45" cy="230" r="3" fill="#334155"/>
+    <circle cx="370" cy="200" r="2" fill="#475569"/>
+    <circle cx="30" cy="130" r="2" fill="#475569"/>
 
-    {/* Orbit 3 */}
-    <ellipse
-      cx="200"
-      cy="150"
-      rx="80"
-      ry="30"
-      transform="rotate(-60 200 150)"
-      stroke="white"
-      strokeOpacity="0.3"
-      strokeWidth="1.5"
-    />
+    {/* React atom orbits */}
+    <ellipse cx="200" cy="148" rx="72" ry="26" stroke="#38bdf8" strokeWidth="1.2" opacity="0.5"/>
+    <ellipse cx="200" cy="148" rx="72" ry="26" transform="rotate(60 200 148)" stroke="#38bdf8" strokeWidth="1.2" opacity="0.5"/>
+    <ellipse cx="200" cy="148" rx="72" ry="26" transform="rotate(-60 200 148)" stroke="#38bdf8" strokeWidth="1.2" opacity="0.5"/>
 
-    {/* Mobile Devices (left & right) */}
-    <rect x="40" y="80" width="60" height="140" rx="10" stroke="white" strokeOpacity="0.25" />
-    <rect x="300" y="80" width="60" height="140" rx="10" stroke="white" strokeOpacity="0.25" />
+    {/* Electron dots */}
+    <circle cx="272" cy="148" r="4" fill="#38bdf8" opacity="0.8"/>
+    <circle cx="164" cy="123" r="4" fill="#38bdf8" opacity="0.8"/>
+    <circle cx="164" cy="173" r="4" fill="#38bdf8" opacity="0.8"/>
 
-    {/* Connection Lines */}
-    <line x1="100" y1="150" x2="150" y2="150" stroke="white" strokeOpacity="0.2" strokeDasharray="4 4" />
-    <line x1="250" y1="150" x2="300" y2="150" stroke="white" strokeOpacity="0.2" strokeDasharray="4 4" />
+    {/* Core nucleus */}
+    <circle cx="200" cy="148" r="13" fill="#0ea5e9" fillOpacity="0.2" stroke="#38bdf8" strokeWidth="1.2"/>
+    <circle cx="200" cy="148" r="7" fill="#38bdf8" opacity="0.7"/>
 
-    {/* Floating circles */}
-    <circle cx="80" cy="50" r="20" stroke="white" strokeOpacity="0.1" />
-    <circle cx="320" cy="250" r="25" stroke="white" strokeOpacity="0.1" />
+    {/* Left phone — Android */}
+    <rect x="44" y="80" width="58" height="115" rx="12" fill="#1e293b" stroke="#475569" strokeWidth="1.5"/>
+    <rect x="63" y="85" width="20" height="5" rx="2.5" fill="#2d3f52"/>
+    <rect x="54" y="96" width="38" height="68" rx="5" fill="#0f1e2e" stroke="#2d3f52" strokeWidth="0.8"/>
+    <rect x="59" y="103" width="28" height="5" rx="2" fill="#1e3a5a"/>
+    <rect x="59" y="113" width="20" height="4" rx="2" fill="#1e3a5a" opacity="0.7"/>
+    <rect x="59" y="121" width="24" height="4" rx="2" fill="#1e3a5a" opacity="0.5"/>
+    <rect x="59" y="132" width="28" height="18" rx="3" fill="#1e3a5a"/>
+    <rect x="59" y="154" width="14" height="5" rx="2" fill="#22c55e" opacity="0.6"/>
+    <rect x="65" y="170" width="22" height="4" rx="2" fill="#334155"/>
+    <circle cx="73" cy="186" r="5" fill="#22c55e" opacity="0.8"/>
+
+    {/* Left dashed connector */}
+    <line x1="102" y1="140" x2="130" y2="142" stroke="#475569" strokeWidth="1" strokeDasharray="4 3"/>
+
+    {/* Right phone — iOS */}
+    <rect x="298" y="80" width="58" height="115" rx="12" fill="#1e293b" stroke="#475569" strokeWidth="1.5"/>
+    <rect x="312" y="85" width="22" height="6" rx="3" fill="#0f1e2e"/>
+    <rect x="308" y="96" width="38" height="68" rx="5" fill="#0f1e2e" stroke="#2d3f52" strokeWidth="0.8"/>
+    <rect x="313" y="103" width="28" height="5" rx="2" fill="#1e3a5a"/>
+    <rect x="313" y="113" width="20" height="4" rx="2" fill="#1e3a5a" opacity="0.7"/>
+    <rect x="313" y="121" width="24" height="4" rx="2" fill="#1e3a5a" opacity="0.5"/>
+    <rect x="313" y="132" width="28" height="18" rx="3" fill="#1e3a5a"/>
+    <rect x="313" y="154" width="14" height="5" rx="2" fill="#60a5fa" opacity="0.6"/>
+    <rect x="319" y="170" width="22" height="4" rx="2" fill="#334155"/>
+    <circle cx="327" cy="186" r="5" fill="#60a5fa" opacity="0.8"/>
+
+    {/* Right dashed connector */}
+    <line x1="298" y1="140" x2="270" y2="142" stroke="#475569" strokeWidth="1" strokeDasharray="4 3"/>
+
+    {/* Mumbai location badge */}
+    <rect x="158" y="228" width="84" height="26" rx="8" fill="#3b82f6" fillOpacity="0.12" stroke="#3b82f6" strokeWidth="1.1"/>
+    <circle cx="172" cy="241" r="5" fill="#3b82f6" fillOpacity="0.25" stroke="#3b82f6" strokeWidth="1"/>
+    <circle cx="172" cy="240" r="2.5" fill="#3b82f6"/>
+    <line x1="172" y1="242" x2="172" y2="247" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round"/>
+    <text x="210" y="245" textAnchor="middle" fontSize="10" fill="#3b82f6" fontFamily="sans-serif" fontWeight="500">Mumbai</text>
+
+    {/* Code tag */}
+    <rect x="152" y="60" width="96" height="22" rx="5" fill="#1e293b" stroke="#475569" strokeWidth="0.8"/>
+    <text x="200" y="75" textAnchor="middle" fontSize="9" fill="#64748b" fontFamily="monospace">&lt;ReactNative /&gt;</text>
 
   </svg>
 );
@@ -188,7 +206,30 @@ const page = () => {
         <Process processSteps={processSteps} />
       </section>
 
+      <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
+              <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
       
+                {/* LEFT: Heading */}
+                <h2 className="text-white text-left max-w-lg">
+                  <span className="text-[var(--primary)]">Trusted </span>
+                  by Businesses Across
+                  <span className="text-[var(--primary)]"> Mumbai </span>
+                  & <span className="text-[var(--primary)]"> Beyond </span>
+                </h2>
+      
+                {/* RIGHT: Button */}
+                <a
+                  href="https://www.google.com/maps/place/Nakshatra+Namaha+Creations+Private+Limited+%7C+Website+Development+Company+in+Mumbai/@19.2345775,68.3744923,7z/data=!4m10!1m2!2m1!1snakshatra+namaha+creations!3m6!1s0x3be7bb2a3d75529f:0x9a21f9c6add3f2aa!8m2!3d19.2345775!4d72.9887501!15sChpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc1ocIhpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc5IBEHdlYnNpdGVfZGVzaWduZXLgAQA!16s%2Fg%2F11yt9b9y2b?entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="primary-btn whitespace-nowrap px-6 py-3 rounded-xl"
+                >
+                  View All on Google
+                </a>
+      
+              </div>
+              <Testimonial CardColor="bg-white/10" ClintTextColor="text-[var(--primary)]" />
+            </section>
       
       <section id='FAQ' className="FAQ scroll-mt-10 w-full py-20 md:px-15 px-6 bg-gradient-to-b from-[var(--secondary)]/5 to-transparent">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">

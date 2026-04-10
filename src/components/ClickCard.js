@@ -17,16 +17,16 @@ const ServicesLayout = ({ servicesData, reverse = false, color,TextColor }) => {
     return (
         <section className="py-16 px-6 md:px-15 ">
             {/* MAIN LAYOUT */}
-            <div className={`max-w-7xl mx-auto grid grid-cols-1  gap-10 ${reverse ? "md:grid-cols-[1fr_40%]" : "md:grid-cols-[40%_1fr]"}`}>
+            <div className={`max-w-7xl mx-auto grid grid-cols-1 gap-4 ${reverse ? "md:grid-cols-[1fr_50%]" : "md:grid-cols-[50%_1fr]"}`}>
 
                 {/* LEFT SIDEBAR */}
-                <div className={`flex flex-col gap-4 ${reverse ? "md:order-2" : "md:order-1"}`}>
+                <div className={`flex flex-col gap-4 h-full ${reverse ? "md:order-2" : "md:order-1"}`}>
                     {servicesData.map((service) => (
-                        <div key={service.id}>
+                        <div key={service.id} className=" flex-1">
                             <div
 
                                 onClick={() => setActive(service.title)}
-                                className={`cursor-pointer border rounded-xl p-4 transition ${Active === service.title
+                                className={`h-full flex items-center cursor-pointer border rounded-xl p-4 transition ${Active === service.title
                                     ? `${color} text-white shadow-md`
                                     : "bg-white border-gray-200 hover:shadow-md"
                                     }`}
@@ -52,7 +52,7 @@ const ServicesLayout = ({ servicesData, reverse = false, color,TextColor }) => {
                                                     {activeService.items.map((subItem, i) => (
                                                         <div
                                                             key={i}
-                                                            className="flex flex-col items-center gap-4 md:gap-3 border border-gray-200 rounded-xl p-4 hover:shadow-md transition"
+                                                            className="flex flex-col items-center gap-4 md:gap-3  rounded-xl p-4 hover:shadow-md transition"
                                                         >
                                                             {/* IMAGE */}
                                                             <div className="relative w-full h-58 rounded-lg overflow-hidden shrink-0">
@@ -69,7 +69,7 @@ const ServicesLayout = ({ servicesData, reverse = false, color,TextColor }) => {
                                                                 <h3 className={`text-lg md:text-xl font-semibold mb-3 py-2 text-${TextColor} border-l-4 border-${TextColor} pl-4`}>
                                                                     {subItem.heading}
                                                                 </h3>
-                                                                <p className="text-sm md:text-base text-gray-600">
+                                                                <p className="text-sm md:text-base text-gray-400">
                                                                     {subItem.discription}
                                                                 </p>
                                                             </div>
@@ -97,7 +97,7 @@ const ServicesLayout = ({ servicesData, reverse = false, color,TextColor }) => {
                             {/* ITEMS GRID */}
                             <div>
                                 {activeService.items.map((item, i) => (
-                                    <div key={i} className="flex flex-col  items-center gap-6 border border-gray-200 rounded-xl p-6 hover:shadow-md transition">
+                                    <div key={i} className="flex flex-col  items-center gap-6  rounded-xl p-6 hover:shadow-md transition">
 
                                         {/* LEFT IMAGE */}
                                         <div className="w-full md:w-1/3 relative h-64">
@@ -114,7 +114,7 @@ const ServicesLayout = ({ servicesData, reverse = false, color,TextColor }) => {
                                             <h3 className={`text-lg md:text-xl font-semibold mb-3 py-2 text-${TextColor} border-l-4 border-${TextColor} pl-4`}>
                                                 {item.heading}
                                             </h3>
-                                            <p className="text-sm md:text-base text-gray-600">
+                                            <p className="text-sm md:text-base text-gray-400">
                                                 {item.discription}
                                             </p>
                                         </div>

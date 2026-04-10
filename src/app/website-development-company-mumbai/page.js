@@ -5,41 +5,106 @@ import CardCarouselLeftRight from '@/components/CardCarousel';
 import TackStack from '@/components/TechStack';
 import FAQ from '@/components/FAQ';
 import CTA from '@/components/Website Development Company in Mumbai/CTA';
+import Testimonial from '@/components/Testimonial';
 
 const websiteDevSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
-    {/* Browser Window */}
-    <rect x="50" y="60" width="300" height="180" rx="12" stroke="white" strokeOpacity="0.4" />
+    {/* Decorative rings */}
+    <circle cx="36" cy="234" r="20" stroke="#cbd5e1" strokeWidth="1.2" />
+    <circle cx="36" cy="234" r="12" stroke="#cbd5e1" strokeWidth="0.6" strokeDasharray="3 3" />
+    <circle cx="366" cy="38" r="24" stroke="#cbd5e1" strokeWidth="1.2" />
+    <circle cx="366" cy="38" r="15" stroke="#cbd5e1" strokeWidth="0.6" strokeDasharray="3 3" />
 
-    {/* Top Bar */}
-    <rect x="50" y="60" width="300" height="30" rx="12" fill="white" fillOpacity="0.05" />
+    {/* Dot accents */}
+    <circle cx="362" cy="240" r="3" fill="#cbd5e1" />
+    <circle cx="40" cy="70" r="2" fill="#e2e8f0" />
+    <circle cx="374" cy="180" r="2" fill="#e2e8f0" />
 
-    {/* Browser Dots */}
-    <circle cx="70" cy="75" r="4" fill="white" fillOpacity="0.3" />
-    <circle cx="85" cy="75" r="4" fill="white" fillOpacity="0.3" />
-    <circle cx="100" cy="75" r="4" fill="white" fillOpacity="0.3" />
+    {/* Browser frame */}
+    <rect x="46" y="52" width="308" height="196" rx="13" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1.2" />
+    <rect x="46" y="52" width="308" height="32" rx="13" fill="#f1f5f9" />
+    <rect x="46" y="70" width="308" height="14" fill="#f1f5f9" />
 
-    {/* Left Content Blocks */}
-    <rect x="70" y="110" width="110" height="18" rx="4" fill="white" fillOpacity="0.1" />
-    <rect x="70" y="140" width="140" height="18" rx="4" fill="white" fillOpacity="0.08" />
-    <rect x="70" y="170" width="120" height="18" rx="4" fill="white" fillOpacity="0.08" />
+    {/* Traffic lights */}
+    <circle cx="70" cy="68" r="5" fill="#ef4444" />
+    <circle cx="88" cy="68" r="5" fill="#f59e0b" />
+    <circle cx="106" cy="68" r="5" fill="#22c55e" />
 
-    {/* Right UI Card */}
-    <rect x="220" y="110" width="100" height="80" rx="8" fill="white" fillOpacity="0.06" />
+    {/* URL bar */}
+    <rect x="120" y="59" width="176" height="18" rx="5" fill="#e2e8f0" stroke="#cbd5e1" strokeWidth="0.7" />
+    <rect x="128" y="65" width="80" height="4" rx="2" fill="#94a3b8" />
+    <rect x="214" y="65" width="28" height="4" rx="2" fill="#94a3b8" opacity="0.4" />
+    <circle cx="288" cy="68" r="4" fill="#cbd5e1" />
 
-    {/* Cursor Pointer */}
-    <path
-      d="M250 140 L250 180 L265 170 L280 200 L290 195 L275 165 L295 165Z"
-      stroke="white"
-      strokeOpacity="0.4"
-      strokeWidth="1.5"
-      fill="none"
-    />
+    {/* Sidebar */}
+    <rect x="56" y="86" width="64" height="148" rx="7" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="0.8" />
+    <rect x="64" y="94" width="48" height="16" rx="4" fill="#e2e8f0" />
+    <circle cx="73" cy="102" r="4" fill="#38bdf8" opacity="0.7" />
+    <rect x="81" y="99" width="24" height="4" rx="2" fill="#94a3b8" />
+    <rect x="81" y="105" width="16" height="3" rx="1.5" fill="#94a3b8" opacity="0.5" />
 
-    {/* Floating Circles */}
-    <circle cx="40" cy="230" r="18" stroke="white" strokeOpacity="0.1" />
-    <circle cx="360" cy="40" r="22" stroke="white" strokeOpacity="0.1" />
+    {/* Nav items */}
+    <rect x="64" y="118" width="48" height="8" rx="3" fill="#38bdf8" fillOpacity="0.15" stroke="#38bdf8" strokeWidth="0.6" />
+    <rect x="68" y="121" width="28" height="3" rx="1.5" fill="#0ea5e9" />
+    <rect x="64" y="132" width="48" height="8" rx="3" fill="#f1f5f9" />
+    <rect x="68" y="135" width="22" height="3" rx="1.5" fill="#94a3b8" />
+    <rect x="64" y="146" width="48" height="8" rx="3" fill="#f1f5f9" />
+    <rect x="68" y="149" width="30" height="3" rx="1.5" fill="#94a3b8" />
+    <rect x="64" y="160" width="48" height="8" rx="3" fill="#f1f5f9" />
+    <rect x="68" y="163" width="18" height="3" rx="1.5" fill="#94a3b8" />
+    <rect x="64" y="174" width="48" height="8" rx="3" fill="#f1f5f9" />
+    <rect x="68" y="177" width="26" height="3" rx="1.5" fill="#94a3b8" />
+
+    {/* Sidebar avatar */}
+    <circle cx="80" cy="218" r="10" fill="#e2e8f0" stroke="#cbd5e1" strokeWidth="0.8" />
+    <circle cx="80" cy="215" r="4" fill="#94a3b8" />
+    <path d="M71 224 Q80 220 89 224" stroke="#94a3b8" strokeWidth="1" strokeLinecap="round" fill="none" />
+
+    {/* Main header */}
+    <rect x="130" y="86" width="214" height="20" rx="5" fill="#f1f5f9" stroke="#e2e8f0" strokeWidth="0.7" />
+    <rect x="138" y="93" width="60" height="5" rx="2" fill="#38bdf8" opacity="0.6" />
+    <rect x="300" y="89" width="36" height="14" rx="4" fill="#22c55e" fillOpacity="0.15" stroke="#22c55e" strokeWidth="0.7" />
+    <rect x="306" y="93" width="24" height="4" rx="2" fill="#22c55e" opacity="0.7" />
+
+    {/* Hero banner */}
+    <rect x="130" y="112" width="214" height="56" rx="8" fill="#f0f9ff" stroke="#bae6fd" strokeWidth="0.8" />
+    <circle cx="164" cy="140" r="20" fill="#e0f2fe" stroke="#7dd3fc" strokeWidth="0.7" />
+    <circle cx="164" cy="140" r="11" fill="#bae6fd" />
+    <circle cx="164" cy="140" r="5" fill="#38bdf8" opacity="0.8" />
+    <rect x="194" y="120" width="96" height="7" rx="3" fill="#bae6fd" />
+    <rect x="194" y="132" width="72" height="5" rx="2" fill="#bae6fd" opacity="0.7" />
+    <rect x="194" y="142" width="54" height="5" rx="2" fill="#bae6fd" opacity="0.5" />
+    <rect x="194" y="153" width="42" height="10" rx="4" fill="#38bdf8" fillOpacity="0.2" stroke="#38bdf8" strokeWidth="0.7" />
+    <rect x="199" y="156" width="26" height="4" rx="2" fill="#0ea5e9" opacity="0.7" />
+
+    {/* Three content cards */}
+    <rect x="130" y="174" width="64" height="48" rx="6" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="0.8" />
+    <rect x="138" y="182" width="48" height="16" rx="4" fill="#e2e8f0" />
+    <rect x="138" y="202" width="38" height="4" rx="2" fill="#94a3b8" />
+    <rect x="138" y="209" width="28" height="4" rx="2" fill="#94a3b8" opacity="0.5" />
+
+    <rect x="203" y="174" width="64" height="48" rx="6" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="0.8" />
+    <rect x="211" y="182" width="48" height="16" rx="4" fill="#e2e8f0" />
+    <rect x="211" y="202" width="38" height="4" rx="2" fill="#94a3b8" />
+    <rect x="211" y="209" width="28" height="4" rx="2" fill="#94a3b8" opacity="0.5" />
+
+    <rect x="276" y="174" width="64" height="48" rx="6" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="0.8" />
+    <rect x="284" y="182" width="48" height="16" rx="4" fill="#e2e8f0" />
+    <rect x="284" y="202" width="38" height="4" rx="2" fill="#94a3b8" />
+    <rect x="284" y="209" width="28" height="4" rx="2" fill="#94a3b8" opacity="0.5" />
+
+    {/* Design cursor */}
+    <path d="M254 124 L250 152 L259 146 L265 162 L271 158 L265 142 L276 142 Z"
+      stroke="#475569" strokeWidth="1.3" strokeLinejoin="round"
+      fill="#ffffff" fillOpacity="0.7" />
+
+    {/* Mumbai badge */}
+    <rect x="140" y="264" width="90" height="24" rx="8" fill="#3b82f6" fillOpacity="0.1" stroke="#3b82f6" strokeWidth="1.1" />
+    <circle cx="156" cy="276" r="5" fill="#3b82f6" fillOpacity="0.2" stroke="#3b82f6" strokeWidth="1" />
+    <circle cx="156" cy="275" r="2.5" fill="#3b82f6" />
+    <line x1="156" y1="277" x2="156" y2="282" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round" />
+    <text x="198" y="280" textAnchor="middle" fontSize="10" fill="#3b82f6" fontFamily="sans-serif" fontWeight="500">Mumbai</text>
 
   </svg>
 );
@@ -184,7 +249,7 @@ const faqData = [
 const page = () => {
   return (
     <>
-       {/* <Hero
+      {/* <Hero
       title="Website Development Company in"
       highlight="Mumbai"
       subtext="Custom websites built for Mumbai businesses. React.js, Next.js, WordPress. Delivered on time. Priced fairly."
@@ -193,13 +258,13 @@ const page = () => {
       buttonText="Get Quote"
       buttonLink="#contact"
     /> */}
-    <Hero
-  title="Website Development Company in "
-  highlight="Mumbai"
-  subtext="Custom websites built for Mumbai businesses. React.js, Next.js, WordPress. Delivered on time. Priced fairly."
-  description="Looking for a reliable website development company in Mumbai? Nakshatra Namaha Creations (NNC) has been building high-performance websites for Mumbai businesses since 2015. From startups in Andheri to enterprises in BKC, we deliver websites that load fast, rank on Google, and convert visitors into paying customers."
-  svg={websiteDevSVG}
-/>
+      <Hero
+        title="Website Development Company in "
+        highlight="Mumbai"
+        subtext="Custom websites built for Mumbai businesses. React.js, Next.js, WordPress. Delivered on time. Priced fairly."
+        description="Looking for a reliable website development company in Mumbai? Nakshatra Namaha Creations (NNC) has been building high-performance websites for Mumbai businesses since 2015. From startups in Andheri to enterprises in BKC, we deliver websites that load fast, rank on Google, and convert visitors into paying customers."
+        svg={websiteDevSVG}
+      />
       <section id='Why_Us' className="Why_Us  w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
@@ -232,6 +297,31 @@ const page = () => {
         </div>
         <TackStack items={techStackData} />
       </section>
+      <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
+        <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
+
+          {/* LEFT: Heading */}
+          <h2 className="text-white text-left max-w-lg">
+            <span className="text-[var(--primary)]">Trusted </span>
+            by Businesses Across
+            <span className="text-[var(--primary)]"> Mumbai </span>
+            & <span className="text-[var(--primary)]"> Beyond </span>
+          </h2>
+
+          {/* RIGHT: Button */}
+          <a
+            href="https://www.google.com/maps/place/Nakshatra+Namaha+Creations+Private+Limited+%7C+Website+Development+Company+in+Mumbai/@19.2345775,68.3744923,7z/data=!4m10!1m2!2m1!1snakshatra+namaha+creations!3m6!1s0x3be7bb2a3d75529f:0x9a21f9c6add3f2aa!8m2!3d19.2345775!4d72.9887501!15sChpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc1ocIhpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc5IBEHdlYnNpdGVfZGVzaWduZXLgAQA!16s%2Fg%2F11yt9b9y2b?entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="primary-btn whitespace-nowrap px-6 py-3 rounded-xl"
+          >
+            View All on Google
+          </a>
+
+        </div>
+        <Testimonial CardColor="bg-white/10" ClintTextColor="text-[var(--primary)]" />
+      </section>
+
       <section id='FAQ' className="FAQ  w-full py-20 md:px-15 px-6 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
@@ -240,19 +330,19 @@ const page = () => {
           </h2>
 
         </div>
-        <FAQ data={faqData} qColor="bg-white/85"/>
+        <FAQ data={faqData} qColor="bg-white/85" />
       </section>
       <section id='CTA' className="CTA  w-full pb-20 pt-10 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center">
-           Ready to  <span className="text-[var(--primary)]">launch  </span>your new website in <span className="text-[var(--primary)]"> Mumbai </span>?
+            Ready to  <span className="text-[var(--primary)]">launch  </span>your new website in <span className="text-[var(--primary)]"> Mumbai </span>?
           </h2>
 
         </div>
-         <CTA />
+        <CTA />
       </section>
-     
+
 
     </>
   )

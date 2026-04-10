@@ -6,37 +6,66 @@ import MobileAppCTA from '@/components/software-development-company-thane-mumbai
 import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import ServicesLayout from '@/components/ClickCard';
+import Testimonial from '@/components/Testimonial';
 
 const softwareDevSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
-    {/* Main App Window */}
-    <rect x="60" y="50" width="280" height="180" rx="12" stroke="white" strokeOpacity="0.4" />
+    {/* Decorative Rings */}
+    <circle cx="44" cy="234" r="22" stroke="#334155"/>
+    <circle cx="362" cy="68" r="26" stroke="#334155"/>
 
-    {/* Top Bar */}
-    <rect x="60" y="50" width="280" height="30" rx="12" fill="white" fillOpacity="0.05" />
+    {/* Main Dashboard */}
+    <rect x="54" y="44" width="292" height="208" rx="13" fill="#0f172a" stroke="#334155"/>
+    <rect x="54" y="44" width="292" height="34" rx="13" fill="#1e293b"/>
 
-    {/* Code Symbols */}
-    <text x="100" y="140" fill="white" fillOpacity="0.3" fontSize="28" fontFamily="monospace">
-      {"< />"}
+    {/* Top Dots */}
+    <circle cx="76" cy="61" r="5" fill="#ef4444"/>
+    <circle cx="94" cy="61" r="5" fill="#f59e0b"/>
+    <circle cx="112" cy="61" r="5" fill="#22c55e"/>
+
+    {/* Code Area (Left) */}
+    <rect x="70" y="90" width="120" height="120" rx="10" fill="#1e293b" stroke="#334155"/>
+
+    <text x="85" y="130" fill="#94a3b8" fontSize="18" fontFamily="monospace">
+      {"<code>"}
+    </text>
+    <text x="85" y="155" fill="#64748b" fontSize="12" fontFamily="monospace">
+      {"function() {"}
+    </text>
+    <text x="85" y="175" fill="#64748b" fontSize="12" fontFamily="monospace">
+      {"  return app"}
+    </text>
+    <text x="85" y="195" fill="#64748b" fontSize="12" fontFamily="monospace">
+      {"}"}
     </text>
 
-    {/* UI Blocks */}
-    <rect x="160" y="110" width="140" height="20" rx="4" fill="white" fillOpacity="0.1" />
-    <rect x="160" y="140" width="120" height="20" rx="4" fill="white" fillOpacity="0.08" />
-    <rect x="160" y="170" width="100" height="20" rx="4" fill="white" fillOpacity="0.08" />
+    {/* UI Panel (Right - Frontend) */}
+    <rect x="210" y="90" width="110" height="120" rx="10" fill="#1e293b" stroke="#334155"/>
 
-    {/* Database Icon */}
-    <ellipse cx="110" cy="190" rx="25" ry="10" stroke="white" strokeOpacity="0.3" />
-    <path d="M85 190 V210 C85 215 135 215 135 210 V190" stroke="white" strokeOpacity="0.3" />
-    <ellipse cx="110" cy="210" rx="25" ry="10" stroke="white" strokeOpacity="0.3" />
+    <rect x="225" y="110" width="80" height="20" rx="5" fill="#334155"/>
+    <rect x="225" y="140" width="70" height="15" rx="4" fill="#475569"/>
+    <rect x="225" y="160" width="60" height="15" rx="4" fill="#475569"/>
 
-    {/* Connection Lines */}
-    <line x1="135" y1="190" x2="160" y2="150" stroke="white" strokeOpacity="0.2" strokeDasharray="4 4" />
+    {/* CTA Button */}
+    <rect x="225" y="185" width="65" height="16" rx="5" fill="#38bdf8" opacity="0.7"/>
 
-    {/* Floating Elements */}
-    <circle cx="40" cy="230" r="18" stroke="white" strokeOpacity="0.1" />
-    <circle cx="360" cy="60" r="22" stroke="white" strokeOpacity="0.1" />
+    {/* Database (Bottom Center) */}
+    <ellipse cx="200" cy="215" rx="30" ry="10" fill="#1e293b" stroke="#475569"/>
+    <path d="M170 215 V235 C170 240 230 240 230 235 V215" stroke="#475569"/>
+    <ellipse cx="200" cy="235" rx="30" ry="10" fill="#1e293b" stroke="#475569"/>
+
+    {/* Connections */}
+    <line x1="130" y1="210" x2="180" y2="215" stroke="#475569" strokeDasharray="4 4"/>
+    <line x1="260" y1="210" x2="220" y2="215" stroke="#475569" strokeDasharray="4 4"/>
+
+    {/* API / System Node */}
+    <circle cx="200" cy="150" r="10" fill="#22c55e" opacity="0.7"/>
+    <line x1="200" y1="160" x2="200" y2="205" stroke="#22c55e" strokeOpacity="0.5"/>
+
+    {/* Floating System Elements */}
+    <circle cx="90" cy="250" r="18" stroke="#334155" />
+    <circle cx="320" cy="250" r="20" stroke="#334155" />
 
   </svg>
 );
@@ -216,22 +245,46 @@ const page = () => {
         </div>
         <CardList cards={cardData} />
       </section>
-      <section id='why-local-matters' className='bg-gradient-to-b from-[var(--secondary)]/5 to-transparent pt-15 '>
+      <section id='why-local-matters' className='bg-gradient-to-r from-[#041027] to-[#0c245a]
+'>
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center text-gray-900 md:px-15 px-6">Why Choosing a 
+          <h2 className="pt-15 text-center text-white md:px-15 px-6">Why Choosing a 
             <span className="text-[var(--primary)]"> Local   </span>Thane  <span className="text-[var(--primary)]"> Software Company  </span>  Matters
           </h2>
 
         </div>
-        <ServicesLayout servicesData={LocalBenefits} color="bg-[var(--primary)]" TextColor="black"/>
+        <ServicesLayout servicesData={LocalBenefits} color="bg-[var(--primary)]" TextColor="white"/>
       </section>
 
 
 
 
 
+<section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
+        <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
 
+          {/* LEFT: Heading */}
+          <h2 className="text-white text-left max-w-lg">
+            <span className="text-[var(--primary)]">Trusted </span>
+            by Businesses Across
+            <span className="text-[var(--primary)]"> Mumbai </span>
+            & <span className="text-[var(--primary)]"> Beyond </span>
+          </h2>
+
+          {/* RIGHT: Button */}
+          <a
+            href="https://www.google.com/maps/place/Nakshatra+Namaha+Creations+Private+Limited+%7C+Website+Development+Company+in+Mumbai/@19.2345775,68.3744923,7z/data=!4m10!1m2!2m1!1snakshatra+namaha+creations!3m6!1s0x3be7bb2a3d75529f:0x9a21f9c6add3f2aa!8m2!3d19.2345775!4d72.9887501!15sChpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc1ocIhpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc5IBEHdlYnNpdGVfZGVzaWduZXLgAQA!16s%2Fg%2F11yt9b9y2b?entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="primary-btn whitespace-nowrap px-6 py-3 rounded-xl"
+          >
+            View All on Google
+          </a>
+
+        </div>
+        <Testimonial CardColor="bg-white/10" ClintTextColor="text-[var(--primary)]" />
+      </section>
       <section id='FAQ' className="FAQ scroll-mt-10 w-full py-15 md:px-15 px-6 ">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
@@ -240,12 +293,13 @@ const page = () => {
           </h2>
 
         </div>
-        <FAQ data={faqData} />
+        <FAQ data={faqData} qColor="bg-gradient-to-r from-[#041027] to-[var(--primary)]" qTextColor="text-white" />
       </section>
-      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 px-6 md:px-15">
+      <section id='CTA' className="CTA scroll-mt-10 w-full pb-20 pt-10 px-6 md:px-15 bg-gradient-to-r from-[#041027] to-[#0c245a]
+">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center">Let's 
+          <h2 className="mb-10 text-center text-white">Let's 
             <span className="text-[var(--primary)]"> build   </span>something great for your    <span className="text-[var(--primary)]">Mumbai  </span>business.
           </h2>
 

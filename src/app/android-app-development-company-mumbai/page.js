@@ -5,34 +5,85 @@ import MobileAppCTA from '@/components/android-app-development-company-mumbai/CT
 import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import MobileAppCTA_React_Native from '@/components/React Native App Development in Mumbai/CTA';
+import Testimonial from '@/components/Testimonial';
 
 const androidSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
-    {/* Phone Body */}
-    <rect x="140" y="40" width="120" height="220" rx="16" stroke="white" strokeOpacity="0.4" />
+    {/* Decorative Rings */}
+    <circle cx="44" cy="234" r="22" stroke="#334155" />
+    <circle cx="362" cy="68" r="26" stroke="#334155" />
+
+    {/* Dashboard Frame */}
+    <rect x="54" y="44" width="292" height="208" rx="13" fill="#0f172a" stroke="#334155"/>
+    <rect x="54" y="44" width="292" height="34" rx="13" fill="#1e293b"/>
+
+    {/* Top Dots */}
+    <circle cx="76" cy="61" r="5" fill="#ef4444"/>
+    <circle cx="94" cy="61" r="5" fill="#f59e0b"/>
+    <circle cx="112" cy="61" r="5" fill="#22c55e"/>
+
+    {/* Phone Body (Center) */}
+    <rect
+      x="160"
+      y="70"
+      width="80"
+      height="160"
+      rx="14"
+      fill="#1e293b"
+      stroke="#475569"
+    />
 
     {/* Screen */}
-    <rect x="150" y="70" width="100" height="150" rx="6" fill="white" fillOpacity="0.05" />
+    <rect
+      x="168"
+      y="90"
+      width="64"
+      height="120"
+      rx="8"
+      fill="#0f172a"
+    />
 
-    {/* Android Head */}
-    <rect x="175" y="85" width="50" height="30" rx="10" fill="white" fillOpacity="0.15" />
-    <line x1="185" y1="80" x2="175" y2="65" stroke="white" strokeOpacity="0.3" strokeWidth="2" />
-    <line x1="215" y1="80" x2="225" y2="65" stroke="white" strokeOpacity="0.3" strokeWidth="2" />
-    <circle cx="190" cy="98" r="2" fill="white" />
-    <circle cx="210" cy="98" r="2" fill="white" />
+    {/* Android Head (Top of screen) */}
+    <rect x="185" y="95" width="30" height="18" rx="6" fill="#22c55e" opacity="0.8"/>
+    <line x1="190" y1="92" x2="185" y2="80" stroke="#22c55e" strokeWidth="1.5"/>
+    <line x1="210" y1="92" x2="215" y2="80" stroke="#22c55e" strokeWidth="1.5"/>
+    <circle cx="195" cy="103" r="1.5" fill="#0f172a"/>
+    <circle cx="205" cy="103" r="1.5" fill="#0f172a"/>
 
     {/* App UI Blocks */}
-    <rect x="165" y="130" width="70" height="12" rx="3" fill="white" fillOpacity="0.1" />
-    <rect x="165" y="150" width="60" height="12" rx="3" fill="white" fillOpacity="0.08" />
-    <rect x="165" y="170" width="50" height="12" rx="3" fill="white" fillOpacity="0.08" />
+    <rect x="175" y="125" width="50" height="10" rx="4" fill="#334155"/>
+    <rect x="175" y="140" width="45" height="10" rx="4" fill="#334155"/>
+    <rect x="175" y="155" width="40" height="10" rx="4" fill="#334155"/>
 
-    {/* Play Button */}
-    <polygon points="195,200 225,215 195,230" fill="white" fillOpacity="0.2" />
+    {/* CTA Button */}
+    <rect
+      x="175"
+      y="175"
+      width="50"
+      height="14"
+      rx="5"
+      fill="#22c55e"
+      opacity="0.8"
+    />
 
-    {/* Floating Circles */}
-    <circle cx="100" cy="240" r="20" stroke="white" strokeOpacity="0.1" />
-    <circle cx="320" cy="60" r="25" stroke="white" strokeOpacity="0.1" />
+    {/* Dev Connection Lines */}
+    <line x1="120" y1="150" x2="160" y2="150" stroke="#475569" strokeDasharray="4 4"/>
+    <line x1="240" y1="150" x2="280" y2="150" stroke="#475569" strokeDasharray="4 4"/>
+
+    {/* Left Code Block */}
+    <rect x="100" y="130" width="20" height="40" rx="4" fill="#334155"/>
+    <text x="103" y="155" fill="#94a3b8" fontSize="10" fontFamily="monospace">
+      {}
+    </text>
+
+    {/* Right Settings / Build */}
+    <circle cx="300" cy="150" r="12" fill="#1e293b" stroke="#475569"/>
+    <circle cx="300" cy="150" r="5" fill="#22c55e" opacity="0.6"/>
+
+    {/* Floating Elements */}
+    <circle cx="80" cy="250" r="18" stroke="#334155" />
+    <circle cx="330" cy="250" r="20" stroke="#334155" />
 
   </svg>
 );
@@ -175,7 +226,30 @@ const page = () => {
       </section>
 
       
+      <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
+              <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
       
+                {/* LEFT: Heading */}
+                <h2 className="text-white text-left max-w-lg">
+                  <span className="text-[var(--primary)]">Trusted </span>
+                  by Businesses Across
+                  <span className="text-[var(--primary)]"> Mumbai </span>
+                  & <span className="text-[var(--primary)]"> Beyond </span>
+                </h2>
+      
+                {/* RIGHT: Button */}
+                <a
+                  href="https://www.google.com/maps/place/Nakshatra+Namaha+Creations+Private+Limited+%7C+Website+Development+Company+in+Mumbai/@19.2345775,68.3744923,7z/data=!4m10!1m2!2m1!1snakshatra+namaha+creations!3m6!1s0x3be7bb2a3d75529f:0x9a21f9c6add3f2aa!8m2!3d19.2345775!4d72.9887501!15sChpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc1ocIhpuYWtzaGF0cmEgbmFtYWhhIGNyZWF0aW9uc5IBEHdlYnNpdGVfZGVzaWduZXLgAQA!16s%2Fg%2F11yt9b9y2b?entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="primary-btn whitespace-nowrap px-6 py-3 rounded-xl"
+                >
+                  View All on Google
+                </a>
+      
+              </div>
+              <Testimonial CardColor="bg-white/10" ClintTextColor="text-[var(--primary)]" />
+            </section>
       <section id='FAQ' className="FAQ  w-full py-20 md:px-15 px-6 ">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
