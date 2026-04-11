@@ -6,6 +6,8 @@ import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import MobileAppCTA_React_Native from '@/components/React Native App Development in Mumbai/CTA';
 import Testimonial from '@/components/Testimonial';
+import InfiniteLogoCarousel from '@/components/BrandLogo';
+import CaseStudyGrid from '@/components/CaseStudy';
 
 const androidSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
@@ -199,7 +201,7 @@ const page = () => {
   title="Android App Development Company in "
   highlight="Mumbai"
   subtext="High-performance Android apps built for speed, scalability, and real user engagement across Mumbai’s fast-growing digital market."
-  description="India has 750 million Android users. If your business doesn't have an Android app, you're invisible to most of the market. NNC is a trusted Android app development company in Mumbai with 80+ apps built and live on the Play Store. From simple utility apps to complex enterprise solutions, we build Android apps that users actually stick to."
+  description="India has 750 million Android users. If your business doesn't have an Android app, you're invisible to most of the market. NNC is a trusted Android app development company in Mumbai with 80+ apps built and live on the Play Store, serving businesses across Andheri, Mumbai, BKC, Mumbai, and Thane, Mumbai. From simple utility apps to complex enterprise solutions, we build Android apps that users actually stick to."
   svg={androidSVG}
 />
      <section id='what-we-build' className="what-we-build  w-full py-20 md:px-15 px-6">
@@ -224,6 +226,8 @@ const page = () => {
         </div>
         <Process processSteps={processSteps} />
       </section>
+      <CaseStudyGrid />
+       <InfiniteLogoCarousel />
 
       
       <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">

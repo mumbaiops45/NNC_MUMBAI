@@ -16,13 +16,21 @@ export default function Layout({ children }) {
         name: "NNC Digital",
         url: "https://nncmumbai1.netlify.app/website-development-company-mumbai",
         telephone: "+91 99005 66466",
+        email: "info@nakshatranamahacreations.com",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Thane West",
           addressRegion: "Mumbai",
           addressCountry: "India",
         },
+        openingHours: "Mo-Sa 10:00-19:00",
+        sameAs: [
+          "https://www.facebook.com/",
+          "https://www.instagram.com/",
+          "https://www.linkedin.com/"
+        ]
       },
+
       {
         "@type": "Service",
         name: "Website Development Company in Mumbai",
@@ -35,8 +43,48 @@ export default function Layout({ children }) {
           name: "Mumbai",
         },
         description:
-          "Custom websites built for Mumbai businesses using React.js, Next.js, and WordPress. Fast, scalable, and SEO-ready.",
+          "Custom website development services in Mumbai including corporate websites, e-commerce platforms, real estate portals, and web applications using React.js, Next.js, Node.js, and WordPress. SEO-ready, fast, and scalable solutions for businesses.",
+
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Website Development Services",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name: "Corporate website development" }
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name: "E-commerce website development" }
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name: "Real estate portal development" }
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name: "Healthcare website development" }
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name: "Landing page design and development" }
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name: "WordPress and CMS development" }
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name: "Custom web application development" }
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name: "Website redesign and revamp" }
+            }
+          ]
+        }
       },
+
       {
         "@type": "FAQPage",
         mainEntity: [

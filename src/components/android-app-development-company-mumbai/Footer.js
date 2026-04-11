@@ -9,14 +9,13 @@ export default function Footer() {
   const pathname = usePathname();
 
   // ✅ Navbar Links
- const menuItems = [
-    { name: "HOME", path: "/website-development-company-mumbai" },
-    { name: "Why NNC", path: "#Why_Us" },
-    { name: "Services", path: "#Services" },
-    { name: "Tech Stack", path: "#Tech_Stack" },
-    { name: "FAQ", path: "#FAQ" },
-    
-  ];
+const menuItems = [
+  { name: "HOME", path: "/android-app-development-company-mumbai" },
+  { name: "What We Build", path: "#what-we-build" },
+  { name: "Our Process ", path: "#process" },
+  { name: "FAQ", path: "#FAQ" },
+  
+];
 
   // ✅ Services (SEO Optimized Names + Slugs)
   const services = [
@@ -140,7 +139,7 @@ export default function Footer() {
           </ul>
 
           {/* Social Icons */}
-         <div className="mt-8 flex gap-3">
+          <div className="mt-8 flex gap-3">
   <a
     href="https://www.facebook.com/Nakshatranamahacreations/"
     target="_blank"
@@ -185,7 +184,9 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-8 py-5 flex flex-col sm:flex-row justify-between items-center text-sm text-white/70">
 
           <div>
-            © {new Date().getFullYear()} NNC. All Rights Reserved.
+            © {new Date().getFullYear()}  Nakshatra Namaha Creations Pvt. Ltd.. All rights reserved. CIN: U74999KA2015PTC082563
+
+
           </div>
 
           <Link

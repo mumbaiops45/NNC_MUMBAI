@@ -1,5 +1,5 @@
 import Navbar from "@/components/Mobile App Development Company in Mumbai/Navbar";
-import Footer from "@/components/Website Development Company in Mumbai/Footer";
+import Footer from "@/components/Mobile App Development Company in Mumbai/Footer";
 
 export const metadata = {
   title: "Mobile App Development Company in Mumbai | NNC Digital",

@@ -6,6 +6,8 @@ import TackStack from '@/components/TechStack';
 import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/crm-development-company-mumbai/CTA';
 import Testimonial from '@/components/Testimonial';
+import InfiniteLogoCarousel from '@/components/BrandLogo';
+import CaseStudyGrid from '@/components/CaseStudy';
 
 const crmSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
@@ -265,7 +267,7 @@ const page = () => {
   title="CRM Development Company in "
   highlight="Mumbai"
   subtext="Build tailor-made CRM solutions to streamline your sales, automate workflows, and boost team productivity."
-  description="A generic CRM forces your team to adapt to the software. A custom CRM is built to match how your business actually works. NNC builds bespoke CRM systems for Mumbai businesses across real estate, healthcare, logistics, legal, and service industries. Built on React.js + Node.js + MongoDB for speed, scale, and flexibility."
+  description="A generic CRM forces your team to adapt to the software. A custom CRM is built to match how your business actually works. NNC builds bespoke CRM systems for Mumbai businesses across Andheri, Mumbai, BKC, Mumbai, and Thane, Mumbai, serving industries like real estate, healthcare, logistics, legal, and services. Built on React.js + Node.js + MongoDB for speed, scale, and flexibility."
   svg={crmSVG}
 />
       <section id='crm-we-build' className="Why_Us scroll-mt-10 w-full py-20 md:px-15 px-6">
@@ -289,6 +291,8 @@ const page = () => {
         </div>
         <TackStack items={techStackData} hColor='text-white' />
       </section>
+      <CaseStudyGrid />
+       <InfiniteLogoCarousel />
       <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
               <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
       

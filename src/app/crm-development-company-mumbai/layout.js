@@ -1,5 +1,5 @@
 import Navbar from "@/components/crm-development-company-mumbai/Navbar";
-import Footer from "@/components/Website Development Company in Mumbai/Footer";
+import Footer from "@/components/crm-development-company-mumbai/Footer";
 
 export const metadata = {
   title: "Custom CRM Development Company in Mumbai | NNC Digital",

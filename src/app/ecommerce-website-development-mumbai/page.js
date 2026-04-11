@@ -7,6 +7,8 @@ import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import ServicesLayout from '@/components/ClickCard';
 import Testimonial from '@/components/Testimonial';
+import InfiniteLogoCarousel from '@/components/BrandLogo';
+import CaseStudyGrid from '@/components/CaseStudy';
 
 const ecommerceSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
@@ -216,7 +218,7 @@ const page = () => {
   title="E-commerce Website Development in "
   highlight="Mumbai"
   subtext="We create scalable e-commerce platforms that help Mumbai businesses sell smarter, reach wider audiences, and grow revenue with ease."
-  description="Mumbai is one of India's largest retail markets. If your products aren't online yet, you're leaving serious money on the table. NNC builds e-commerce websites in Mumbai that are fast, mobile-first, and optimised for conversions. From catalogue sites to full marketplace platforms, we handle it all."
+  description="Mumbai is one of India's largest retail markets. If your products aren't online yet, you're leaving serious money on the table. NNC builds e-commerce websites in Mumbai that are fast, mobile-first, and optimised for conversions across Andheri, Mumbai, BKC, Mumbai, and Thane, Mumbai. From catalogue sites to full marketplace platforms, we handle it all."
   svg={ecommerceSVG}
 />
 
@@ -240,6 +242,8 @@ const page = () => {
         </div>
         <ServicesLayout servicesData={servicesData} reverse={true} color="bg-[var(--primary)]" TextColor="white"/>
       </section>
+      <CaseStudyGrid />
+       <InfiniteLogoCarousel />
 
 
 <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">

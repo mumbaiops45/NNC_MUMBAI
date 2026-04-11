@@ -39,7 +39,7 @@ const testimonialsArray = [
 const metricDefinitions = [
   { id: "rating", label: "Rating", value: 5, suffix: "" },
   { id: "reviews", label: "Verified Reviews", value: 7, suffix: "" },
-  { id: "projects", label: "Projects Delivered ", value: 565, suffix: "+" },
+  { id: "projects", label: "Projects Delivered from All branches ", value: 565, suffix: "+" },
   { id: "years", label: "Years Operating", value: 8, suffix: "+" },
 ];
 
@@ -48,20 +48,25 @@ const metricDefinitions = [
 // ==========================================
 export default function Testimonial({CardColor,ClintTextColor}) {
   return (
-    <section className="text-white py-16 px-6 md:px-10 lg:px-15 font-sans">
-      <div className=" mx-auto">
+    <section className="text-white">
+      <div className="mx-auto">
 
         {/* Metrics */}
         <div className={`${CardColor}  border border-gray-800 rounded-2xl p-8 md:p-10 mb-12 shadow-xl flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4 text-center md:text-left`}>
           {metricDefinitions.map((metric) => (
             <div key={metric.id} className="flex-1 px-4 border-gray-800 last:border-0 md:border-r md:last:border-0 w-full md:w-auto">
-              <div className="text-6xl font-extrabold tracking-tighter text-white mb-2">
+              <div className="flex justify-center">
+                <div className="text-5xl font-extrabold tracking-tighter text-white mb-2">
                 {metric.id === "rating" ? metric.value.toFixed(1) : metric.value}
                 <span className="text-4xl font-bold text-gray-500">{metric.suffix}</span>
               </div>
-              <p className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
+              </div>
+              <div className="flex justify-center">
+                <p className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
                 {metric.label}
               </p>
+              </div>
+              
             </div>
           ))}
         </div>
@@ -91,8 +96,8 @@ export default function Testimonial({CardColor,ClintTextColor}) {
               </div>
 
               {/* Quote */}
-              <blockquote className="text-lg leading-relaxed text-gray-100 font-medium mb-10 flex-grow relative">
-                <span className="absolute -top-4 -left-3 text-7xl text-gray-800 font-serif opacity-40">“</span>
+              <blockquote className=" leading-relaxed text-gray-100 font-medium mb-10 flex-grow relative">
+                <span className="absolute -top-4 -left-3 text-7xl text-gray-800  opacity-40">“</span>
                 <span className="relative z-10">{testimonial.quote}</span>
               </blockquote>
 

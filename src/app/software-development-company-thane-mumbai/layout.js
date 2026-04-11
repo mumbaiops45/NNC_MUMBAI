@@ -1,5 +1,5 @@
 import Navbar from "@/components/software-development-company-thane-mumbai/Navbar";
-import Footer from "@/components/Website Development Company in Mumbai/Footer";
+import Footer from "@/components/software-development-company-thane-mumbai/Footer";
 
 export const metadata = {
   title: "Software Development Company in Thane Mumbai | NNC Digital",

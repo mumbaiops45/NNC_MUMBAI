@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 
-const ServicesLayout = ({ servicesData, reverse = false, color,TextColor }) => {
+const ServicesLayout = ({ servicesData, reverse = false, color, TextColor }) => {
     const [Active, setActive] = useState(
         servicesData[0]?.title
     );
@@ -22,11 +22,11 @@ const ServicesLayout = ({ servicesData, reverse = false, color,TextColor }) => {
                 {/* LEFT SIDEBAR */}
                 <div className={`flex flex-col gap-4 h-full ${reverse ? "md:order-2" : "md:order-1"}`}>
                     {servicesData.map((service) => (
-                        <div key={service.id} className=" flex-1">
+                        <div key={service.id} className=" md:flex-1">
                             <div
 
                                 onClick={() => setActive(service.title)}
-                                className={`h-full flex items-center cursor-pointer border rounded-xl p-4 transition ${Active === service.title
+                                className={`md:h-full flex items-center cursor-pointer border rounded-xl p-4 transition ${Active === service.title
                                     ? `${color} text-white shadow-md`
                                     : "bg-white border-gray-200 hover:shadow-md"
                                     }`}
@@ -100,7 +100,7 @@ const ServicesLayout = ({ servicesData, reverse = false, color,TextColor }) => {
                                     <div key={i} className="flex flex-col  items-center gap-6  rounded-xl p-6 hover:shadow-md transition">
 
                                         {/* LEFT IMAGE */}
-                                        <div className="w-full md:w-1/3 relative h-64">
+                                        <div className="w-full md:w-1/2 relative h-64">
                                             <Image
                                                 src={item.img}
                                                 alt="Service Image"

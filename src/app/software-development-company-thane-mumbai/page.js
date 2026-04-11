@@ -7,25 +7,27 @@ import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import ServicesLayout from '@/components/ClickCard';
 import Testimonial from '@/components/Testimonial';
+import InfiniteLogoCarousel from '@/components/BrandLogo';
+import CaseStudyGrid from '@/components/CaseStudy';
 
 const softwareDevSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
     {/* Decorative Rings */}
-    <circle cx="44" cy="234" r="22" stroke="#334155"/>
-    <circle cx="362" cy="68" r="26" stroke="#334155"/>
+    <circle cx="44" cy="234" r="22" stroke="#334155" />
+    <circle cx="362" cy="68" r="26" stroke="#334155" />
 
     {/* Main Dashboard */}
-    <rect x="54" y="44" width="292" height="208" rx="13" fill="#0f172a" stroke="#334155"/>
-    <rect x="54" y="44" width="292" height="34" rx="13" fill="#1e293b"/>
+    <rect x="54" y="44" width="292" height="208" rx="13" fill="#0f172a" stroke="#334155" />
+    <rect x="54" y="44" width="292" height="34" rx="13" fill="#1e293b" />
 
     {/* Top Dots */}
-    <circle cx="76" cy="61" r="5" fill="#ef4444"/>
-    <circle cx="94" cy="61" r="5" fill="#f59e0b"/>
-    <circle cx="112" cy="61" r="5" fill="#22c55e"/>
+    <circle cx="76" cy="61" r="5" fill="#ef4444" />
+    <circle cx="94" cy="61" r="5" fill="#f59e0b" />
+    <circle cx="112" cy="61" r="5" fill="#22c55e" />
 
     {/* Code Area (Left) */}
-    <rect x="70" y="90" width="120" height="120" rx="10" fill="#1e293b" stroke="#334155"/>
+    <rect x="70" y="90" width="120" height="120" rx="10" fill="#1e293b" stroke="#334155" />
 
     <text x="85" y="130" fill="#94a3b8" fontSize="18" fontFamily="monospace">
       {"<code>"}
@@ -41,27 +43,27 @@ const softwareDevSVG = (
     </text>
 
     {/* UI Panel (Right - Frontend) */}
-    <rect x="210" y="90" width="110" height="120" rx="10" fill="#1e293b" stroke="#334155"/>
+    <rect x="210" y="90" width="110" height="120" rx="10" fill="#1e293b" stroke="#334155" />
 
-    <rect x="225" y="110" width="80" height="20" rx="5" fill="#334155"/>
-    <rect x="225" y="140" width="70" height="15" rx="4" fill="#475569"/>
-    <rect x="225" y="160" width="60" height="15" rx="4" fill="#475569"/>
+    <rect x="225" y="110" width="80" height="20" rx="5" fill="#334155" />
+    <rect x="225" y="140" width="70" height="15" rx="4" fill="#475569" />
+    <rect x="225" y="160" width="60" height="15" rx="4" fill="#475569" />
 
     {/* CTA Button */}
-    <rect x="225" y="185" width="65" height="16" rx="5" fill="#38bdf8" opacity="0.7"/>
+    <rect x="225" y="185" width="65" height="16" rx="5" fill="#38bdf8" opacity="0.7" />
 
     {/* Database (Bottom Center) */}
-    <ellipse cx="200" cy="215" rx="30" ry="10" fill="#1e293b" stroke="#475569"/>
-    <path d="M170 215 V235 C170 240 230 240 230 235 V215" stroke="#475569"/>
-    <ellipse cx="200" cy="235" rx="30" ry="10" fill="#1e293b" stroke="#475569"/>
+    <ellipse cx="200" cy="215" rx="30" ry="10" fill="#1e293b" stroke="#475569" />
+    <path d="M170 215 V235 C170 240 230 240 230 235 V215" stroke="#475569" />
+    <ellipse cx="200" cy="235" rx="30" ry="10" fill="#1e293b" stroke="#475569" />
 
     {/* Connections */}
-    <line x1="130" y1="210" x2="180" y2="215" stroke="#475569" strokeDasharray="4 4"/>
-    <line x1="260" y1="210" x2="220" y2="215" stroke="#475569" strokeDasharray="4 4"/>
+    <line x1="130" y1="210" x2="180" y2="215" stroke="#475569" strokeDasharray="4 4" />
+    <line x1="260" y1="210" x2="220" y2="215" stroke="#475569" strokeDasharray="4 4" />
 
     {/* API / System Node */}
-    <circle cx="200" cy="150" r="10" fill="#22c55e" opacity="0.7"/>
-    <line x1="200" y1="160" x2="200" y2="205" stroke="#22c55e" strokeOpacity="0.5"/>
+    <circle cx="200" cy="150" r="10" fill="#22c55e" opacity="0.7" />
+    <line x1="200" y1="160" x2="200" y2="205" stroke="#22c55e" strokeOpacity="0.5" />
 
     {/* Floating System Elements */}
     <circle cx="90" cy="250" r="18" stroke="#334155" />
@@ -128,7 +130,7 @@ const LocalBenefits = [
     items: [
       {
         name: "Available for onsite visits for enterprise clients",
-        img: "/E-commerce Website Development in Mumbai/Inventory and Order Management Panel.webp",
+        img: "/software-development-company-thane-mumbai/Available for onsite visits for enterprise clients.png",
         heading: "Available for onsite visits for enterprise clients",
         discription:
           "For enterprise-level projects, we provide onsite visits to understand workflows, integrate systems efficiently, and ensure seamless implementation.",
@@ -141,7 +143,7 @@ const LocalBenefits = [
     items: [
       {
         name: "Local invoice and GST billing from Mumbai branch",
-        img: "/E-commerce Website Development in Mumbai/GST-Compliant Invoicing.png",
+        img: "/software-development-company-thane-mumbai/Local invoice and GST billing from Mumbai branch.png",
         heading: "Local invoice and GST billing from Mumbai branch",
         discription:
           "We provide proper GST-compliant invoicing from our Mumbai branch, ensuring transparency, easy accounting, and compliance with Indian tax regulations.",
@@ -228,40 +230,41 @@ const page = () => {
         buttonLink="#contact"
       /> */}
       <Hero
-  title="Software Development Company in "
-  highlight="Thane, Mumbai"
-  subtext="Building scalable, secure, and high-performance software solutions tailored for businesses in Thane and across Mumbai."
-  description="NNC's Mumbai branch is based in Thane West, making us one of the most accessible software development companies in the Thane and Greater Mumbai area. Whether you need a web application, mobile app, CRM, or custom business software, our Thane team is available for face-to-face meetings, discovery sessions, and ongoing project reviews."
-  svg={softwareDevSVG}
-/>
+        title="Software Development Company in "
+        highlight="Thane, Mumbai"
+        subtext="Building scalable, secure, and high-performance software solutions tailored for businesses in Thane and across Mumbai."
+        description="NNC's Mumbai branch is based in Thane West, Mumbai, making us one of the most accessible software development companies serving Thane, Mumbai, Andheri, Mumbai, and BKC, Mumbai. Whether you need a web application, mobile app, CRM, or custom business software, our Thane team is available for face-to-face meetings, discovery sessions, and ongoing project reviews."
+        svg={softwareDevSVG}
+      />
 
       <section id='Services' className="Services  w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">
-            <span className="text-[var(--primary)]"> Software Development   </span>  Services from Our <span className="text-[var(--primary)]"> Thane, Mumbai   </span>Office 
+            <span className="text-[var(--primary)]"> Software Development   </span>  Services from Our <span className="text-[var(--primary)]"> Thane, Mumbai   </span>Office
           </h2>
 
         </div>
         <CardList cards={cardData} />
       </section>
-      <section id='why-local-matters' className='bg-gradient-to-r from-[#041027] to-[#0c245a]
-'>
+      <section id='why-local-matters' className='bg-gradient-to-r from-[#041027] to-[#0c245a]'>
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="pt-15 text-center text-white md:px-15 px-6">Why Choosing a 
+          <h2 className="pt-15 text-center text-white md:px-15 px-6">Why Choosing a
             <span className="text-[var(--primary)]"> Local   </span>Thane  <span className="text-[var(--primary)]"> Software Company  </span>  Matters
           </h2>
 
         </div>
-        <ServicesLayout servicesData={LocalBenefits} color="bg-[var(--primary)]" TextColor="white"/>
+        <ServicesLayout servicesData={LocalBenefits} color="bg-[var(--primary)]" TextColor="white" />
       </section>
+      <CaseStudyGrid />
+      <InfiniteLogoCarousel />
 
 
 
 
 
-<section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
+      <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
         <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
 
           {/* LEFT: Heading */}
@@ -299,7 +302,7 @@ const page = () => {
 ">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
-          <h2 className="mb-10 text-center text-white">Let's 
+          <h2 className="mb-10 text-center text-white">Let's
             <span className="text-[var(--primary)]"> build   </span>something great for your    <span className="text-[var(--primary)]">Mumbai  </span>business.
           </h2>
 

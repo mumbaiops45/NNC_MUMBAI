@@ -6,6 +6,8 @@ import TackStack from '@/components/TechStack';
 import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/custom-web-development-mumbai/CTA';
 import Testimonial from '@/components/Testimonial';
+import InfiniteLogoCarousel from '@/components/BrandLogo';
+import CaseStudyGrid from '@/components/CaseStudy';
 const customWebSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
@@ -245,17 +247,19 @@ const page = () => {
           </h2>
 
         </div>
-        <h3 className='text-[var(--secondary)] py-2  border-l-4 border-[var(--secondary)] pl-4'>Frontend</h3>
+        <h3 className='text-[var(--primary)] py-2  border-l-4 border-[var(--primary)] pl-4'>Frontend</h3>
         <TackStack items={techStackData1} hColor="text-white" />
-        <h3 className='text-[var(--secondary)] py-2  border-l-4 border-[var(--secondary)] pl-4'>Backend</h3>
+        <h3 className='text-[var(--primary)] py-2  border-l-4 border-[var(--primary)] pl-4'>Backend</h3>
         <TackStack items={techStackData2} hColor="text-white" />
-        <h3 className='text-[var(--secondary)] py-2  border-l-4 border-[var(--secondary)] pl-4'>Database</h3>
+        <h3 className='text-[var(--primary)] py-2  border-l-4 border-[var(--primary)] pl-4'>Database</h3>
         <TackStack items={techStackData3} hColor="text-white" />
-        <h3 className='text-[var(--secondary)] py-2  border-l-4 border-[var(--secondary)] pl-4'>Hosting</h3>
+        <h3 className='text-[var(--primary)] py-2  border-l-4 border-[var(--primary)] pl-4'>Hosting</h3>
         <TackStack items={techStackData4} hColor="text-white" />
-        <h3 className='text-[var(--secondary)] py-2  border-l-4 border-[var(--secondary)] pl-4'>Mobile</h3>
+        <h3 className='text-[var(--primary)] py-2  border-l-4 border-[var(--primary)] pl-4'>Mobile</h3>
         <TackStack items={techStackData5} hColor="text-white" />
       </section>
+      <CaseStudyGrid />
+       <InfiniteLogoCarousel />
       <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
               <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
       

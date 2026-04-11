@@ -1,5 +1,5 @@
 import Navbar from "@/components/React Native App Development in Mumbai/Navbar";
-import Footer from "@/components/Website Development Company in Mumbai/Footer";
+import Footer from "@/components/React Native App Development in Mumbai/Footer";
 
 export const metadata = {
   title: "React Native App Development Company in Mumbai | NNC",

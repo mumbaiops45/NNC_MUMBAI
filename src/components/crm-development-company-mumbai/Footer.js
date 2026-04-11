@@ -9,13 +9,11 @@ export default function Footer() {
   const pathname = usePathname();
 
   // ✅ Navbar Links
- const menuItems = [
-    { name: "HOME", path: "/website-development-company-mumbai" },
-    { name: "Why NNC", path: "#Why_Us" },
-    { name: "Services", path: "#Services" },
-    { name: "Tech Stack", path: "#Tech_Stack" },
+  const menuItems = [
+    { name: "HOME", path: "/crm-development-company-mumbai" },
+    { name: "CRM We Build", path: "#crm-we-build" },
+    { name: "Industries", path: "#Industries" },
     { name: "FAQ", path: "#FAQ" },
-    
   ];
 
   // ✅ Services (SEO Optimized Names + Slugs)
@@ -125,7 +123,7 @@ export default function Footer() {
           <ul className="space-y-4 text-white/80">
             <li className="flex gap-2">
               <MapPin className="text-[var(--primary)] shrink-0" />
-              Lodha Signet, 302, Kolshet Rd, Kolshet Industrial Area, Thane West, Thane, Maharashtra 400607
+             Lodha Signet, 302, Kolshet Rd, Kolshet Industrial Area, Thane West, Thane, Maharashtra 400607
             </li>
 
             <li className="flex gap-2">

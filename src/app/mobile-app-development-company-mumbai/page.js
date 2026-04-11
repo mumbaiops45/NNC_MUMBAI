@@ -5,6 +5,8 @@ import CardCarouselLeftRight from '@/components/CardCarousel';
 import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/Mobile App Development Company in Mumbai/CTA';
 import Testimonial from '@/components/Testimonial';
+import InfiniteLogoCarousel from '@/components/BrandLogo';
+import CaseStudyGrid from '@/components/CaseStudy';
 const mobileAppSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
@@ -235,7 +237,7 @@ const page = () => {
         title="Mobile App Development Company in "
         highlight="Mumbai"
         subtext="Android apps. iOS apps. Cross-platform builds. Built by a Mumbai team that has delivered 80+ apps."
-        description="NNC is a trusted mobile app development company in Mumbai with a proven track record of building Android and iOS apps for startups, SMEs, and large enterprises. We develop apps using React Native for cross-platform delivery, keeping your timeline short and your budget in check."
+        description="NNC is a trusted mobile app development company in Mumbai with a proven track record of building Android and iOS apps for startups, SMEs, and large enterprises across Andheri, Mumbai, BKC, Mumbai, and Thane, Mumbai. We develop apps using React Native for cross-platform delivery, keeping your timeline short and your budget in check."
         svg={mobileAppSVG}
       />
       <section id='Why_Us' className="Why_Us scroll-mt-10 w-full py-20 md:px-15 px-6">
@@ -260,6 +262,8 @@ const page = () => {
         <CardCarouselLeftRight cards={leftSlideService} direction="left" />
         <CardCarouselLeftRight className='mt-10' cards={rightSlideService} direction="right" />
       </section>
+      <CaseStudyGrid />
+       <InfiniteLogoCarousel />
 <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
         <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
 

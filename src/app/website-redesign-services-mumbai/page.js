@@ -7,7 +7,8 @@ import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import ServicesLayout from '@/components/ClickCard';
 import Testimonial from '@/components/Testimonial';
-
+import InfiniteLogoCarousel from '@/components/BrandLogo';
+import CaseStudyGrid from '@/components/CaseStudy';
 const redesignSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
@@ -69,34 +70,93 @@ const redesignSVG = (
 const servicesData = [
   {
     id: "01",
-    title: "Custom React.js + Node.js stores for full flexibility",
+    title: "Page speed optimisation to under 2 seconds",
     items: [
-      { name: "Custom React.js + Node.js stores for full flexibility", img: "/E-commerce Website Development in Mumbai/Custom React.js + Node.js stores for full flexibility.png", heading: "Custom React.js + Node.js stores for full flexibility", discription: "Our React.js and Node.js development approach delivers fast, scalable, and fully customized e-commerce solutions tailored to your business requirements and future expansion needs." },
-
+      {
+        name: "Page speed optimisation to under 2 seconds",
+        img: "/website-redesign-services-mumbai/Page speed optimisation to under 2 seconds.png",
+        heading: "Page speed optimisation to under 2 seconds",
+        discription:
+          "We optimize your website performance to achieve loading times under 2 seconds, improving user experience, reducing bounce rates, and boosting search engine rankings.",
+      },
     ],
   },
   {
     id: "02",
-    title: "WooCommerce for WordPress-based businesses",
+    title: "Mobile-first responsive redesign",
     items: [
-      { name: "WooCommerce for WordPress-based businesses", img: "/E-commerce Website Development in Mumbai/WooCommerce for WordPress-based businesses.svg", heading: "WooCommerce for WordPress-based businesses", discription: "Our WooCommerce development approach for WordPress-based businesses delivers flexible, scalable, and easy-to-manage e-commerce solutions tailored to your products and growth goals." },
-
+      {
+        name: "Mobile-first responsive redesign",
+        img: "/website-redesign-services-mumbai/Mobile-first responsive redesign.png",
+        heading: "Mobile-first responsive redesign",
+        discription:
+          "We redesign your website with a mobile-first approach, ensuring seamless performance and a consistent experience across all devices including smartphones, tablets, and desktops.",
+      },
     ],
   },
   {
     id: "03",
-    title: "Shopify for faster launch timelines ",
+    title: "SEO structure preservation during migration",
     items: [
-      { name: "Shopify for faster launch timelines ", img: "/E-commerce Website Development in Mumbai/shopify.svg", heading: "Shopify for faster launch timelines ", discription: "Our Shopify development approach enables faster launch timelines with ready-to-scale e-commerce solutions, helping you go live quickly without compromising on performance or flexibility." },
-
+      {
+        name: "SEO structure preservation during migration",
+        img: "/website-redesign-services-mumbai/SEO structure preservation during migration.png",
+        heading: "SEO structure preservation during migration",
+        discription:
+          "We ensure your existing SEO rankings are protected during website migration by maintaining URL structures, metadata, and implementing proper redirects.",
+      },
     ],
   },
   {
     id: "04",
-    title: "OpenCart for small and mid-size catalogues",
+    title: "Modern UI with updated brand elements",
     items: [
-      { name: "OpenCart for small and mid-size catalogues", img: "/E-commerce Website Development in Mumbai/openCart.svg", heading: "OpenCart for small and mid-size catalogues", discription: "Our OpenCart development approach is ideal for small and mid-size catalogues, delivering cost-effective, scalable, and easy-to-manage e-commerce solutions tailored to your business needs." },
-
+      {
+        name: "Modern UI with updated brand elements",
+        img: "/website-redesign-services-mumbai/Modern UI with updated brand elements.png",
+        heading: "Modern UI with updated brand elements",
+        discription:
+          "We create visually appealing and modern user interfaces aligned with your brand identity to enhance engagement and build trust with your audience.",
+      },
+    ],
+  },
+  {
+    id: "05",
+    title: "Proper contact forms and lead capture",
+    items: [
+      {
+        name: "Proper contact forms and lead capture",
+        img: "/website-redesign-services-mumbai/Proper contact forms and lead capture.png",
+        heading: "Proper contact forms and lead capture",
+        discription:
+          "We implement optimized contact forms and lead capture systems to convert visitors into potential customers efficiently.",
+      },
+    ],
+  },
+  {
+    id: "06",
+    title: "Google Analytics and Search Console setup",
+    items: [
+      {
+        name: "Google Analytics and Search Console setup",
+        img: "/website-redesign-services-mumbai/Google Analytics and Search Console setup.png",
+        heading: "Google Analytics and Search Console setup",
+        discription:
+          "We integrate Google Analytics and Search Console to track performance, monitor traffic, and gain actionable insights for business growth.",
+      },
+    ],
+  },
+  {
+    id: "07",
+    title: "Clear navigation and user flow",
+    items: [
+      {
+        name: "Clear navigation and user flow",
+        img: "/website-redesign-services-mumbai/clear_navigation_user_flow.png",
+        heading: "Clear navigation and user flow",
+        discription:
+          "We design intuitive navigation and user flow to help visitors easily find information and complete desired actions, improving overall usability.",
+      },
     ],
   },
 ];
@@ -170,7 +230,7 @@ const page = () => {
   title="Website Redesign Services in "
   highlight="Mumbai"
   subtext="Transform your online presence with modern, responsive, and user-friendly website designs that engage visitors and drive results."
-  description="An outdated website kills trust and kills leads. If your website looks like it was built in 2015, it is silently turning away customers every day. NNC's website redesign service in Mumbai gives your existing site a full transformation, improving speed, design, mobile experience, and SEO in one go."
+  description="An outdated website kills trust and kills leads. If your website looks like it was built in 2015, it is silently turning away customers every day. NNC's website redesign service in Mumbai gives your existing site a full transformation across Andheri, Mumbai, BKC, Mumbai, and Thane, Mumbai, improving speed, design, mobile experience, and SEO in one go."
   svg={redesignSVG}
 />
 
@@ -194,6 +254,8 @@ const page = () => {
         </div>
         <ServicesLayout servicesData={servicesData} reverse={true} color="bg-[var(--primary)]" TextColor="white"/>
       </section>
+      <CaseStudyGrid />
+       <InfiniteLogoCarousel />
 
 
 

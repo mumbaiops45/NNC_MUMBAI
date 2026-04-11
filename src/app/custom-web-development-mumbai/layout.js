@@ -1,5 +1,5 @@
 import Navbar from "@/components/custom-web-development-mumbai/Navbar";
-import Footer from "@/components/Website Development Company in Mumbai/Footer";
+import Footer from "@/components/custom-web-development-mumbai/Footer";
 
 export const metadata = {
   title: "Custom Web Development Company in Mumbai | NNC Digital",

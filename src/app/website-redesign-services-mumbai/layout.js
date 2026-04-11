@@ -1,5 +1,5 @@
 import Navbar from "@/components/website-redesign-services-mumbai/Navbar";
-import Footer from "@/components/Website Development Company in Mumbai/Footer";
+import Footer from "@/components/website-redesign-services-mumbai/Footer";
 
 export const metadata = {
   title: "Professional Website Redesign Services in Mumbai | NNC",

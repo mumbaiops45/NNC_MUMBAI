@@ -1,5 +1,5 @@
 import Navbar from "@/components/ecommerce-website-development-mumbai/Navbar";
-import Footer from "@/components/Website Development Company in Mumbai/Footer";
+import Footer from "@/components/ecommerce-website-development-mumbai/Footer";
 
 export const metadata = {
   title: "E-commerce Website Development Company in Mumbai | NNC",

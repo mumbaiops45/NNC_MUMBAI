@@ -6,7 +6,8 @@ import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import MobileAppCTA_React_Native from '@/components/React Native App Development in Mumbai/CTA';
 import Testimonial from '@/components/Testimonial';
-
+import InfiniteLogoCarousel from '@/components/BrandLogo';
+import CaseStudyGrid from '@/components/CaseStudy';
 const reactNativeSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
@@ -179,7 +180,7 @@ const page = () => {
   title="React Native App Development in "
   highlight="Mumbai"
   subtext="Empower your business with fast, cost-effective React Native app development in Mumbai, designed for performance, scalability, and user engagement."
-  description="React Native lets you ship one codebase to both Android and iOS, cutting your development time and cost by up to 40%. NNC's React Native team in Mumbai has built 80+ apps across healthcare, logistics, real estate, and e-commerce verticals. One build. Two platforms. Full native performance."
+  description="React Native lets you ship one codebase to both Android and iOS, cutting your development time and cost by up to 40%. NNC's React Native team in Mumbai has built 80+ apps across healthcare, logistics, real estate, and e-commerce verticals in Andheri, Mumbai, BKC, Mumbai, and Thane, Mumbai. One build. Two platforms. Full native performance."
   svg={reactNativeSVG}
 />
       
@@ -205,6 +206,8 @@ const page = () => {
         </div>
         <Process processSteps={processSteps} />
       </section>
+      <CaseStudyGrid />
+       <InfiniteLogoCarousel />
 
       <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
               <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">

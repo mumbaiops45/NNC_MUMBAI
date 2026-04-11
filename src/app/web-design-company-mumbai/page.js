@@ -6,6 +6,7 @@ import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/Web Design Company in Mumbai/CTA';
 import Process from '@/components/Step';
 import Testimonial from '@/components/Testimonial';
+import InfiniteLogoCarousel from '@/components/BrandLogo';
 const webDesignSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
@@ -263,7 +264,7 @@ const page = () => {
   title="Web Design Company in "
   highlight="Mumbai"
   subtext="Designs that impress. Pages that convert. Built for Mumbai's competitive market."
-  description="NNC is a premium web design company in Mumbai that blends creativity with conversion-focused design thinking. Our designers understand the Mumbai market and know exactly what makes a local audience click, trust, and buy. We don't just make websites look good. We make them work."
+  description="NNC is a premium web design company in Mumbai that blends creativity with conversion-focused design thinking. Our designers understand the Mumbai market and know exactly what makes a local audience click, trust, and buy across Andheri, Mumbai, BKC, Mumbai, and Thane, Mumbai. We don't just make websites look good. We make them work."
   svg={webDesignSVG}
 />
  <section id='Services' className="Services  w-full py-20 md:px-15 px-6">
@@ -301,6 +302,7 @@ const page = () => {
         </div>
         <Process processSteps={processSteps} />
       </section>
+       <InfiniteLogoCarousel />
 
       <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
               <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
