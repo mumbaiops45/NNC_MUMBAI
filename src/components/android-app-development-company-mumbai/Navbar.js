@@ -43,7 +43,7 @@ const menuItems = [
           ))}
 
           {/* Request Quote Button */}
-          <Link href="#contact">
+          <Link href="#CTA">
             <button className="primary-btn px-5 py-2 rounded-lg transition hover:opacity-90">
               Request a Quote
             </button>
@@ -76,7 +76,7 @@ const menuItems = [
             ))}
 
             {/* Mobile Button */}
-            <Link href="#contact" onClick={() => setIsOpen(false)}>
+            <Link href="#CTA" onClick={() => setIsOpen(false)}>
               <button className="primary-btn px-5 py-2 rounded-lg mt-2">
                 Request a Quote
               </button>

@@ -8,6 +8,7 @@ import MobileAppCTA from '@/components/crm-development-company-mumbai/CTA';
 import Testimonial from '@/components/Testimonial';
 import InfiniteLogoCarousel from '@/components/BrandLogo';
 import CaseStudyGrid from '@/components/CaseStudy';
+import Information from '@/components/information';
 
 const crmSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
@@ -292,6 +293,14 @@ const page = () => {
         <TackStack items={techStackData} hColor='text-white' />
       </section>
       <CaseStudyGrid />
+      <Information
+  backgroundImage="/crm-development-company-mumbai/CRM.jpg"
+  backgroundImageAltName='CRM Development Company in Mumbai for Custom Business Workflows' 
+  title="CRM Development Company in Mumbai for Custom Business Workflows"
+  highlightText="Mumbai"
+  description="Looking for a CRM that fits your business perfectly? NNC builds custom CRM systems in Mumbai designed around your workflows and processes. Serving businesses across Andheri, BKC, and Thane, we develop scalable solutions for industries like real estate, healthcare, logistics, legal, and services using modern technologies like React.js, Node.js, and MongoDB."
+  align="left"
+/>
        <InfiniteLogoCarousel />
       <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
               <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">

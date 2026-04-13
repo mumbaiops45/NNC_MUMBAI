@@ -9,7 +9,7 @@ export default function CTA({
   className = "",
 }) {
   return (
-    <section className={`w-full ${className}`}>
+    <section id="CTA" className={`w-full ${className}`}>
       <div className="max-w-5xl mx-auto ">
 
         <div className=" rounded-2xl p-8 md:py-10 text-center shadow-md">

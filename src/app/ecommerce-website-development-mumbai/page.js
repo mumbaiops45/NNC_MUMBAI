@@ -9,6 +9,7 @@ import ServicesLayout from '@/components/ClickCard';
 import Testimonial from '@/components/Testimonial';
 import InfiniteLogoCarousel from '@/components/BrandLogo';
 import CaseStudyGrid from '@/components/CaseStudy';
+import Information from '@/components/information';
 
 const ecommerceSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
@@ -243,6 +244,14 @@ const page = () => {
         <ServicesLayout servicesData={servicesData} reverse={true} color="bg-[var(--primary)]" TextColor="white"/>
       </section>
       <CaseStudyGrid />
+      <Information
+  backgroundImage="/E-commerce Website Development in Mumbai/E_commerce.webp"
+  backgroundImageAltName="E-commerce website development in Mumbai with online store interface and product listings"
+  title="E-commerce Website Development in Mumbai for High-Conversion Online Stores"
+  highlightText="Mumbai"
+  description="Looking to grow your business online? NNC builds high-performance e-commerce websites in Mumbai designed for speed, mobile users, and conversions. Serving businesses across Andheri, BKC, and Thane, we create everything from product catalogue websites to fully functional marketplace platforms that drive real sales."
+  align="left"
+/>
        <InfiniteLogoCarousel />
 
 

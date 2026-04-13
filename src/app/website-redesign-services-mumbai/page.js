@@ -9,6 +9,7 @@ import ServicesLayout from '@/components/ClickCard';
 import Testimonial from '@/components/Testimonial';
 import InfiniteLogoCarousel from '@/components/BrandLogo';
 import CaseStudyGrid from '@/components/CaseStudy';
+import Information from '@/components/information';
 const redesignSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
@@ -255,6 +256,14 @@ const page = () => {
         <ServicesLayout servicesData={servicesData} reverse={true} color="bg-[var(--primary)]" TextColor="white"/>
       </section>
       <CaseStudyGrid />
+      <Information
+  backgroundImage="/website-redesign-services-mumbai/website-redesign-services-mumbai.jpg"
+  backgroundImageAltName="Website Redesign Services in Mumbai to Upgrade Your Online Presence"
+  title="Website Redesign Services in Mumbai to Upgrade Your Online Presence"
+  highlightText="Mumbai"
+  description="Is your website outdated and losing potential customers? NNC offers professional website redesign services in Mumbai to transform your existing site into a modern, fast, and high-performing platform. Serving businesses across Andheri, BKC, and Thane, we improve design, speed, mobile experience, and SEO to help you build trust and generate more leads."
+  align="left"
+/>
        <InfiniteLogoCarousel />
 
 

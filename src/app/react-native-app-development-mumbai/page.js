@@ -8,6 +8,7 @@ import MobileAppCTA_React_Native from '@/components/React Native App Development
 import Testimonial from '@/components/Testimonial';
 import InfiniteLogoCarousel from '@/components/BrandLogo';
 import CaseStudyGrid from '@/components/CaseStudy';
+import Information from '@/components/information';
 const reactNativeSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
@@ -207,6 +208,14 @@ const page = () => {
         <Process processSteps={processSteps} />
       </section>
       <CaseStudyGrid />
+      <Information
+  backgroundImage="/React Native App Development in Mumbai/React Native App Development in Mumbai.jpg"
+  backgroundImageAltName="React Native app development workspace building fast and cost-effective mobile applications for businesses in Mumbai"
+  title="React Native App Development in Mumbai for Faster & Cost-Effective Apps"
+  highlightText="Mumbai"
+  description="Looking for React Native app development in Mumbai? NNC builds high-performance Android and iOS apps using a single codebase, helping you reduce development time and cost. With experience across healthcare, logistics, real estate, and e-commerce in Andheri, BKC, and Thane, we deliver scalable apps with true native performance."
+  align="left"
+/>
        <InfiniteLogoCarousel />
 
       <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">

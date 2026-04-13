@@ -8,6 +8,7 @@ import CTA from '@/components/Website Development Company in Mumbai/CTA';
 import Testimonial from '@/components/Testimonial';
 import InfiniteLogoCarousel from '@/components/BrandLogo';
 import CaseStudyGrid from '@/components/CaseStudy';
+import Information from '@/components/information';
 
 const websiteDevSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
@@ -290,17 +291,25 @@ const page = () => {
         <CardCarouselLeftRight className='mt-10' cards={rightSlideService} direction="right" />
       </section>
       <CaseStudyGrid />
+      <Information
+        backgroundImage="/Website Development Company in Mumbai/Website Development Company.png"
+        backgroundImageAltName="Professional web developer working on high-performance website dashboards in a modern office"
+        title="Website Development Company in Mumbai That Builds Results-Driven Websites"
+        highlightText="Mumbai"
+        description="Searching for a trusted website development company in Mumbai? Nakshatra Namaha Creations (NNC) has been helping businesses grow online since 2015 with fast, SEO-friendly websites. From startups in Andheri to established companies in BKC and expanding brands in Thane, we build websites designed to perform, rank, and convert."
+        align="left"
+      />
       <section id='Tech_Stack' className="Tech_Stack  w-full py-20 md:px-15 px-6">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center">
-            <span className="text-[var(--primary)]">Tech </span> Stack
+            <span className="text-[var(--primary)]">Tech Stack </span> We Use
           </h2>
 
         </div>
         <TackStack items={techStackData} />
       </section>
-    
+
       <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
         <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
 
@@ -325,7 +334,7 @@ const page = () => {
         </div>
         <Testimonial CardColor="bg-white/10" ClintTextColor="text-[var(--primary)]" />
       </section>
-  <InfiniteLogoCarousel />
+      <InfiniteLogoCarousel />
       <section id='FAQ' className="FAQ  w-full py-20 md:px-15 px-6 bg-gradient-to-r from-[#041027] to-[#0c245a]">
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 

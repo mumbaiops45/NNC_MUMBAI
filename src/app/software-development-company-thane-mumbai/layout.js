@@ -2,9 +2,26 @@ import Navbar from "@/components/software-development-company-thane-mumbai/Navba
 import Footer from "@/components/software-development-company-thane-mumbai/Footer";
 
 export const metadata = {
-  title: "Software Development Company in Thane Mumbai | NNC Digital",
+  title: "Software Development Company in Thane Mumbai | Nakshatra Namaha Creations",
   description:
     "Software development company in Thane, Mumbai. Web apps, mobile apps, CRM, custom software. Local office in Thane West. 10+ years experience. Free consultation.",
+icons: {
+  icon: "/logo.avif",
+  shortcut: "/logo.avif",
+  apple: "/logo.avif",
+},
+  keywords: [
+    "Software Development Company in Mumbai",
+    "Software Development Company in Thane",
+    "Software Development Company in Navi Mumbai",
+    "Software Development Company in Andheri",
+    "Software Development Company in BKC",
+    "Software Development Company in Lower Parel",
+    "Software Development Company in Bandra",
+    "Custom Software Development Mumbai",
+    "Web App Development Mumbai",
+    "CRM Development Mumbai"
+  ],
 };
 
 export default function Layout({ children }) {
@@ -13,15 +30,27 @@ export default function Layout({ children }) {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        name: "NNC Digital",
+        name: "Nakshatra Namaha Creations",
         url: "https://nncmumbai1.netlify.app/software-development-company-thane-mumbai",
         telephone: "+91 99005 66466",
+        email: "info@nakshatranamahacreations.com",
+
         address: {
           "@type": "PostalAddress",
+          streetAddress: "Thane West Office",
           addressLocality: "Thane West",
-          addressRegion: "Mumbai",
+          addressRegion: "Maharashtra",
+          postalCode: "400601",
           addressCountry: "India",
         },
+
+        openingHours: "Mo-Sa 09:30-18:30",
+
+        sameAs: [
+          "https://www.facebook.com/Nakshatranamahacreations/",
+          "https://www.instagram.com/nnc.digitalbengaluru/",
+          "https://www.youtube.com/c/NakshatraNamahaCreations"
+        ],
 
         areaServed: [
           { "@type": "Place", name: "Thane" },
@@ -29,7 +58,8 @@ export default function Layout({ children }) {
           { "@type": "Place", name: "Navi Mumbai" },
           { "@type": "Place", name: "BKC" },
           { "@type": "Place", name: "Andheri" },
-          { "@type": "Place", name: "South Mumbai" }
+          { "@type": "Place", name: "Bandra" },
+          { "@type": "Place", name: "Lower Parel" }
         ]
       },
 
@@ -38,26 +68,26 @@ export default function Layout({ children }) {
         name: "Software Development Company in Thane, Mumbai",
         provider: {
           "@type": "LocalBusiness",
-          name: "NNC Digital",
+          name: "Nakshatra Namaha Creations",
         },
         areaServed: {
           "@type": "Place",
           name: "Mumbai Metropolitan Region",
         },
         description:
-          "Custom software development services in Thane, Mumbai including web applications, mobile apps, CRM systems, SaaS platforms, and business automation solutions.",
+          "Custom software development services in Thane, Mumbai including web apps, mobile apps, CRM systems, SaaS platforms, and business automation solutions.",
 
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Software Development Services",
           itemListElement: [
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Custom web application development" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Android and iOS mobile app development" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "CRM and ERP software development" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mobile app development (Android & iOS)" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "CRM & ERP software development" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "SaaS product development" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "API development and integrations" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Business automation software" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Admin dashboards and reporting tools" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Business automation systems" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Admin dashboards & analytics tools" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "E-commerce platform development" } }
           ]
         },
@@ -65,9 +95,9 @@ export default function Layout({ children }) {
         additionalProperty: [
           {
             "@type": "PropertyValue",
-            name: "Why Choose Local Thane Software Company",
+            name: "Local SEO Advantage",
             value:
-              "Face-to-face meetings, faster response time, no timezone delays, understanding of Mumbai market, onsite availability, local GST billing",
+              "Onsite meetings in Thane West, Mumbai-focused delivery, fast communication for MMR clients, local business understanding",
           }
         ]
       },
@@ -77,36 +107,38 @@ export default function Layout({ children }) {
         mainEntity: [
           {
             "@type": "Question",
-            name: "Where is NNC's Mumbai office located?",
+            name: "Where is your Mumbai office located?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Our Mumbai branch is located in Thane West and serves clients across Thane, Navi Mumbai, BKC, Andheri, and South Mumbai.",
+              text:
+                "Our Mumbai office is in Thane West and serves clients across Mumbai, Navi Mumbai, BKC, Andheri, Bandra, and Lower Parel.",
             },
           },
           {
             "@type": "Question",
-            name: "Can I visit your Thane office before starting a project?",
+            name: "Can I visit your Thane office?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Absolutely. We encourage an in-person discovery meeting before any project kickoff. Call us to schedule.",
+              text:
+                "Yes, we welcome in-person meetings at our Thane West office for project discussions and onboarding.",
             },
           },
           {
             "@type": "Question",
-            name: "Do you provide onsite software development support in Mumbai?",
+            name: "Do you provide onsite software development consultation?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes, we are available for onsite meetings and enterprise project discussions across Mumbai and nearby areas.",
+              text:
+                "Yes, we provide onsite consultations across Mumbai and MMR for enterprise clients.",
             },
           }
-        ]
-      }
-    ]
+        ],
+      },
+    ],
   };
 
   return (
     <>
-      {/* ✅ SCHEMA MARKUP */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
@@ -114,9 +146,7 @@ export default function Layout({ children }) {
 
       <Navbar />
 
-      <main className="pt-23">
-        {children}
-      </main>
+      <main className="pt-23">{children}</main>
 
       <Footer />
     </>

@@ -8,6 +8,7 @@ import MobileAppCTA from '@/components/custom-web-development-mumbai/CTA';
 import Testimonial from '@/components/Testimonial';
 import InfiniteLogoCarousel from '@/components/BrandLogo';
 import CaseStudyGrid from '@/components/CaseStudy';
+import Information from '@/components/information';
 const customWebSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
@@ -243,7 +244,7 @@ const page = () => {
         <div className="max-w-6xl mx-auto  flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-white">
-            <span className="text-[var(--primary)]">Tech </span> Stack
+            <span className="text-[var(--primary)]">Technology  </span> Stack
           </h2>
 
         </div>
@@ -259,6 +260,14 @@ const page = () => {
         <TackStack items={techStackData5} hColor="text-white" />
       </section>
       <CaseStudyGrid />
+      <Information
+  backgroundImage="/Custom Web Development in Mumbai/Web Design Company in Mumbai.jpg"
+  backgroundImageAltName="Custom web development workspace with website dashboards and application interfaces for businesses in Mumbai"
+  title="Custom Web Development in Mumbai for Scalable & Tailored Solutions"
+  highlightText="Mumbai"
+  description="Looking for custom web development in Mumbai? NNC builds powerful web applications designed around your unique business needs. From booking systems to marketplaces and CRM platforms, we create scalable, high-performance solutions that align perfectly with your workflows and integrations."
+  align="left"
+/>
        <InfiniteLogoCarousel />
       <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
               <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">

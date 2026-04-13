@@ -8,6 +8,7 @@ import MobileAppCTA_React_Native from '@/components/React Native App Development
 import Testimonial from '@/components/Testimonial';
 import InfiniteLogoCarousel from '@/components/BrandLogo';
 import CaseStudyGrid from '@/components/CaseStudy';
+import Information from '@/components/information';
 
 const androidSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
@@ -227,6 +228,14 @@ const page = () => {
         <Process processSteps={processSteps} />
       </section>
       <CaseStudyGrid />
+      <Information
+  backgroundImage="/android-app-development-company-mumbai/Android-App-Development.webp"
+  backgroundImageAltName="Android App Development Company in Mumbai for Scalable & High-Performance Apps"
+  title="Android App Development Company in Mumbai for Scalable & High-Performance Apps"
+  highlightText="Mumbai"
+  description="Want to reach millions of mobile users? NNC is a trusted Android app development company in Mumbai, building powerful and scalable apps for businesses of all sizes. With 80+ apps delivered across Andheri, BKC, and Thane, we create solutions ranging from simple utility apps to advanced enterprise platforms that users love and engage with."
+  align="left"
+/>
        <InfiniteLogoCarousel />
 
       

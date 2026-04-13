@@ -2,9 +2,34 @@ import Navbar from "@/components/website-redesign-services-mumbai/Navbar";
 import Footer from "@/components/website-redesign-services-mumbai/Footer";
 
 export const metadata = {
-  title: "Professional Website Redesign Services in Mumbai | NNC",
+  title: "Professional Website Redesign Services in Mumbai | Nakshatra Namaha Creations",
   description:
     "Website redesign services in Mumbai. Old websites transformed into fast, modern, mobile-first experiences. Preserve SEO rankings. Get a free website audit.",
+icons: {
+  icon: "/logo.avif",
+  shortcut: "/logo.avif",
+  apple: "/logo.avif",
+},
+  keywords: [
+    "Website Redesign Services in Mumbai",
+    "Website Redesign Company in Mumbai",
+    "Website Revamp Services Mumbai",
+    "Website Design Upgrade Mumbai",
+
+    "Website Redesign in Andheri",
+    "Website Redesign in BKC",
+    "Website Redesign in Bandra",
+    "Website Redesign in Lower Parel",
+    "Website Redesign in Navi Mumbai",
+
+    "Website Modernization Mumbai",
+    "Website Performance Optimization Mumbai",
+    "SEO Website Migration Mumbai",
+    "Mobile Friendly Website Redesign Mumbai",
+
+    "Corporate Website Redesign Mumbai",
+    "Business Website Upgrade Mumbai"
+  ]
 };
 
 export default function Layout({ children }) {
@@ -13,130 +38,105 @@ export default function Layout({ children }) {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        name: "NNC Digital",
+        name: "Nakshatra Namaha Creations",
         url: "https://nncmumbai1.netlify.app/website-redesign-services-mumbai",
         telephone: "+91 99005 66466",
+
         address: {
           "@type": "PostalAddress",
           addressLocality: "Thane West",
           addressRegion: "Mumbai",
-          addressCountry: "India",
+          addressCountry: "India"
         },
+
+        openingHours: "Mo-Sa 09:30-18:30",
+
+        sameAs: [
+          "https://www.facebook.com/Nakshatranamahacreations/",
+          "https://www.instagram.com/nnc.digitalbengaluru/",
+          "https://www.youtube.com/c/NakshatraNamahaCreations"
+        ]
       },
+
       {
         "@type": "Service",
         name: "Website Redesign Services in Mumbai",
         provider: {
           "@type": "LocalBusiness",
-          name: "NNC Digital",
+          name: "Nakshatra Namaha Creations"
         },
-        areaServed: {
-          "@type": "Place",
-          name: "Mumbai",
-        },
+
+        areaServed: [
+          { "@type": "Place", name: "Mumbai" },
+          { "@type": "Place", name: "Andheri" },
+          { "@type": "Place", name: "BKC" },
+          { "@type": "Place", name: "Bandra" },
+          { "@type": "Place", name: "Lower Parel" },
+          { "@type": "Place", name: "Navi Mumbai" }
+        ],
+
         description:
-          "Professional website redesign services in Mumbai. We transform outdated websites into fast, mobile-first, SEO-optimized platforms while preserving existing rankings and improving conversions.",
-        
+          "Professional website redesign services in Mumbai focused on improving speed, mobile responsiveness, UI/UX, SEO structure, and conversion optimization while preserving existing Google rankings through safe migration techniques.",
+
         hasOfferCatalog: {
           "@type": "OfferCatalog",
-          name: "Website Redesign Fixes & Improvements",
+          name: "Website Redesign Improvements",
           itemListElement: [
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Page speed optimisation to under 2 seconds",
-              },
-            },
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Mobile-first responsive redesign",
-              },
-            },
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "SEO structure preservation during migration",
-              },
-            },
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Modern UI with updated brand elements",
-              },
-            },
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Lead capture forms and conversion optimization",
-              },
-            },
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Google Analytics and Search Console setup",
-              },
-            },
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Clear navigation and user flow improvements",
-              },
-            }
-          ],
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Page speed optimisation under 2 seconds" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mobile-first responsive redesign" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO-safe migration with 301 redirects" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Modern UI/UX redesign with branding upgrade" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Lead generation and conversion optimization" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Analytics and Search Console setup" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Navigation and UX flow improvement" } }
+          ]
         },
 
         additionalProperty: [
           {
             "@type": "PropertyValue",
-            name: "Signs You Need Website Redesign",
+            name: "Website Redesign Indicators",
             value:
-              "Website takes more than 3 seconds to load, looks broken on mobile, no clear CTA, outdated design, low conversions, not ranking on Google",
+              "Slow loading website, outdated UI, poor mobile experience, low conversions, broken layout, no SEO structure, high bounce rate"
           }
         ]
       },
+
       {
         "@type": "FAQPage",
         mainEntity: [
           {
             "@type": "Question",
-            name: "Will a redesign affect my current Google rankings?",
+            name: "Will a website redesign affect my Google rankings?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "We follow SEO-safe migration protocols including 301 redirects, canonical tags, and sitemap resubmission to protect your rankings.",
-            },
+              text: "No. We use SEO-safe migration techniques like 301 redirects, canonical tags, and sitemap updates to preserve rankings."
+            }
           },
           {
             "@type": "Question",
             name: "How long does a website redesign take in Mumbai?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A full redesign of a 10 to 15 page website typically takes 4 to 6 weeks.",
-            },
+              text: "A full redesign of a business website typically takes 4 to 6 weeks depending on complexity."
+            }
           },
           {
             "@type": "Question",
-            name: "Do you provide a free website audit?",
+            name: "Do you provide a website audit before redesign?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes, NNC Digital offers a free website audit to identify design issues, performance gaps, and SEO problems before redesign.",
-            },
+              text: "Yes. We provide a free website audit to identify design, UX, and SEO issues before starting the redesign."
+            }
           }
-        ],
-      },
-    ],
+        ]
+      }
+    ]
   };
 
   return (
     <>
-      {/* ✅ SCHEMA MARKUP */}
+      {/* SCHEMA MARKUP */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
@@ -144,9 +144,7 @@ export default function Layout({ children }) {
 
       <Navbar />
 
-      <main className="pt-23">
-        {children}
-      </main>
+      <main className="pt-23">{children}</main>
 
       <Footer />
     </>

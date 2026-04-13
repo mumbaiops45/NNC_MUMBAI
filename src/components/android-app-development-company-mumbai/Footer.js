@@ -129,7 +129,9 @@ const menuItems = [
 
             <li className="flex gap-2">
               <Phone className="text-[var(--primary)] shrink-0" />
-              +91 98765 43210
+              +91 99005 66466
+
+
             </li>
 
             <li className="flex gap-2">

@@ -7,6 +7,8 @@ import MobileAppCTA from '@/components/Web Design Company in Mumbai/CTA';
 import Process from '@/components/Step';
 import Testimonial from '@/components/Testimonial';
 import InfiniteLogoCarousel from '@/components/BrandLogo';
+import CaseStudyGrid from '@/components/CaseStudy';
+import Information from '@/components/information';
 const webDesignSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
@@ -302,6 +304,16 @@ const page = () => {
         </div>
         <Process processSteps={processSteps} />
       </section>
+      
+<CaseStudyGrid />
+<Information
+  backgroundImage="/Web Design Company in Mumbai/web design.png"
+  backgroundImageAltName="Professional web design company in Mumbai building high-conversion websites"
+  title="Web Design Company in Mumbai That Creates Visually Stunning & Conversion-Driven Websites"
+  highlightText="Mumbai"
+  description="Looking for a premium web design company in Mumbai? NNC combines creative design with conversion-focused strategies to build websites that truly perform. From Andheri to BKC and Thane, we design experiences that connect with local audiences, build trust, and drive real business results."
+  align="left"
+/>
        <InfiniteLogoCarousel />
 
       <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">

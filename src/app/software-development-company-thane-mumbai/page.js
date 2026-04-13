@@ -9,6 +9,7 @@ import ServicesLayout from '@/components/ClickCard';
 import Testimonial from '@/components/Testimonial';
 import InfiniteLogoCarousel from '@/components/BrandLogo';
 import CaseStudyGrid from '@/components/CaseStudy';
+import Information from '@/components/information';
 
 const softwareDevSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
@@ -258,6 +259,14 @@ const page = () => {
         <ServicesLayout servicesData={LocalBenefits} color="bg-[var(--primary)]" TextColor="white" />
       </section>
       <CaseStudyGrid />
+      <Information
+  backgroundImage="/software-development-company-thane-mumbai/software-devlopment.jpg"
+  backgroundImageAltName="Software Development Company in Thane, Mumbai for Scalable Digital Solutions"
+  title="Software Development Company in Thane, Mumbai for Scalable Digital Solutions"
+  highlightText="Thane, Mumbai"
+  description="Looking for a reliable software development company in Thane, Mumbai? NNC operates from Thane West, offering easy accessibility for businesses across Thane, Andheri, and BKC. From web applications and mobile apps to CRM systems and custom software, our team delivers tailored solutions with the added advantage of in-person meetings and ongoing collaboration."
+  align="left"
+/>
       <InfiniteLogoCarousel />
 
 

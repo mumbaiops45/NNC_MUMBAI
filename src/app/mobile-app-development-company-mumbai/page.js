@@ -7,111 +7,112 @@ import MobileAppCTA from '@/components/Mobile App Development Company in Mumbai/
 import Testimonial from '@/components/Testimonial';
 import InfiniteLogoCarousel from '@/components/BrandLogo';
 import CaseStudyGrid from '@/components/CaseStudy';
+import Information from '@/components/information';
 const mobileAppSVG = (
   <svg viewBox="0 0 400 300" className="w-full h-auto" fill="none">
 
     {/* Decorative rings */}
-    <circle cx="62" cy="88" r="28" stroke="#334155" strokeWidth="1.2"/>
-    <circle cx="62" cy="88" r="18" stroke="#334155" strokeWidth="0.6" strokeDasharray="3 3"/>
-    <circle cx="338" cy="212" r="32" stroke="#334155" strokeWidth="1.2"/>
-    <circle cx="338" cy="212" r="21" stroke="#334155" strokeWidth="0.6" strokeDasharray="3 3"/>
+    <circle cx="62" cy="88" r="28" stroke="#334155" strokeWidth="1.2" />
+    <circle cx="62" cy="88" r="18" stroke="#334155" strokeWidth="0.6" strokeDasharray="3 3" />
+    <circle cx="338" cy="212" r="32" stroke="#334155" strokeWidth="1.2" />
+    <circle cx="338" cy="212" r="21" stroke="#334155" strokeWidth="0.6" strokeDasharray="3 3" />
 
     {/* Dot accents */}
-    <circle cx="355" cy="68" r="3" fill="#334155"/>
-    <circle cx="44" cy="240" r="3" fill="#334155"/>
-    <circle cx="370" cy="140" r="2" fill="#475569"/>
-    <circle cx="32" cy="170" r="2" fill="#475569"/>
+    <circle cx="355" cy="68" r="3" fill="#334155" />
+    <circle cx="44" cy="240" r="3" fill="#334155" />
+    <circle cx="370" cy="140" r="2" fill="#475569" />
+    <circle cx="32" cy="170" r="2" fill="#475569" />
 
     {/* Phone shell */}
-    <rect x="138" y="28" width="124" height="244" rx="22" fill="#0f1e2e" stroke="#475569" strokeWidth="1.8"/>
-    <rect x="144" y="34" width="112" height="232" rx="18" fill="#0a1628" stroke="#1e3a5a" strokeWidth="0.8"/>
+    <rect x="138" y="28" width="124" height="244" rx="22" fill="#0f1e2e" stroke="#475569" strokeWidth="1.8" />
+    <rect x="144" y="34" width="112" height="232" rx="18" fill="#0a1628" stroke="#1e3a5a" strokeWidth="0.8" />
 
     {/* Dynamic island */}
-    <rect x="178" y="42" width="44" height="12" rx="6" fill="#060e1a"/>
-    <circle cx="186" cy="48" r="3" fill="#1a2a3a"/>
-    <circle cx="214" cy="48" r="2" fill="#1e3a5a" opacity="0.6"/>
+    <rect x="178" y="42" width="44" height="12" rx="6" fill="#060e1a" />
+    <circle cx="186" cy="48" r="3" fill="#1a2a3a" />
+    <circle cx="214" cy="48" r="2" fill="#1e3a5a" opacity="0.6" />
 
     {/* Status bar */}
-    <rect x="152" y="58" width="16" height="4" rx="1.5" fill="#334155"/>
-    <rect x="170" y="58" width="10" height="4" rx="1.5" fill="#334155" opacity="0.5"/>
-    <rect x="224" y="57" width="18" height="6" rx="2" fill="none" stroke="#475569" strokeWidth="0.8"/>
-    <rect x="242" y="59" width="2" height="2" rx="1" fill="#475569"/>
-    <rect x="225" y="58" width="12" height="4" rx="1.5" fill="#22c55e" opacity="0.7"/>
-    <circle cx="218" cy="60" r="1.5" fill="#475569"/>
-    <circle cx="213" cy="60" r="1.5" fill="#475569" opacity="0.6"/>
-    <circle cx="208" cy="60" r="1.5" fill="#475569" opacity="0.3"/>
+    <rect x="152" y="58" width="16" height="4" rx="1.5" fill="#334155" />
+    <rect x="170" y="58" width="10" height="4" rx="1.5" fill="#334155" opacity="0.5" />
+    <rect x="224" y="57" width="18" height="6" rx="2" fill="none" stroke="#475569" strokeWidth="0.8" />
+    <rect x="242" y="59" width="2" height="2" rx="1" fill="#475569" />
+    <rect x="225" y="58" width="12" height="4" rx="1.5" fill="#22c55e" opacity="0.7" />
+    <circle cx="218" cy="60" r="1.5" fill="#475569" />
+    <circle cx="213" cy="60" r="1.5" fill="#475569" opacity="0.6" />
+    <circle cx="208" cy="60" r="1.5" fill="#475569" opacity="0.3" />
 
     {/* Screen */}
-    <rect x="152" y="66" width="96" height="178" rx="8" fill="#0d1d30"/>
+    <rect x="152" y="66" width="96" height="178" rx="8" fill="#0d1d30" />
 
     {/* Grid lines */}
-    <line x1="152" y1="90" x2="248" y2="90" stroke="#0f2040" strokeWidth="0.6"/>
-    <line x1="152" y1="120" x2="248" y2="120" stroke="#0f2040" strokeWidth="0.6"/>
-    <line x1="152" y1="150" x2="248" y2="150" stroke="#0f2040" strokeWidth="0.6"/>
-    <line x1="152" y1="180" x2="248" y2="180" stroke="#0f2040" strokeWidth="0.6"/>
-    <line x1="184" y1="66" x2="184" y2="244" stroke="#0f2040" strokeWidth="0.6"/>
-    <line x1="216" y1="66" x2="216" y2="244" stroke="#0f2040" strokeWidth="0.6"/>
+    <line x1="152" y1="90" x2="248" y2="90" stroke="#0f2040" strokeWidth="0.6" />
+    <line x1="152" y1="120" x2="248" y2="120" stroke="#0f2040" strokeWidth="0.6" />
+    <line x1="152" y1="150" x2="248" y2="150" stroke="#0f2040" strokeWidth="0.6" />
+    <line x1="152" y1="180" x2="248" y2="180" stroke="#0f2040" strokeWidth="0.6" />
+    <line x1="184" y1="66" x2="184" y2="244" stroke="#0f2040" strokeWidth="0.6" />
+    <line x1="216" y1="66" x2="216" y2="244" stroke="#0f2040" strokeWidth="0.6" />
 
     {/* App icons row 1 */}
-    <rect x="158" y="74" width="24" height="24" rx="6" fill="#1e40af" fillOpacity="0.8" stroke="#3b82f6" strokeWidth="0.6"/>
-    <rect x="163" y="81" width="14" height="3" rx="1.5" fill="#60a5fa" opacity="0.8"/>
-    <rect x="163" y="87" width="10" height="3" rx="1.5" fill="#60a5fa" opacity="0.5"/>
-    <rect x="190" y="74" width="24" height="24" rx="6" fill="#065f46" fillOpacity="0.8" stroke="#34d399" strokeWidth="0.6"/>
-    <rect x="195" y="81" width="14" height="3" rx="1.5" fill="#34d399" opacity="0.8"/>
-    <rect x="195" y="87" width="10" height="3" rx="1.5" fill="#34d399" opacity="0.5"/>
-    <rect x="222" y="74" width="24" height="24" rx="6" fill="#7c3aed" fillOpacity="0.8" stroke="#a78bfa" strokeWidth="0.6"/>
-    <rect x="227" y="81" width="14" height="3" rx="1.5" fill="#a78bfa" opacity="0.8"/>
-    <rect x="227" y="87" width="10" height="3" rx="1.5" fill="#a78bfa" opacity="0.5"/>
+    <rect x="158" y="74" width="24" height="24" rx="6" fill="#1e40af" fillOpacity="0.8" stroke="#3b82f6" strokeWidth="0.6" />
+    <rect x="163" y="81" width="14" height="3" rx="1.5" fill="#60a5fa" opacity="0.8" />
+    <rect x="163" y="87" width="10" height="3" rx="1.5" fill="#60a5fa" opacity="0.5" />
+    <rect x="190" y="74" width="24" height="24" rx="6" fill="#065f46" fillOpacity="0.8" stroke="#34d399" strokeWidth="0.6" />
+    <rect x="195" y="81" width="14" height="3" rx="1.5" fill="#34d399" opacity="0.8" />
+    <rect x="195" y="87" width="10" height="3" rx="1.5" fill="#34d399" opacity="0.5" />
+    <rect x="222" y="74" width="24" height="24" rx="6" fill="#7c3aed" fillOpacity="0.8" stroke="#a78bfa" strokeWidth="0.6" />
+    <rect x="227" y="81" width="14" height="3" rx="1.5" fill="#a78bfa" opacity="0.8" />
+    <rect x="227" y="87" width="10" height="3" rx="1.5" fill="#a78bfa" opacity="0.5" />
 
     {/* App icons row 2 */}
-    <rect x="158" y="104" width="24" height="24" rx="6" fill="#92400e" fillOpacity="0.8" stroke="#fbbf24" strokeWidth="0.6"/>
-    <rect x="163" y="111" width="14" height="3" rx="1.5" fill="#fbbf24" opacity="0.8"/>
-    <rect x="163" y="117" width="10" height="3" rx="1.5" fill="#fbbf24" opacity="0.5"/>
-    <rect x="190" y="104" width="24" height="24" rx="6" fill="#991b1b" fillOpacity="0.8" stroke="#f87171" strokeWidth="0.6"/>
-    <rect x="195" y="111" width="14" height="3" rx="1.5" fill="#f87171" opacity="0.8"/>
-    <rect x="195" y="117" width="10" height="3" rx="1.5" fill="#f87171" opacity="0.5"/>
-    <rect x="222" y="104" width="24" height="24" rx="6" fill="#0e4a6e" fillOpacity="0.8" stroke="#38bdf8" strokeWidth="0.6"/>
-    <rect x="227" y="111" width="14" height="3" rx="1.5" fill="#38bdf8" opacity="0.8"/>
-    <rect x="227" y="117" width="10" height="3" rx="1.5" fill="#38bdf8" opacity="0.5"/>
+    <rect x="158" y="104" width="24" height="24" rx="6" fill="#92400e" fillOpacity="0.8" stroke="#fbbf24" strokeWidth="0.6" />
+    <rect x="163" y="111" width="14" height="3" rx="1.5" fill="#fbbf24" opacity="0.8" />
+    <rect x="163" y="117" width="10" height="3" rx="1.5" fill="#fbbf24" opacity="0.5" />
+    <rect x="190" y="104" width="24" height="24" rx="6" fill="#991b1b" fillOpacity="0.8" stroke="#f87171" strokeWidth="0.6" />
+    <rect x="195" y="111" width="14" height="3" rx="1.5" fill="#f87171" opacity="0.8" />
+    <rect x="195" y="117" width="10" height="3" rx="1.5" fill="#f87171" opacity="0.5" />
+    <rect x="222" y="104" width="24" height="24" rx="6" fill="#0e4a6e" fillOpacity="0.8" stroke="#38bdf8" strokeWidth="0.6" />
+    <rect x="227" y="111" width="14" height="3" rx="1.5" fill="#38bdf8" opacity="0.8" />
+    <rect x="227" y="117" width="10" height="3" rx="1.5" fill="#38bdf8" opacity="0.5" />
 
     {/* Widget card */}
-    <rect x="158" y="134" width="88" height="40" rx="7" fill="#142135" stroke="#2d4a6a" strokeWidth="0.8"/>
-    <rect x="164" y="142" width="50" height="5" rx="2" fill="#38bdf8" opacity="0.4"/>
-    <rect x="164" y="151" width="36" height="4" rx="2" fill="#334155"/>
-    <rect x="218" y="140" width="22" height="14" rx="4" fill="#22c55e" fillOpacity="0.2" stroke="#22c55e" strokeWidth="0.6"/>
-    <rect x="221" y="144" width="16" height="3" rx="1.5" fill="#22c55e" opacity="0.6"/>
-    <rect x="221" y="149" width="10" height="3" rx="1.5" fill="#22c55e" opacity="0.4"/>
+    <rect x="158" y="134" width="88" height="40" rx="7" fill="#142135" stroke="#2d4a6a" strokeWidth="0.8" />
+    <rect x="164" y="142" width="50" height="5" rx="2" fill="#38bdf8" opacity="0.4" />
+    <rect x="164" y="151" width="36" height="4" rx="2" fill="#334155" />
+    <rect x="218" y="140" width="22" height="14" rx="4" fill="#22c55e" fillOpacity="0.2" stroke="#22c55e" strokeWidth="0.6" />
+    <rect x="221" y="144" width="16" height="3" rx="1.5" fill="#22c55e" opacity="0.6" />
+    <rect x="221" y="149" width="10" height="3" rx="1.5" fill="#22c55e" opacity="0.4" />
 
     {/* Content row */}
-    <rect x="158" y="180" width="88" height="32" rx="6" fill="#0f2540" stroke="#1e4a7a" strokeWidth="0.8"/>
-    <rect x="164" y="187" width="60" height="5" rx="2" fill="#1e4a7a"/>
-    <rect x="164" y="196" width="44" height="4" rx="2" fill="#1e4a7a" opacity="0.6"/>
-    <rect x="164" y="203" width="52" height="4" rx="2" fill="#1e4a7a" opacity="0.4"/>
+    <rect x="158" y="180" width="88" height="32" rx="6" fill="#0f2540" stroke="#1e4a7a" strokeWidth="0.8" />
+    <rect x="164" y="187" width="60" height="5" rx="2" fill="#1e4a7a" />
+    <rect x="164" y="196" width="44" height="4" rx="2" fill="#1e4a7a" opacity="0.6" />
+    <rect x="164" y="203" width="52" height="4" rx="2" fill="#1e4a7a" opacity="0.4" />
 
     {/* Bottom nav */}
-    <rect x="152" y="218" width="96" height="26" fill="#0a1628"/>
-    <rect x="152" y="218" width="96" height="1" fill="#1e3a5a"/>
-    <circle cx="170" cy="231" r="4" fill="#38bdf8" fillOpacity="0.3" stroke="#38bdf8" strokeWidth="0.7"/>
-    <circle cx="170" cy="231" r="2" fill="#38bdf8" opacity="0.7"/>
-    <rect x="194" y="227" width="12" height="8" rx="2" fill="#334155"/>
-    <rect x="218" y="228" width="12" height="3" rx="1.5" fill="#334155"/>
-    <rect x="218" y="233" width="8" height="3" rx="1.5" fill="#334155" opacity="0.5"/>
-    <circle cx="238" cy="231" r="4" fill="#334155" opacity="0.6"/>
+    <rect x="152" y="218" width="96" height="26" fill="#0a1628" />
+    <rect x="152" y="218" width="96" height="1" fill="#1e3a5a" />
+    <circle cx="170" cy="231" r="4" fill="#38bdf8" fillOpacity="0.3" stroke="#38bdf8" strokeWidth="0.7" />
+    <circle cx="170" cy="231" r="2" fill="#38bdf8" opacity="0.7" />
+    <rect x="194" y="227" width="12" height="8" rx="2" fill="#334155" />
+    <rect x="218" y="228" width="12" height="3" rx="1.5" fill="#334155" />
+    <rect x="218" y="233" width="8" height="3" rx="1.5" fill="#334155" opacity="0.5" />
+    <circle cx="238" cy="231" r="4" fill="#334155" opacity="0.6" />
 
     {/* Home indicator */}
-    <rect x="184" y="248" width="32" height="4" rx="2" fill="#334155"/>
+    <rect x="184" y="248" width="32" height="4" rx="2" fill="#334155" />
 
     {/* Signal arcs */}
-    <path d="M306 56 Q320 42 334 56" stroke="#94a3b8" strokeWidth="1.2" strokeLinecap="round" opacity="0.6"/>
-    <path d="M300 48 Q320 28 340 48" stroke="#94a3b8" strokeWidth="1" strokeLinecap="round" opacity="0.35"/>
-    <path d="M294 40 Q320 14 346 40" stroke="#94a3b8" strokeWidth="0.8" strokeLinecap="round" opacity="0.2"/>
-    <circle cx="320" cy="62" r="2.5" fill="#94a3b8" opacity="0.5"/>
+    <path d="M306 56 Q320 42 334 56" stroke="#94a3b8" strokeWidth="1.2" strokeLinecap="round" opacity="0.6" />
+    <path d="M300 48 Q320 28 340 48" stroke="#94a3b8" strokeWidth="1" strokeLinecap="round" opacity="0.35" />
+    <path d="M294 40 Q320 14 346 40" stroke="#94a3b8" strokeWidth="0.8" strokeLinecap="round" opacity="0.2" />
+    <circle cx="320" cy="62" r="2.5" fill="#94a3b8" opacity="0.5" />
 
     {/* Mumbai badge */}
-    <rect x="145" y="278" width="90" height="24" rx="8" fill="#3b82f6" fillOpacity="0.12" stroke="#3b82f6" strokeWidth="1.1"/>
-    <circle cx="161" cy="290" r="5" fill="#3b82f6" fillOpacity="0.25" stroke="#3b82f6" strokeWidth="1"/>
-    <circle cx="161" cy="289" r="2.5" fill="#3b82f6"/>
-    <line x1="161" y1="291" x2="161" y2="296" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round"/>
+    <rect x="145" y="278" width="90" height="24" rx="8" fill="#3b82f6" fillOpacity="0.12" stroke="#3b82f6" strokeWidth="1.1" />
+    <circle cx="161" cy="290" r="5" fill="#3b82f6" fillOpacity="0.25" stroke="#3b82f6" strokeWidth="1" />
+    <circle cx="161" cy="289" r="2.5" fill="#3b82f6" />
+    <line x1="161" y1="291" x2="161" y2="296" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round" />
     <text x="203" y="294" textAnchor="middle" fontSize="10" fill="#3b82f6" fontFamily="sans-serif" fontWeight="500">Mumbai</text>
 
   </svg>
@@ -263,8 +264,16 @@ const page = () => {
         <CardCarouselLeftRight className='mt-10' cards={rightSlideService} direction="right" />
       </section>
       <CaseStudyGrid />
-       <InfiniteLogoCarousel />
-<section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
+      <Information
+        backgroundImage="/Mobile App Development Company in Mumbai/mobile-app-development-mumbai-scalable-high-performance.png"
+        backgroundImageAltName="/Mobile App Development Company in Mumbai"
+        title="Mobile App Development Company in Mumbai for Scalable & High-Performance Apps"
+        highlightText="Mumbai"
+        description="Looking for a reliable mobile app development company in Mumbai? NNC delivers powerful Android and iOS applications for startups, SMEs, and enterprises. From Andheri to BKC and Thane, we build fast, scalable apps using modern technologies like React Native to ensure quicker delivery and cost efficiency."
+        align="right"
+      />
+      <InfiniteLogoCarousel />
+      <section id='Rewiew' className="Rewiew  w-full py-20 px-6 bg-[var(--sectioncolor)]">
         <div className="max-w-6xl mx-auto flex items-center justify-between mb-10 flex-wrap gap-4">
 
           {/* LEFT: Heading */}
