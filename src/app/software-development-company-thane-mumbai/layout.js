@@ -2,9 +2,9 @@ import Navbar from "@/components/software-development-company-thane-mumbai/Navba
 import Footer from "@/components/software-development-company-thane-mumbai/Footer";
 
 export const metadata = {
-  title: "Software Development Company in Thane Mumbai | Nakshatra Namaha Creations",
-  description:
-    "Software development company in Thane, Mumbai. Web apps, mobile apps, CRM, custom software. Local office in Thane West. 10+ years experience. Free consultation.",
+ title: "Software Development Company in Thane Mumbai | ठाणे, मुंबईतील सॉफ्टवेअर डेव्हलपमेंट कंपनी | Nakshatra Namaha Creations",
+description:
+  "Software development company in Thane, Mumbai. Web apps, mobile apps, CRM, custom software. Local office in Thane West. 10+ years experience. Free consultation. ठाणे, मुंबईमध्ये सॉफ्टवेअर डेव्हलपमेंट सेवा. वेब अॅप्स, मोबाईल अॅप्स, CRM आणि कस्टम सॉफ्टवेअर. ठाणे वेस्टमध्ये स्थानिक ऑफिस. 10+ वर्षांचा अनुभव. फ्री कन्सल्टेशन.",
 icons: {
   icon: "/logo.avif",
   shortcut: "/logo.avif",

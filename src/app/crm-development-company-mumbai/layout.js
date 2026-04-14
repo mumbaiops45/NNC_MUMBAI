@@ -2,9 +2,9 @@ import Navbar from "@/components/crm-development-company-mumbai/Navbar";
 import Footer from "@/components/crm-development-company-mumbai/Footer";
 
 export const metadata = {
-  title: "Custom CRM Development Company in Mumbai | Nakshatra Namaha Creations",
-  description:
-    "Custom CRM development in Mumbai. Lead management, sales pipelines, task automation, reporting dashboards. Built on React + Node.js. Free demo available.",
+title: "Custom CRM Development Company in Mumbai | मुंबईतील कस्टम CRM डेव्हलपमेंट कंपनी | Nakshatra Namaha Creations",
+description:
+  "Custom CRM development in Mumbai. Lead management, sales pipelines, task automation, reporting dashboards. Built on React + Node.js. Free demo available. मुंबईमध्ये कस्टम CRM डेव्हलपमेंट सेवा. लीड मॅनेजमेंट, सेल्स पाइपलाइन, टास्क ऑटोमेशन आणि रिपोर्टिंग डॅशबोर्ड्स. React + Node.js वर आधारित. फ्री डेमो उपलब्ध.",
 icons: {
   icon: "/logo.avif",
   shortcut: "/logo.avif",

@@ -22,11 +22,14 @@ export default function CTA({
                 {phone}
               </a>
             </span>
-            <span className="flex items-center gap-2">or
-              <Mail className="text-[var(--secondary)] w-4 h-4 " />  email{" "}
+            <span className="block md:flex items-center gap-2">or  email{" "}
+              <span className="flex justify-center gap-1 mt-4 md:mt-0">
+                <Mail className="text-[var(--secondary)] w-4 h-4 " />
               <a href={`mailto:${email}`} className="font-semibold underline">
                 {email}
               </a>
+              </span>
+              
             </span>
           </p>
 

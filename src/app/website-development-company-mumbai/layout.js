@@ -2,9 +2,9 @@ import Navbar from "@/components/Website Development Company in Mumbai/Navbar";
 import Footer from "@/components/Website Development Company in Mumbai/Footer";
 
 export const metadata = {
-  title: "Best Website Development Company in Mumbai | Nakshatra Namaha Creations",
-  description:
-    "Top-rated website development company in Mumbai. Custom websites, React & Next.js builds, SEO-ready. 565+ projects delivered. Get a free quote today.",
+ title: "Best Website Development Company in Mumbai | मुंबईतील सर्वोत्तम वेबसाइट डेव्हलपमेंट कंपनी | Nakshatra Namaha Creations",
+description:
+  "Top-rated website development company in Mumbai. Custom websites, React & Next.js builds, SEO-ready. 565+ projects delivered. Get a free quote today. मुंबईमध्ये टॉप-रेटेड वेबसाइट डेव्हलपमेंट सेवा. कस्टम वेबसाइट्स, React आणि Next.js वर आधारित. SEO-रेडी. 565+ प्रोजेक्ट्स डिलिव्हर केले. आजच फ्री कोट मिळवा.",
 icons: {
   icon: "/logo.avif",
   shortcut: "/logo.avif",

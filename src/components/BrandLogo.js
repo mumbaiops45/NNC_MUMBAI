@@ -37,8 +37,7 @@ export default function InfiniteLogoCarousel() {
       </h2>
 
       {/* Mask fade */}
-      <div className="relative w-full  overflow-hidden
-        [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+      <div className="relative w-full  overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
 
         {/* TRACK (IMPORTANT CLASS NAME = track) */}
         <div className="track flex w-max gap-12 animate-logo-scroll">

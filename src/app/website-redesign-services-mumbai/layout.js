@@ -2,9 +2,9 @@ import Navbar from "@/components/website-redesign-services-mumbai/Navbar";
 import Footer from "@/components/website-redesign-services-mumbai/Footer";
 
 export const metadata = {
-  title: "Professional Website Redesign Services in Mumbai | Nakshatra Namaha Creations",
-  description:
-    "Website redesign services in Mumbai. Old websites transformed into fast, modern, mobile-first experiences. Preserve SEO rankings. Get a free website audit.",
+title: "Professional Website Redesign Services in Mumbai | मुंबईतील प्रोफेशनल वेबसाइट रीडिझाईन सेवा | Nakshatra Namaha Creations",
+description:
+  "Website redesign services in Mumbai. Old websites transformed into fast, modern, mobile-first experiences. Preserve SEO rankings. Get a free website audit. मुंबईमध्ये वेबसाइट रीडिझाईन सेवा. जुन्या वेबसाइट्सना जलद, आधुनिक आणि मोबाइल-फर्स्ट अनुभवात बदलतो. SEO रँकिंग जतन करा. आजच फ्री वेबसाइट ऑडिट मिळवा.",
 icons: {
   icon: "/logo.avif",
   shortcut: "/logo.avif",

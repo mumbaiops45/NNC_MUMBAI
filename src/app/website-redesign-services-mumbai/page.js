@@ -182,19 +182,19 @@ const cardData = [
       "Without visible and compelling CTAs, visitors may leave without taking action. We craft strategic CTAs that guide users to contact, purchase, or engage, boosting conversions effectively.",
   },
   {
-    image: "/E-commerce Website Development in Mumbai/outdated-design.jpg",
+    image: "/website-redesign-services-mumbai/Design hasn't been updated in the last 3 years.jpg",
     heading: "Design hasn't been updated in the last 3 years",
     paragraph:
       "An outdated design can harm credibility. We refresh your website with modern layouts, typography, and visuals that align with current trends and enhance brand perception.",
   },
   {
-    image: "/E-commerce Website Development in Mumbai/low-conversion.jpg",
+    image: "/website-redesign-services-mumbai/Low conversion rate despite decent traffic.jpg",
     heading: "Low conversion rate despite decent traffic",
     paragraph:
       "High traffic is wasted if visitors don’t convert. We analyze user behavior, optimize navigation, and improve product/service presentation to turn visitors into loyal customers.",
   },
   {
-    image: "/E-commerce Website Development in Mumbai/seo-issues.jpg",
+    image: "/website-redesign-services-mumbai/Not ranking on Google for core keywords.jpg",
     heading: "Not ranking on Google for core keywords",
     paragraph:
       "If your website isn’t visible on search engines, potential customers can’t find you. We implement SEO best practices, keyword optimization, and structured content to improve rankings and organic traffic.",
@@ -253,7 +253,7 @@ const page = () => {
           </h2>
 
         </div>
-        <ServicesLayout servicesData={servicesData} reverse={true} color="bg-[var(--primary)]" TextColor="white"/>
+        <ServicesLayout servicesData={servicesData} reverse={true} color="bg-[var(--primary)]" TextColor="white" hMobImg='h-75'/>
       </section>
       <CaseStudyGrid />
       <Information

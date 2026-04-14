@@ -2,9 +2,9 @@ import Navbar from "@/components/android-app-development-company-mumbai/Navbar";
 import Footer from "@/components/android-app-development-company-mumbai/Footer";
 
 export const metadata = {
-  title: "Android App Development Company in Mumbai | Nakshatra Namaha Creations",
-  description:
-    "Professional Android app development in Mumbai. React Native and native builds. 80+ apps on Play Store. Free consultation. Get your Android app built by NNC.",
+ title: "Android App Development Company in Mumbai | मुंबईतील अँड्रॉइड अॅप डेव्हलपमेंट कंपनी | Nakshatra Namaha Creations",
+description:
+  "Professional Android app development in Mumbai. React Native and native builds. 80+ apps on Play Store. Free consultation. Get your Android app built by NNC. मुंबईमध्ये व्यावसायिक अँड्रॉइड अॅप डेव्हलपमेंट सेवा. React Native आणि native अॅप्स तयार करतो. Play Store वर 80+ अॅप्स. फ्री कन्सल्टेशन. तुमचे अँड्रॉइड अॅप NNC कडून तयार करून घ्या.",
 icons: {
   icon: "/logo.avif",
   shortcut: "/logo.avif",

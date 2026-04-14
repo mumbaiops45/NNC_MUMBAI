@@ -2,20 +2,20 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { MapPin, Phone, Mail, Facebook, Instagram, Youtube ,Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
   const pathname = usePathname();
 
   // ✅ Navbar Links
-const menuItems = [
-  { name: "HOME", path: "/android-app-development-company-mumbai" },
-  { name: "What We Build", path: "#what-we-build" },
-  { name: "Our Process ", path: "#process" },
-  { name: "FAQ", path: "#FAQ" },
-  
-];
+  const menuItems = [
+    { name: "HOME", path: "/android-app-development-company-mumbai" },
+    { name: "What We Build", path: "#what-we-build" },
+    { name: "Our Process ", path: "#process" },
+    { name: "FAQ", path: "#FAQ" },
+
+  ];
 
   // ✅ Services (SEO Optimized Names + Slugs)
   const services = [
@@ -80,13 +80,16 @@ const menuItems = [
             NNC is a leading website development company in Mumbai offering
             custom, scalable and SEO-friendly digital solutions for businesses.
           </p>
+
+          <iframe className="h-60 md:w-140 w-[100%]  mt-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.097605385604!2d72.98875009999999!3d19.2345775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bb2a3d75529f%3A0x9a21f9c6add3f2aa!2sNakshatra%20Namaha%20Creations%20Private%20Limited%20%7C%20Website%20Development%20Company%20in%20Mumbai!5e0!3m2!1sen!2sin!4v1776166566127!5m2!1sen!2sin" width="500" height="300" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
         </div>
 
         {/* Quick Links */}
         <div>
           <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
           <ul className="space-y-3">
-            { menuItems.map((link) => (
+            {menuItems.map((link) => (
               <li key={link.name}>
                 <Link
                   href={link.path}
@@ -136,48 +139,48 @@ const menuItems = [
 
             <li className="flex gap-2">
               <Mail className="text-[var(--primary)] shrink-0" />
-              info@nnc.com
+              info@nakshatranamahacreations.com
             </li>
           </ul>
 
           {/* Social Icons */}
           <div className="mt-8 flex gap-3">
-  <a
-    href="https://www.facebook.com/Nakshatranamahacreations/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
-  >
-    <Facebook size={18} />
-  </a>
+            <a
+              href="https://www.facebook.com/Nakshatranamahacreations/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
+            >
+              <Facebook size={18} />
+            </a>
 
-  <a
-    href="https://www.instagram.com/nnc.digitalbengaluru/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
-  >
-    <Instagram size={18} />
-  </a>
+            <a
+              href="https://www.instagram.com/nnc.digitalbengaluru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
+            >
+              <Instagram size={18} />
+            </a>
 
-  <a
-    href="https://www.youtube.com/c/NakshatraNamahaCreations"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
-  >
-    <Youtube size={18} />
-  </a>
+            <a
+              href="https://www.youtube.com/c/NakshatraNamahaCreations"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
+            >
+              <Youtube size={18} />
+            </a>
 
-  <a
-    href="https://www.linkedin.com/company/nakshatra-namaha-creation/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
-  >
-    <Linkedin size={18} />
-  </a>
-</div>
+            <a
+              href="https://www.linkedin.com/company/nakshatra-namaha-creation/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
+            >
+              <Linkedin size={18} />
+            </a>
+          </div>
         </div>
       </div>
 
@@ -192,7 +195,7 @@ const menuItems = [
           </div>
 
           <Link
-            href="/terms-and-conditions"
+            href="/terms"
             className="hover:text-[var(--primary)] transition"
           >
             Terms & Conditions

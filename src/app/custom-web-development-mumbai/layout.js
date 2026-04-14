@@ -2,9 +2,9 @@ import Navbar from "@/components/custom-web-development-mumbai/Navbar";
 import Footer from "@/components/custom-web-development-mumbai/Footer";
 
 export const metadata = {
-  title: "Custom Web Development Company in Mumbai | Nakshatra Namaha Creations",
-  description:
-    "Custom web development in Mumbai. Bespoke portals, CRMs, marketplaces, booking engines. React, Node.js, MongoDB stack. 10+ years experience. Get a quote.",
+  title: "Custom Web Development Company in Mumbai | मुंबईतील कस्टम वेब डेव्हलपमेंट कंपनी | Nakshatra Namaha Creations",
+description:
+  "Custom web development in Mumbai. Bespoke portals, CRMs, marketplaces, booking engines. React, Node.js, MongoDB stack. 10+ years experience. Get a quote. मुंबईमध्ये कस्टम वेब डेव्हलपमेंट सेवा. कस्टम पोर्टल्स, CRM, मार्केटप्लेस, बुकिंग इंजिन्स. React, Node.js, MongoDB तंत्रज्ञान. 10+ वर्षांचा अनुभव. कोट मिळवा.",
 icons: {
   icon: "/logo.avif",
   shortcut: "/logo.avif",

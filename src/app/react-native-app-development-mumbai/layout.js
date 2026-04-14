@@ -2,9 +2,9 @@ import Navbar from "@/components/React Native App Development in Mumbai/Navbar";
 import Footer from "@/components/React Native App Development in Mumbai/Footer";
 
 export const metadata = {
-  title: "React Native App Development Company in Mumbai | Nakshatra Namaha Creations",
-  description:
-    "Expert React Native app development in Mumbai. Single codebase for Android and iOS. Faster delivery, lower cost. 80+ apps built. Free consultation.",
+ title: "React Native App Development Company in Mumbai | मुंबईतील React Native अॅप डेव्हलपमेंट कंपनी | Nakshatra Namaha Creations",
+description:
+  "Expert React Native app development in Mumbai. Single codebase for Android and iOS. Faster delivery, lower cost. 80+ apps built. Free consultation. मुंबईमध्ये एक्सपर्ट React Native अॅप डेव्हलपमेंट सेवा. Android आणि iOS साठी सिंगल कोडबेस. जलद डिलिव्हरी आणि कमी खर्च. 80+ अॅप्स तयार केले आहेत. फ्री कन्सल्टेशन.",
 icons: {
   icon: "/logo.avif",
   shortcut: "/logo.avif",

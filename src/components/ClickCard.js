@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 
-const ServicesLayout = ({ servicesData, reverse = false, color, TextColor }) => {
+const ServicesLayout = ({ servicesData, reverse = false, color, TextColor,hMobImg="h-58" }) => {
     const [Active, setActive] = useState(
         servicesData[0]?.title
     );
@@ -55,12 +55,12 @@ const ServicesLayout = ({ servicesData, reverse = false, color, TextColor }) => 
                                                             className="flex flex-col items-center gap-4 md:gap-3  rounded-xl p-4 hover:shadow-md transition"
                                                         >
                                                             {/* IMAGE */}
-                                                            <div className="relative w-full h-58 rounded-lg overflow-hidden shrink-0">
+                                                            <div className={`relative w-full ${hMobImg} rounded-lg overflow-hidden shrink-0`}>
                                                                 <Image
                                                                     src={subItem.img}
                                                                     alt={subItem.name}
                                                                     fill
-                                                                    className="object-fill"
+                                                                    className="object-contain"
                                                                 />
                                                             </div>
 

@@ -2,9 +2,9 @@ import Navbar from "@/components/Web Design Company in Mumbai/Navbar";
 import Footer from "@/components/Web Design Company in Mumbai/Footer";
 
 export const metadata = {
-  title: "Best Web Design Company in Mumbai | Nakshatra Namaha Creations",
-  description:
-    "Award-worthy web design company in Mumbai. UI/UX design, responsive layouts, brand-consistent pages. 565+ projects. Get a free design mockup today.",
+ title: "Best Web Design Company in Mumbai | मुंबईतील सर्वोत्तम वेब डिझाईन कंपनी | Nakshatra Namaha Creations",
+description:
+  "Award-worthy web design company in Mumbai. UI/UX design, responsive layouts, brand-consistent pages. 565+ projects. Get a free design mockup today. मुंबईमध्ये अवॉर्ड-वर्थी वेब डिझाईन सेवा. UI/UX डिझाईन, रिस्पॉन्सिव लेआउट्स आणि ब्रँड-कन्सिस्टंट पेजेस. 565+ प्रोजेक्ट्स पूर्ण. आजच फ्री डिझाईन मॉकअप मिळवा.",
 icons: {
   icon: "/logo.avif",
   shortcut: "/logo.avif",

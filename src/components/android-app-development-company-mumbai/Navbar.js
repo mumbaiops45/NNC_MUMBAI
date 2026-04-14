@@ -20,13 +20,16 @@ const menuItems = [
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Logo */}
-        <Image
-          src="/logo.avif"
-          alt="Logo"
-          width={60}
-          height={25}
-          className="object-contain ml-8"
-        />
+       {/* Logo */}
+<Link href="/android-app-development-company-mumbai">
+  <Image
+    src="/logo.avif"
+    alt="Logo"
+    width={60}
+    height={25}
+    className="object-contain ml-8 cursor-pointer"
+  />
+</Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">

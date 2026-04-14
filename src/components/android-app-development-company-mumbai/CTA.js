@@ -22,11 +22,14 @@ export default function MobileAppCTA({
                 {phone}
               </a>
             </span>
-            <span className="flex items-center gap-2 text-white">or 
-              <Globe className="text-[var(--secondary)] w-4 h-4" /> email us {" "}
-              <a href={website} target="_blank" className="font-semibold underline">
+            <span className="block md:flex items-center gap-2 text-white">or email us
+              <span className="flex">
+                <Globe className="text-[var(--secondary)] w-4 h-4" />  {" "}
+              <a href={website} target="_blank" className="font-semibold underline mb-4">
                 {website.replace(/^https?:\/\//, "")}
-              </a>for a free consultation.
+              </a>
+              </span>
+               for a free consultation.
             </span>
           </p>
 

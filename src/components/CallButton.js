@@ -5,10 +5,7 @@ export default function CallButton() {
   return (
     <Link
       href="tel:+919900566466"
-      className="fixed bottom-12 left-6 flex justify-center items-center
-                 w-12 h-12
-                 rounded-full z-50 cursor-pointer 
-                 hover:scale-[1.05] transition"
+      className="fixed bottom-12 left-6 flex justify-center items-center w-12 h-12 rounded-full z-50 cursor-pointer hover:scale-[1.05] transition"
       style={{
         background: "linear-gradient(135deg, #22c55e, #16a34a)",
       }}

@@ -2,9 +2,9 @@ import Navbar from "@/components/ecommerce-website-development-mumbai/Navbar";
 import Footer from "@/components/ecommerce-website-development-mumbai/Footer";
 
 export const metadata = {
-  title: "E-commerce Website Development Company in Mumbai | Nakshatra Namaha Creations",
-  description:
-    "Custom e-commerce development in Mumbai. WooCommerce, Shopify, React-based stores. Mobile-first, fast-loading, SEO-ready. Get your online store live in 21 days.",
+  title: "E-commerce Website Development Company in Mumbai | मुंबईतील ई-कॉमर्स वेबसाइट डेव्हलपमेंट कंपनी | Nakshatra Namaha Creations",
+description:
+  "Custom e-commerce development in Mumbai. WooCommerce, Shopify, React-based stores. Mobile-first, fast-loading, SEO-ready. Get your online store live in 21 days. मुंबईमध्ये कस्टम ई-कॉमर्स डेव्हलपमेंट सेवा. WooCommerce, Shopify आणि React आधारित स्टोअर्स. मोबाइल-फर्स्ट, जलद लोडिंग आणि SEO-रेडी. तुमचा ऑनलाइन स्टोअर 21 दिवसांत लाईव्ह करा.",
 
   keywords: [
     "E-commerce Website Development in Mumbai",

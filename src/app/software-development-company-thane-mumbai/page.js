@@ -256,7 +256,7 @@ const page = () => {
           </h2>
 
         </div>
-        <ServicesLayout servicesData={LocalBenefits} color="bg-[var(--primary)]" TextColor="white" />
+        <ServicesLayout servicesData={LocalBenefits} color="bg-[var(--primary)]" TextColor="white" hMobImg='h-75' />
       </section>
       <CaseStudyGrid />
       <Information

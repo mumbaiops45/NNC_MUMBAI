@@ -81,6 +81,8 @@ export default function Footer() {
             NNC is a leading website development company in Mumbai offering
             custom, scalable and SEO-friendly digital solutions for businesses.
           </p>
+          <iframe  className="h-60 md:w-140 w-[100%]  mt-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.097605385604!2d72.98875009999999!3d19.2345775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bb2a3d75529f%3A0x9a21f9c6add3f2aa!2sNakshatra%20Namaha%20Creations%20Private%20Limited%20%7C%20Website%20Development%20Company%20in%20Mumbai!5e0!3m2!1sen!2sin!4v1776166566127!5m2!1sen!2sin" width="500" height="300" style={{ border: 0 }}  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+         
         </div>
 
         {/* Quick Links */}
@@ -137,7 +139,7 @@ export default function Footer() {
 
             <li className="flex gap-2">
               <Mail className="text-[var(--primary)] shrink-0" />
-              info@nnc.com
+              info@nakshatranamahacreations.com
             </li>
           </ul>
 
@@ -191,7 +193,7 @@ export default function Footer() {
           </div>
 
           <Link
-            href="/terms-and-conditions"
+            href="/terms"
             className="hover:text-[var(--primary)] transition"
           >
             Terms & Conditions

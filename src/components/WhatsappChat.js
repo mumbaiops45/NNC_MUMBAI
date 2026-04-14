@@ -4,16 +4,10 @@ import Link from "next/link";
 export default function WhatsappChat() {
   return (
     <Link
-  href="https://wa.me/918104001697"
+  href="https://wa.me/+919900566466"
   target="_blank"
   rel="noopener noreferrer"
-  className="fixed bottom-28 right-6 z-60
-  w-15 h-15
-  bg-[linear-gradient(135deg,_rgb(37,211,102)_0%,_rgb(18,140,126)_100%)]
-  hover:scale-105
-  p-4 rounded-2xl shadow-lg 
-  transition duration-300 
-  flex items-center justify-center"
+  className="fixed bottom-28 right-6 z-60 w-15 h-15 bg-[linear-gradient(135deg,_rgb(37,211,102)_0%,_rgb(18,140,126)_100%)] hover:scale-105 p-4 rounded-2xl shadow-lg  transition duration-300 flex items-center justify-center"
 >
       <svg
         xmlns="http://www.w3.org/2000/svg"
