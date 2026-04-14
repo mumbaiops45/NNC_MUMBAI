@@ -19,13 +19,11 @@ export default function CardCarouselFM({
   const mobileRef = useRef(null);
   const xMobile = useMotionValue(0);
   const animationRef = useRef(null);
-
-  // direction (mutable)
-  const directionRef = useRef(direction);
+  const isPaused = useRef(false);
 
   const loopCards = [...cards, ...cards];
 
-  // ===== DESKTOP ANIMATION =====
+  // ===== DESKTOP ANIMATION (unchanged) =====
   const startDesktop = () => {
     const container = desktopRef.current;
     if (!container) return;
@@ -35,7 +33,7 @@ export default function CardCarouselFM({
 
     desktopControls.start({
       x:
-        directionRef.current === "left"
+        direction === "left"
           ? [xDesktop.current, xDesktop.current - totalWidth]
           : [xDesktop.current, xDesktop.current + totalWidth],
       transition: {
@@ -45,28 +43,24 @@ export default function CardCarouselFM({
     });
   };
 
-  // ===== MOBILE LOOP (REAL FIX) =====
+  // ===== MOBILE LOOP =====
   const startMobile = () => {
-    const container = mobileRef.current;
-    if (!container) return;
-
-    const totalWidth = container.scrollWidth / 2;
+    cancelAnimationFrame(animationRef.current);
 
     const step = () => {
-      const dir = directionRef.current === "left" ? -1 : 1;
+      if (isPaused.current) return;
 
-      xMobile.set(xMobile.get() + dir * (speed / 100));
+      const container = mobileRef.current;
+      if (!container) return;
+
+      const totalWidth = container.scrollWidth / 2;
+      const d = direction === "left" ? -1 : 1;
+
+      xMobile.set(xMobile.get() + d * (speed / 60));
 
       const current = xMobile.get();
-
-      // infinite loop
-      if (current <= -totalWidth) {
-        xMobile.set(0);
-      }
-
-      if (current >= 0) {
-        xMobile.set(-totalWidth);
-      }
+      if (current <= -totalWidth) xMobile.set(0);
+      if (current >= 0) xMobile.set(-totalWidth);
 
       animationRef.current = requestAnimationFrame(step);
     };
@@ -89,7 +83,7 @@ export default function CardCarouselFM({
 
   return (
     <>
-      {/* ================= DESKTOP ================= */}
+      {/* ================= DESKTOP (unchanged) ================= */}
       <div
         className={`w-full overflow-hidden hidden md:block ${className}`}
         onMouseEnter={() => desktopControls.stop()}
@@ -105,12 +99,12 @@ export default function CardCarouselFM({
             const totalWidth = container.scrollWidth / 2;
             xDesktop.current = latest.x;
 
-            if (directionRef.current === "left" && latest.x <= -totalWidth) {
+            if (direction === "left" && latest.x <= -totalWidth) {
               xDesktop.current = 0;
               desktopControls.set({ x: 0 });
             }
 
-            if (directionRef.current === "right" && latest.x >= 0) {
+            if (direction === "right" && latest.x >= 0) {
               xDesktop.current = -totalWidth;
               desktopControls.set({ x: -totalWidth });
             }
@@ -144,27 +138,33 @@ export default function CardCarouselFM({
       </div>
 
       {/* ================= MOBILE ================= */}
-      <div className="md:hidden w-full overflow-hidden">
+      <div
+        className={`md:hidden w-full overflow-hidden ${className}`}
+        onTouchStart={() => {
+          isPaused.current = true;
+          cancelAnimationFrame(animationRef.current);
+        }}
+        onTouchEnd={() => {
+          isPaused.current = false;
+          startMobile(); // resumes in prop direction from exact position
+        }}
+      >
         <motion.div
           ref={mobileRef}
           style={{ x: xMobile }}
           drag="x"
-          dragElastic={0.05}
+          dragElastic={0}
           dragMomentum={false}
-          onDragStart={() => {
-            cancelAnimationFrame(animationRef.current);
-          }}
-          onDrag={(e, info) => {
+          onDrag={(_, info) => {
             xMobile.set(xMobile.get() + info.delta.x);
-          }}
-          onDragEnd={(e, info) => {
-            if (info.velocity.x < 0) {
-              directionRef.current = "left";
-            } else {
-              directionRef.current = "right";
-            }
 
-            startMobile(); // resume from SAME position
+            // keep loop bounds intact during drag
+            const container = mobileRef.current;
+            if (!container) return;
+            const totalWidth = container.scrollWidth / 2;
+            const current = xMobile.get();
+            if (current <= -totalWidth) xMobile.set(0);
+            if (current >= 0) xMobile.set(-totalWidth);
           }}
           className="flex gap-4 w-max px-4 py-4"
         >

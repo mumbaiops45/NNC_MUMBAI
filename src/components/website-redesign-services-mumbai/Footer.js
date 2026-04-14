@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { MapPin, Phone, Mail, Facebook, Instagram, Youtube ,Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -129,7 +129,7 @@ export default function Footer() {
 
                         <li className="flex gap-2">
                             <Phone className="text-[var(--primary)] shrink-0" />
-                           +91 99005 66466
+                            +91 99005 66466
 
 
                         </li>
@@ -141,43 +141,43 @@ export default function Footer() {
                     </ul>
 
                     {/* Social Icons */}
-                 <div className="mt-8 flex gap-3">
-  <a
-    href="https://www.facebook.com/Nakshatranamahacreations/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
-  >
-    <Facebook size={18} />
-  </a>
+                    <div className="mt-8 flex gap-3">
+                        <a
+                            href="https://www.facebook.com/Nakshatranamahacreations/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
+                        >
+                            <Facebook size={18} />
+                        </a>
 
-  <a
-    href="https://www.instagram.com/nnc.digitalbengaluru/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
-  >
-    <Instagram size={18} />
-  </a>
+                        <a
+                            href="https://www.instagram.com/nnc.digitalbengaluru/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
+                        >
+                            <Instagram size={18} />
+                        </a>
 
-  <a
-    href="https://www.youtube.com/c/NakshatraNamahaCreations"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
-  >
-    <Youtube size={18} />
-  </a>
+                        <a
+                            href="https://www.youtube.com/c/NakshatraNamahaCreations"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
+                        >
+                            <Youtube size={18} />
+                        </a>
 
-  <a
-    href="https://www.linkedin.com/company/nakshatra-namaha-creation/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
-  >
-    <Linkedin size={18} />
-  </a>
-</div>
+                        <a
+                            href="https://www.linkedin.com/company/nakshatra-namaha-creation/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-3 border border-white rounded-full hover:bg-[var(--primary)] transition"
+                        >
+                            <Linkedin size={18} />
+                        </a>
+                    </div>
                 </div>
             </div>
 
