@@ -6,7 +6,7 @@ const caseStudies = [
   {
     client: "Puran Interiors",
     industry: "Interior Design",
-    location: "Bengaluru",
+    location: "",
     title: "Website & SEO Page 1 Google in 90 Days",
 
     before:
@@ -31,7 +31,7 @@ const caseStudies = [
   {
     client: "Vijaya Home Services",
     industry: "On-Demand Services",
-    location: "Bengaluru",
+    location: "",
     title: "Full Platform 340% Booking Growth in 6 Months",
 
     before:
@@ -56,7 +56,7 @@ const caseStudies = [
   {
     client: "Pro Leverage",
     industry: "Finance & Investment",
-    location: "Bengaluru",
+    location: "",
     title: "Finance App 10,000 Downloads in Month One",
 
     before:
