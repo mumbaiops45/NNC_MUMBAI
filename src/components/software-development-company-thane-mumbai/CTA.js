@@ -17,12 +17,12 @@ export default function MobileAppCTA({
           {/* Contact Info with icons */}
           <p className="text-sm md:text-base mb-6 opacity-90 flex flex-col sm:flex-row justify-center items-center gap-4">
             <span className="block md:flex items-center gap-2 text-white">  Visit our Thane West office or call  {" "}
-              <div className="flex justify-center gap-1 mt-4 md:mt-0">
+              <span className="flex justify-center gap-1 mt-4 md:mt-0">
                 <Phone className="text-[var(--primary)] w-4 h-4" />
               <a href={`tel:${phone}`} className="font-semibold underline">
                 {phone}
               </a>
-              </div>
+              </span>
               
             </span>
           

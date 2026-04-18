@@ -1,7 +1,6 @@
-import React from 'react'
-import Hero from '@/components/Hero'
+import React from 'react';
+import Hero from '@/components/Hero';
 import FAQ from '@/components/FAQ';
-import MobileAppCTA from '@/components/Web Design Company in Mumbai/CTA';
 import Process from '@/components/Step';
 import CardList from '@/components/CardList';
 import MobileAppCTA_React_Native from '@/components/React Native App Development in Mumbai/CTA';

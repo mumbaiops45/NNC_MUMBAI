@@ -4,7 +4,6 @@ import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/android-app-development-company-mumbai/CTA';
 import Process from '@/components/Step';
 import CardList from '@/components/CardList';
-import MobileAppCTA_React_Native from '@/components/React Native App Development in Mumbai/CTA';
 import Testimonial from '@/components/Testimonial';
 import InfiniteLogoCarousel from '@/components/BrandLogo';
 import CaseStudyGrid from '@/components/CaseStudy';

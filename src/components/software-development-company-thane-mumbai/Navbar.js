@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "HOME", path: "/software-development-company-thane-mumbai" },
+    { name: "Home", path: "/software-development-company-thane-mumbai" },
     { name: "Services", path: "#Services" },
     { name: "Why Local Matters", path: "#why-local-matters" },
     { name: "FAQ", path: "#FAQ" },

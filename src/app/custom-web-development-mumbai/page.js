@@ -1,7 +1,6 @@
 import React from 'react'
 import Hero from '@/components/Hero'
 import CardList from '@/components/CardList'
-import CardCarouselLeftRight from '@/components/CardCarousel';
 import TackStack from '@/components/TechStack';
 import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/custom-web-development-mumbai/CTA';

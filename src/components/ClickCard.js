@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 
-const ServicesLayout = ({ servicesData, reverse = false, color, TextColor,hMobImg="h-58" }) => {
+const ServicesLayout = ({ servicesData, reverse = false, color, TextColor, hMobImg = "h-58" }) => {
     const [Active, setActive] = useState(
         servicesData[0]?.title
     );
@@ -15,10 +15,11 @@ const ServicesLayout = ({ servicesData, reverse = false, color, TextColor,hMobIm
     );
 
     return (
-        <section className="py-16 px-6 md:px-15 ">
+        <section className="py-10 px-6 md:px-15 ">
             {/* MAIN LAYOUT */}
-            <div className={`max-w-7xl mx-auto grid grid-cols-1 gap-4 ${reverse ? "md:grid-cols-[1fr_50%]" : "md:grid-cols-[50%_1fr]"}`}>
-
+            <div className={servicesData[0]?.title !== 'Custom React.js + Node.js stores for full flexibility' ? `max-w-7xl mx-auto grid grid-cols-1 gap-4 ${reverse ? "md:grid-cols-[1fr_50%]" : "md:grid-cols-[50%_1fr]"}`
+                : `max-w-7xl mx-auto grid grid-cols-1 gap-4 ${reverse ? "md:grid-cols-[1fr_65%]" : "md:grid-cols-[50%_1fr]"}`
+            }>
                 {/* LEFT SIDEBAR */}
                 <div className={`flex flex-col gap-4 h-full ${reverse ? "md:order-2" : "md:order-1"}`}>
                     {servicesData.map((service) => (
@@ -26,14 +27,21 @@ const ServicesLayout = ({ servicesData, reverse = false, color, TextColor,hMobIm
                             <div
 
                                 onClick={() => setActive(service.title)}
-                                className={`md:h-full flex items-center cursor-pointer border rounded-xl p-4 transition ${Active === service.title
+                                className={servicesData[0]?.title !== 'Custom React.js + Node.js stores for full flexibility' ? (`md:h-full flex items-center justify-center cursor-pointer border rounded-md p-4 transition ${Active === service.title
                                     ? `${color} text-white shadow-md`
-                                    : "bg-white border-gray-200 hover:shadow-md"
-                                    }`}
+                                    : "bg-gray-200 border-gray-200 hover:shadow-md"
+                                    }`) : (`md:h-full flex flex-col  cursor-pointer border rounded-md px-4 py-2 transition ${Active === service.title
+                                        ? `${color} text-white shadow-md`
+                                        : "bg-gray-200 border-gray-200 hover:shadow-md"
+                                        }`)}
                             >
                                 <h3 className="font-semibold text-sm md:text-base">
                                     {service.title}
                                 </h3>
+
+                                {servicesData[0]?.title === 'Custom React.js + Node.js stores for full flexibility' && <p className="hidden md:block ">
+                                    {service.items[0].discription}
+                                </p>}
 
 
                             </div>
@@ -110,13 +118,14 @@ const ServicesLayout = ({ servicesData, reverse = false, color, TextColor,hMobIm
                                         </div>
 
                                         {/* RIGHT CONTENT */}
-                                        <div className="w-full md:w-2/3 text-center md:text-left">
+                                        <div className={`w-full  ${servicesData[0]?.title !== 'Custom React.js + Node.js stores for full flexibility' ? "md:w-2/3" : "w-full"} text-center md:text-left`}>
                                             <h3 className={`text-lg md:text-xl font-semibold mb-3 py-2 text-${TextColor} border-l-4 border-${TextColor} pl-4`}>
                                                 {item.heading}
                                             </h3>
-                                            <p className="text-sm md:text-base text-gray-400">
+                                            {servicesData[0]?.title !== 'Custom React.js + Node.js stores for full flexibility' && <p className="text-sm md:text-base text-gray-400">
                                                 {item.discription}
-                                            </p>
+                                            </p>}
+
                                         </div>
 
                                     </div>

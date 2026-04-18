@@ -38,14 +38,14 @@ export default function Hero({
 
             {/* Subtext */}
             {subtext && (
-              <p className="text-lg md:text-xl text-gray-300 mb-4">
+              <p className="text-lg md:text-[16.5px] text-[#ffffff8c] mb-4">
                 {subtext}
               </p>
             )}
 
             {/* Description */}
             {description && (
-              <p className="text-base md:text-lg text-gray-400 mb-6 leading-relaxed">
+              <p className="text-base md:text-[16.5px] text-[#ffffff6b] mb-6 leading-relaxed">
                 {description}
               </p>
             )}

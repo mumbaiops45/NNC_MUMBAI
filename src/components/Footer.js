@@ -74,7 +74,7 @@ export default function Footer() {
             height={25}
             className="object-contain"
           />
-          <p className="text-sm leading-7 pt-5 text-white/80">
+          <p className="text-sm leading-7 pt-5 text-gray-400">
             NNC is a leading website development company in Mumbai offering
             custom, scalable and SEO-friendly digital solutions for businesses.
           </p>
@@ -106,7 +106,7 @@ export default function Footer() {
                 <Link
                   href={service.path}
                   title={service.name}
-                  className="text-white/80 hover:text-[var(--primary)] transition"
+                  className="text-gray-400 hover:text-[var(--primary)] transition"
                 >
                   {service.name}
                 </Link>
@@ -119,7 +119,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-6">Contact</h3>
 
-          <ul className="space-y-4 text-white/80">
+          <ul className="space-y-4 text-gray-400">
             <li className="flex gap-2">
               <MapPin className="text-[var(--primary)] shrink-0" />
               Lodha Signet, 302, Kolshet Rd, Kolshet Industrial Area, Thane West, Thane, Maharashtra 400607

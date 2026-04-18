@@ -10,7 +10,7 @@ export default function Footer() {
 
     // ✅ Navbar Links
     const menuItems = [
-        { name: "HOME", path: "/react-native-app-development-mumbai" },
+        { name: "Home", path: "/react-native-app-development-mumbai" },
         { name: "Why React Native ", path: "#why-react-native" },
         { name: "Our Process ", path: "#Process" },
         { name: "FAQ", path: "#FAQ" },
@@ -76,7 +76,7 @@ export default function Footer() {
                         height={25}
                         className="object-contain"
                     />
-                    <p className="text-sm leading-7 pt-5 text-white/80">
+                    <p className="text-sm leading-7 pt-5 text-gray-400">
                        NNC is a leading React Native app development company in Mumbai offering fast, scalable and high-performance cross-platform app solutions for businesses.
                     </p>
                     <iframe  className="h-60 md:w-140 w-[100%]  mt-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.097605385604!2d72.98875009999999!3d19.2345775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bb2a3d75529f%3A0x9a21f9c6add3f2aa!2sNakshatra%20Namaha%20Creations%20Private%20Limited%20%7C%20Website%20Development%20Company%20in%20Mumbai!5e0!3m2!1sen!2sin!4v1776166566127!5m2!1sen!2sin" width="500" height="300" style={{ border: 0 }}  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
@@ -91,7 +91,7 @@ export default function Footer() {
                             <li key={link.name}>
                                 <Link
                                     href={link.path}
-                                    className={`transition text-white hover:text-[var(--primary)] `}
+                                    className={`transition text-gray-400 hover:text-[var(--primary)] `}
                                 >
                                     {link.name}
                                 </Link>
@@ -109,7 +109,7 @@ export default function Footer() {
                                 <Link
                                     href={service.path}
                                     title={service.name}
-                                    className="text-white/80 hover:text-[var(--primary)] transition"
+                                    className="text-gray-400 hover:text-[var(--primary)] transition"
                                 >
                                     {service.name}
                                 </Link>
@@ -122,7 +122,7 @@ export default function Footer() {
                 <div>
                     <h3 className="text-lg font-semibold mb-6">Contact</h3>
 
-                      <ul className="space-y-4 text-white/80">
+                      <ul className="space-y-4 text-gray-400">
             <li className="flex gap-2">
               <MapPin className="text-[var(--primary)] shrink-0" />
               <a

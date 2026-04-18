@@ -23,7 +23,7 @@ export default function CTA({
               </a>
             </span>
             <span className="block md:flex items-center gap-2">or  email{" "}
-              <span className="flex justify-center gap-1 mt-4 md:mt-0">
+              <span className="flex items-center justify-center gap-1 mt-4 md:mt-0">
                 <Mail className="text-[var(--secondary)] w-4 h-4 " />
               <a href={`mailto:${email}`} className="font-semibold underline">
                 {email}

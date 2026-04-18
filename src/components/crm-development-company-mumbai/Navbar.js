@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "HOME", path: "/crm-development-company-mumbai" },
+    { name: "Home", path: "/crm-development-company-mumbai" },
     { name: "CRM We Build", path: "#crm-we-build" },
     { name: "Industries", path: "#Industries" },
     { name: "FAQ", path: "#FAQ" },

@@ -48,7 +48,7 @@ const Information = ({
             </h2>
 
             {/* Description */}
-            <p className="mt-4 text-sm md:!text-[16px] text-white/90">
+            <p className="mt-4 text-sm md:!text-[17px] text-white/90">
               {description}
             </p>
 

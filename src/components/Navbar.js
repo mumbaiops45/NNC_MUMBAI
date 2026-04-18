@@ -10,7 +10,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const menuItems = [
-    { name: "HOME", path: "/website-development-company-mumbai" },
+    { name: "Home", path: "/website-development-company-mumbai" },
     
   ];
 

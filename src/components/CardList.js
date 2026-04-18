@@ -26,7 +26,7 @@ export default function CardList({ cards }) {
           </div>
 
           {/* Paragraph */}
-          <p className="text-gray-600 text-sm mt-4 leading-relaxed">
+          <p className="text-[#6b7a99] text-sm mt-4 leading-relaxed">
             {card.paragraph}
           </p>
         </div>

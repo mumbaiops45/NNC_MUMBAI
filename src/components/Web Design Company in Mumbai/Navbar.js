@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
 const menuItems = [
-  { name: "HOME", path: "/web-design-company-mumbai" },
+  { name: "Home", path: "/web-design-company-mumbai" },
   { name: "Services", path: "#Services" },
   { name: "Process", path: "#process" },
   { name: "FAQ", path: "#FAQ" },

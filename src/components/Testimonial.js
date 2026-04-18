@@ -98,7 +98,7 @@ export default function Testimonial({CardColor,ClintTextColor}) {
               {/* Quote */}
               <blockquote className=" leading-relaxed text-gray-100 font-medium mb-10 flex-grow relative">
            
-                <p className="relative z-10">{testimonial.quote}</p>
+                <p className="relative text-[#fff6] text-[14px] z-10">{testimonial.quote}</p>
               </blockquote>
 
               {/* Footer */}

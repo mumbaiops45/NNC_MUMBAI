@@ -1,7 +1,6 @@
 import React from 'react'
 import Hero from '@/components/Hero'
 import CardList from '@/components/CardList';
-import CardCarouselLeftRight from '@/components/CardCarousel';
 import FAQ from '@/components/FAQ';
 import MobileAppCTA from '@/components/Web Design Company in Mumbai/CTA';
 import Process from '@/components/Step';
